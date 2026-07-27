@@ -1,0 +1,11 @@
+# Malleable
+
+mal·​lea·​ble
+
+* capable of being extended or shaped by beating with a hammer or by the pressure of rollers
+* capable of being altered or controlled by outside forces or influences
+* having a capacity for adaptive change
+
+Similar words: [[Adaptable]], [[Plastic]]
+
+Near antonyms: [[Intractable]]
