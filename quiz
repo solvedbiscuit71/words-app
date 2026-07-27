@@ -1,0 +1,231 @@
+#!/Users/biscuit/.pyenv/shims/python
+
+import os
+import time
+import argparse
+import random
+
+from obsidian import Vault
+from crandom import randexp, rand
+
+UNKNOWN = 0b000
+ALL = 0b001
+LATEST = 0b010
+OLDEST = 0b100
+
+UNIFORM = "uniform"
+EXP_LATEST = "latest"
+EXP_OLDEST = "oldest"
+
+
+def select_choices(
+    word_bank: list[str], answer: str, weights: list[float]
+) -> list[str]:
+    if len(word_bank) != len(weights):
+        raise ValueError(
+            "length of `word_bank` is expected to be equal to length of `weights`"
+        )
+
+    # Reduce the weight of answer choice
+    i = word_bank.index(answer)
+    weights[i] = max(weights[i] / 10, 0)
+
+    correct_choice = random.choice(["a", "b", "c", "d", "e"])
+    choices = []
+    for choice in ["a", "b", "c", "d", "e"]:
+        if choice == correct_choice:
+            choices.append(answer)
+        else:
+            while True:
+                i = rand(len(word_bank), weights)
+                random_choice = word_bank[i]
+                if random_choice != answer and random_choice not in choices:
+                    choices.append(random_choice)
+                    weights[i] = max(weights[i] / 10, 0)
+                    break
+    return choices
+
+
+def render_question(question_number: str, question: str, choices: list[str]):
+    # Clear screen
+    os.system("clear")
+
+    # Select one definition
+    print()
+    print(question_number)
+    print("Q:", question)
+    print()
+
+    # Print options
+    for i, choice in zip(["A", "B", "C", "D", "E"], choices):
+        print(f"{i}) {choice}")
+    print()
+
+
+def parse_arg_take(take: str):
+    if take == "all":
+        return ALL, None
+    elif take[0] == "l":
+        count = int(take[1:])
+        return LATEST, count
+    elif take[0] == "o":
+        count = int(take[1:])
+        return OLDEST, count
+    else:
+        return UNKNOWN, None
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="quiz", description="Quiz program for practising vocabulary"
+    )
+
+    parser.add_argument("-n", "--no", type=int, default=30)
+    parser.add_argument("-t", "--take", type=str, default="all")
+    parser.add_argument("-s", "--sampling", type=str, default=UNIFORM)
+    parser.add_argument("-d", "--debug", action="store_true")
+
+    args = parser.parse_args()
+
+    no = args.no
+    take, count = parse_arg_take(args.take)
+    sampling = args.sampling
+
+    # Vault instance
+    lexicon_dir = os.getenv("LEXICON_DIR")
+    if lexicon_dir is None:
+        print("environment variable 'LEXICON_DIR' is not set")
+        return
+    vault = Vault(lexicon_dir)
+
+    # Read from input file
+    entries = vault.fetch_all_entries()
+
+    # Sanity check
+    if no <= 0:
+        print(f"no. of question ({no}) must be positive integer")
+        return
+
+    if take == UNKNOWN:
+        print(f"unknown take method '{args.take}'")
+        return
+
+    if no > len(entries):
+        print(f"no. of question ({no}) is greater than no. of entries ({len(entries)})")
+        return
+
+    # no. of questions shouldn't exceed take count
+    if count is not None:
+        no = min(no, count)
+
+    # Extract word bank
+    word_bank = [entry.text for entry in entries]
+
+    # Weights will be used for select_choices
+    weights = [100.0 for _ in range(len(word_bank))]
+
+    # take
+    if take != ALL and count is not None:
+        # sort the entries
+        entries = sorted(entries, key=lambda e: e.ctime)
+
+        if take == LATEST:
+            entries = entries[-count:]
+        elif take == OLDEST:
+            entries = entries[:count]
+
+    # sampling
+    if sampling != UNIFORM:
+        # sort the entries
+        if sampling == EXP_LATEST:
+            entries = sorted(entries, key=lambda e: e.ctime)
+        elif sampling == EXP_OLDEST:
+            entries = sorted(entries, key=lambda e: -e.ctime)
+        else:
+            print(f"Unknown sampling method '{sampling}'")
+            return
+
+    # Welcome screen
+    try:
+        os.system("clear")
+        print("Welcome to Quiz2.0")
+        print()
+        print("number of questions:", no)
+        print("take:", args.take)
+        print("sampling:", sampling)
+        print()
+        print(f"Loaded {len(entries)} words")
+        print()
+        if args.debug:
+            print(", ".join([e.text for e in entries]))
+            print()
+        print("The quiz will began in ", end="", flush=True)
+        for i in range(3, 0, -1):
+            print(f"{i}... ", end="", flush=True)
+            time.sleep(1)
+        print("Start!")
+        time.sleep(0.2)
+    except KeyboardInterrupt:
+        return
+
+    # start the quiz
+    current = 0
+    game_over = False
+    while current < no and len(entries) > 0 and not game_over:
+        # Randomly sample one entry
+        if sampling == UNIFORM:
+            # use uniform distribution
+            i = random.randrange(len(entries))
+        else:
+            # use exponential distribution
+            i = randexp(len(entries), lam=3)
+        entry = entries[i]
+
+        try:
+            # Fetch word
+            word = vault.fetch_word(entry)
+
+            # Remove the entry
+            entries.pop(i)
+
+            # If word doesn't exist, remove it
+            if word is None or len(word.definitions) == 0:
+                continue
+
+            question = random.choice(word.definitions)
+            answer = entry.text
+            choices = select_choices(word_bank, answer, weights)
+
+            correct = False
+            while not correct:
+                render_question(f"{current+1} of {no}", question, choices)
+
+                user_input = input("A: ")
+                if user_input.lower() == word.text.lower():
+                    print("✓ Correct")
+                    correct = True
+                else:
+                    print("x Incorrect")
+                    time.sleep(0.5)
+
+            current += 1
+
+            if not game_over:
+                if word.similar_words:
+                    print()
+                    print("Similar words:", ", ".join(word.similar_words))
+                time.sleep(1)
+
+        except KeyboardInterrupt:
+            os.system("clear")
+            game_over = True
+            continue
+        except:
+            continue
+
+    # Exit
+    os.system("clear")
+
+
+if __name__ == "__main__":
+    main()
