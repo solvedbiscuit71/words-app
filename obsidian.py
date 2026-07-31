@@ -60,8 +60,9 @@ class Vault:
         word = Word(entry.text)
 
         for line in lines:
-            if line[0] == "#" and line[1:].strip() != entry.text:
-                return None
+            if line[0] == "#":
+                if line[1] == " " and line[2:].strip() != entry.text:
+                    return None
             elif line[0] == "-" or line[0] == "*":
                 word.definitions.append(Vault.normalize_sentence(line[2:]))
             elif line.startswith("Similar words:"):
