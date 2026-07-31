@@ -9,4 +9,4 @@ Similar words: [[Inappropriate]], [[Unsuitable]]
 
 Near antonyms: [[Appropriate]]
 
-Mnemonic: Unseemly, not be seen, because it's inappropriate.
+Mnemonic: Unseemly, not be seen, not appropriate to be seen

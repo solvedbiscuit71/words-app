@@ -11,4 +11,4 @@ Similar words: [[Suppress]], [[Strangle]]
 
 Near antonyms: [[Express]], [[Breathe]]
 
-Mnemonic: She try to stifle her cry.
+Example: She try to stifle her cry.

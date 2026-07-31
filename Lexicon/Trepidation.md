@@ -6,7 +6,7 @@
 - a feeling of fear that causes you to hesitate because you think something bad or unpleasant is going to happen
 - a tremulous motion : tremor
 
-Similar words: [[Fear]]
+Similar words: [[Fear]], [[Apprehensive]]
 
 Near antonyms: [[Confidence]]
 

@@ -1,5 +1,7 @@
 # Espousal
 
+#hard 
+
 esˈpaʊ.zəlk
 
 - the act of becoming involved with or supporting an activity or opinion

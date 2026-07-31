@@ -1,5 +1,7 @@
 # Relegate
 
+#hard 
+
 rel·​e·​gate
 
 - to send into exile : banish

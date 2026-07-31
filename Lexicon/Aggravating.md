@@ -1,5 +1,7 @@
 # Aggravating
 
+#hard 
+
 ag·​gra·​vat·​ing
 
 - arousing displeasure, impatience, or anger : annoying

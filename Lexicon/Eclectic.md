@@ -4,7 +4,7 @@ i-ˈklek-tik
 
 - including things taken from many different sources
 
-Similar words: [[Varied]], [[Diverse]]
+Similar words: [[Varied]], [[Diverse]], [[Sundry]]
 
 Near antonyms: [[Homogeneous]]
 

@@ -6,4 +6,6 @@ prɪˈzʌmp.tʃəs.nəs
 
 Similar words: [[Impertinent]], [[Imprudent]]
 
+Mnemonic: Presumptuousness, assumption to do things you have no right to do.
+
 Example: They were accused of arrogance and presumptuousness.

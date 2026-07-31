@@ -1,5 +1,7 @@
 # Plight
 
+#hard 
+
 ˈplīt
 
 - an unpleasant condition, especially a serious, sad, or difficult one

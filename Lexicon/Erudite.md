@@ -1,5 +1,7 @@
 # Erudite
 
+#hard 
+
 er.ʊ.daɪt
 
 - having or containing a lot of knowledge that is known by very few people

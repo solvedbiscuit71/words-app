@@ -1,5 +1,7 @@
 # Erratic
 
+#hard
+
 i-ˈra-tik
 
 - having no fixed course : wandering

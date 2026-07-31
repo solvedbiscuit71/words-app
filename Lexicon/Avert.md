@@ -1,5 +1,7 @@
 # Avert
 
+#hard
+
 ə-ˈvərt
 
 - to turn away or aside (the eyes, one's gaze, etc.) in avoidance

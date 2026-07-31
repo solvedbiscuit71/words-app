@@ -1,5 +1,7 @@
 # Facile
 
+#hard 
+
 fæs.aɪl
 
 - A remark or theory is too simple and has not been thought about enough
@@ -7,6 +9,6 @@ fæs.aɪl
 
 Similar words: [[Superficial]], [[Easy]]
 
-Mnemonic: Face, I will, because it's easy.
+Mnemonic: Facile, face so still because it's not enough thought has been given.
 
 Example: He does not permit himself facile answers.

@@ -6,6 +6,6 @@ mer·​cu·​ri·​al
 * very lively and quick, changing often
 * having qualities (as of eloquence, ingenuity, or thievishness) attributed to the god Mercury or in astrology to the influence of the planet Mercury
 
-Similar words: [[Volatile]]
+Similar words: [[Volatile]], [[Capricious]]
 
 Near antonyms: [[Stable]]

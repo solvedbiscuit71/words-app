@@ -1,5 +1,7 @@
 # Vociferous
 
+#hard
+
 vō-ˈsi-f(ə-)rəs
 
 - expressing feelings or opinions in a very loud or forceful way

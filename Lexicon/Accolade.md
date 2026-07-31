@@ -1,5 +1,7 @@
 # Accolade
 
+#hard 
+
 æk.ə.leɪd
 
 - praise and approval
