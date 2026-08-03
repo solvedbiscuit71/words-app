@@ -9,10 +9,11 @@ from obsidian import Vault
 from crandom import randexp, rand
 from ollama import Ollama
 
-UNKNOWN = 0b000
-ALL = 0b001
-LATEST = 0b010
-OLDEST = 0b100
+UNKNOWN = 0b0000
+ALL = 0b0001
+HARD = 0b0010
+LATEST = 0b0100
+OLDEST = 0b1000
 
 UNIFORM = "uniform"
 EXP_LATEST = "latest"
@@ -79,6 +80,8 @@ def render_thinking(question_number: str):
 def parse_arg_take(take: str):
     if take == "all":
         return ALL, None
+    elif take == "hard":
+        return HARD, None
     elif take[0] == "l":
         count = int(take[1:])
         return LATEST, count
@@ -158,6 +161,15 @@ def main():
             entries = entries[-count:]
         elif take == OLDEST:
             entries = entries[:count]
+    elif take == HARD:
+        # need to load all the words in the vault to check whether marked as hard
+        # can be slow in case of a lot of words.
+        filtered_entries = []
+        for entry in entries:
+            word = vault.fetch_word(entry)
+            if word is not None and word.marked_as_hard:
+                filtered_entries.append(entry)
+        entries = filtered_entries
 
     # sampling
     if sampling != UNIFORM:
@@ -192,6 +204,8 @@ def main():
         print("Start!")
         time.sleep(0.2)
     except KeyboardInterrupt:
+        if not args.debug:
+            os.system("clear")
         return
 
     # start the quiz

@@ -15,6 +15,7 @@ class Entry:
 class Word:
     text: str
     pronunciation: str | None = None
+    marked_as_hard: bool = False
     definitions: list[str] = field(default_factory=list)
     similar_words: list[str] = field(default_factory=list)
     near_antonyms: list[str] = field(default_factory=list)
@@ -61,7 +62,9 @@ class Vault:
 
         for line in lines:
             if line[0] == "#":
-                if line[1] == " " and line[2:].strip() != entry.text:
+                if line == "#hard":
+                    word.marked_as_hard = True
+                elif line[1] == " " and line[2:].strip() != entry.text:
                     return None
             elif line[0] == "-" or line[0] == "*":
                 word.definitions.append(Vault.normalize_sentence(line[2:]))
