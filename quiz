@@ -7,6 +7,7 @@ import random
 
 from obsidian import Vault
 from crandom import randexp, rand
+from ollama import Ollama
 
 UNKNOWN = 0b000
 ALL = 0b001
@@ -16,6 +17,9 @@ OLDEST = 0b100
 UNIFORM = "uniform"
 EXP_LATEST = "latest"
 EXP_OLDEST = "oldest"
+
+MODE_CLASSIC = "classic"
+MODE_CREATIVE = "creative"
 
 
 def select_choices(
@@ -62,6 +66,16 @@ def render_question(question_number: str, question: str, choices: list[str]):
     print()
 
 
+def render_thinking(question_number: str):
+    # Clear screen
+    os.system("clear")
+
+    # Select one definition
+    print()
+    print(question_number)
+    print("Thinking...")
+
+
 def parse_arg_take(take: str):
     if take == "all":
         return ALL, None
@@ -81,6 +95,13 @@ def main():
     )
 
     parser.add_argument("-n", "--no", type=int, default=30)
+    parser.add_argument(
+        "-m",
+        "--mode",
+        type=str,
+        default=MODE_CLASSIC,
+        choices=[MODE_CLASSIC, MODE_CREATIVE],
+    )
     parser.add_argument("-t", "--take", type=str, default="all")
     parser.add_argument("-s", "--sampling", type=str, default=UNIFORM)
     parser.add_argument("-d", "--debug", action="store_true")
@@ -88,6 +109,7 @@ def main():
     args = parser.parse_args()
 
     no = args.no
+    mode = args.mode
     take, count = parse_arg_take(args.take)
     sampling = args.sampling
 
@@ -97,6 +119,9 @@ def main():
         print("environment variable 'LEXICON_DIR' is not set")
         return
     vault = Vault(lexicon_dir)
+
+    # Ollama instance
+    ollama = Ollama()
 
     # Read from input file
     entries = vault.fetch_all_entries()
@@ -151,6 +176,7 @@ def main():
         print("Welcome to Quiz2.0")
         print()
         print("number of questions:", no)
+        print("mode:", args.mode)
         print("take:", args.take)
         print("sampling:", sampling)
         print()
@@ -192,7 +218,19 @@ def main():
             if word is None or len(word.definitions) == 0:
                 continue
 
-            question = random.choice(word.definitions)
+            definition = random.choice(word.definitions)
+            if mode == "classic":
+                # use definition as the question
+                question = definition
+            else:
+                try:
+                    # use AI to generate a question from the definition
+                    render_thinking(f"{current+1} of {no}")
+                    question = ollama.generate_question(word.text, definition)
+                except:
+                    # in case of failure, fallback to classic mode
+                    question = definition
+
             answer = entry.text
             choices = select_choices(word_bank, answer, weights)
 
@@ -200,8 +238,14 @@ def main():
             while not correct:
                 render_question(f"{current+1} of {no}", question, choices)
 
-                user_input = input("A: ")
-                if user_input.lower() == word.text.lower():
+                user_input = input("A: ").lower()
+                if user_input == "/exit":
+                    raise KeyboardInterrupt
+                elif user_input == "/hint":
+                    if mode == MODE_CREATIVE:
+                        print(f"Hint: {definition}")
+                        time.sleep(2)
+                elif user_input == word.text.lower():
                     print("✓ Correct")
                     correct = True
                 else:
@@ -211,9 +255,9 @@ def main():
             current += 1
 
             if not game_over:
-                if word.similar_words:
-                    print()
-                    print("Similar words:", ", ".join(word.similar_words))
+                # if word.similar_words:
+                #     print()
+                #     print("Similar words:", ", ".join(word.similar_words))
                 time.sleep(1)
 
         except KeyboardInterrupt:
