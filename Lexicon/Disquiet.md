@@ -1,5 +1,7 @@
 # Disquiet
 
+#hard 
+
 dɪˈskwaɪət
 
 - to make (someone) worried or nervous

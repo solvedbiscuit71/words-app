@@ -1,5 +1,7 @@
 # Largesse
 
+#hard 
+
 lär-ˈjes
 
 - the act of giving away money or the quality of a person who gives away money

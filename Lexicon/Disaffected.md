@@ -1,5 +1,7 @@
 # Disaffected
 
+#hard 
+
 dis·​af·​fect·​ed
 
 - no longer happy and willing to support a leader, government, etc.

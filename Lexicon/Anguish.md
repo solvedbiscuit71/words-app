@@ -1,5 +1,7 @@
 # Anguish
 
+#hard 
+
 ˈaŋ-gwish
 
 - extreme pain, distress, or anxiety

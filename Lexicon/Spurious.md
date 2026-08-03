@@ -1,5 +1,7 @@
 # Spurious
 
+#hard 
+
 ˈspyu̇r-ē-əs
 
 - not genuine, sincere, or authentic

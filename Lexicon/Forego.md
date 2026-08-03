@@ -1,5 +1,7 @@
 # Forego
 
+#hard 
+
 fore·​go
 
 - to go before : precede

@@ -1,5 +1,7 @@
 # Virtuoso
 
+#hard 
+
 vɜː.tjuˈəʊ.səʊ
 
 - a person who is extremely skilled at something, especially at playing an instrument or performing

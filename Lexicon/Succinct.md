@@ -1,5 +1,7 @@
 # Succinct
 
+#hard 
+
 /səkˈsɪŋkt/
 
 - (of writing or speech) clear and short; expressing what needs to be said without unnecessary words

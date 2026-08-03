@@ -1,5 +1,7 @@
 # Thwart
 
+#hard 
+
 ˈthwȯrt
 
 - to oppose successfully : defeat the hopes or aspirations of

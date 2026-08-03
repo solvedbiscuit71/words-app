@@ -1,5 +1,7 @@
 # Curmudgeon
 
+#hard 
+
 kəˈmʌdʒ.ən
 
 - a person (especially an old man) who is easily annoyed or angered and who often complains

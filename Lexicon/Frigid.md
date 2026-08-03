@@ -1,5 +1,7 @@
 # Frigid
 
+#hard 
+
 frɪdʒ.ɪd
 
 - (of weather conditions or the conditions in a room) extremely cold

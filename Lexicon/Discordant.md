@@ -1,5 +1,7 @@
 # Discordant
 
+#hard 
+
 dis·​cor·​dant
 
 - harsh or unpleasant in sound
@@ -8,3 +10,5 @@ dis·​cor·​dant
 Similar words: [[Shrill]], [[Cacophonous]], [[Noisy]], [[Aggressive]]
 
 Near antonyms: [[Musical]], [[Silent]], [[Peaceful]]
+
+Mnemonic: Disgusting + cord (like in music cord)

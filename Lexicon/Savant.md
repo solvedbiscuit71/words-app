@@ -1,5 +1,7 @@
 # Savant
 
+#hard 
+
 sæv.ənt
 
 - a person with a high level of knowledge or skill, especially someone who is less able in other ways

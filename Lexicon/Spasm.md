@@ -1,9 +1,11 @@
 # Spasm
 
+#hard 
+
 spæz.əm
 
-- a sudden uncontrolled and often painful tightening of a muscle
 - a sudden and usually brief occurrence of something you cannot control
+- a sudden uncontrolled and often painful tightening of a muscle
 
 Similar words: [[Cramp]], [[Burst]]
 

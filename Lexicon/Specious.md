@@ -1,5 +1,7 @@
 # Specious
 
+#hard 
+
 spiː.ʃəs
 
 - seeming to be right or true, but really wrong or false

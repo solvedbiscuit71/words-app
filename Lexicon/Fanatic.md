@@ -1,5 +1,7 @@
 # Fanatic
 
+#hard 
+
 fəˈnæt.ɪk
 
 - a person who is extremely interested in something, to a degree that some people find unreasonable

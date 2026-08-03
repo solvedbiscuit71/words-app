@@ -1,5 +1,7 @@
 # Enthrall
 
+#hard 
+
 in-ˈthrȯl
 
 - to hold the attention of (someone) by being very exciting, interesting, or beautiful

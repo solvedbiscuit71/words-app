@@ -1,5 +1,7 @@
 # Subdue
 
+#hard 
+
 səb-ˈdü 
 
 - to get control of (a violent or dangerous person or group) by using force, punishment, etc.
@@ -7,6 +9,4 @@ səb-ˈdü
 
 Similar words: [[Overcome]], [[Dominate]], [[Quell]]
 
-Near antonyms: [[Lose]], [[Liberate]], [[Help]]
-
-Mnemonic: Subject is due, he has to subdue it.
+Mnemonic: Subject is pass due date, so we have to take control.

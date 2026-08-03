@@ -1,5 +1,7 @@
 # Boorish
 
+#hard 
+
 bʊər.ɪʃ
 
 - rude and not considering other people's feelings

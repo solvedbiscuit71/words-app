@@ -1,5 +1,7 @@
 # Apposite
 
+#hard 
+
 /ˈæp.ə.zɪt/
 
 - suitable and right for the occasion

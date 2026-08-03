@@ -1,5 +1,7 @@
 # Frenetic
 
+#hard 
+
 fri-ˈne-tik
 
 - marked by fast and energetic, disordered, or anxiety-driven activity
@@ -9,4 +11,4 @@ Similar words: [[Frantic]]
 
 Near antonyms: [[Quiet]]
 
-Mnemonic: Frenetic, Frantic, Frenzied, are similar words, which means excited
+Mnemonic: Frenetic, like a freak who's excited and confused.

@@ -1,5 +1,7 @@
 # Admonish
 
+#hard 
+
 ədˈmɒn.ɪʃ
 
 - to tell someone that they have done something wrong

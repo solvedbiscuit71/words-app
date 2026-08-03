@@ -1,5 +1,7 @@
 # Rectitude
 
+#hard 
+
 rek.tɪ.tʃuːd
 
 - honesty and correct moral behavior

@@ -1,5 +1,7 @@
 # Slight
 
+#hard 
+
 /slaɪt/
 
 - very small in degree or amount

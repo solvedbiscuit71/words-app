@@ -9,6 +9,6 @@ fæs.aɪl
 
 Similar words: [[Superficial]], [[Easy]]
 
-Mnemonic: Facile, face so still because it's not enough thought has been given.
+Mnemonic: Facile, face so still because not enough thought has been given.
 
 Example: He does not permit himself facile answers.

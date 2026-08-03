@@ -1,5 +1,7 @@
 # Stodgy
 
+#hard 
+
 ˈstä-jē
 
 - extremely old-fashioned (as in opinions, attitudes, etc.) : hidebound

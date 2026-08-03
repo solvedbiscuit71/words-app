@@ -1,5 +1,7 @@
 # Avarice
 
+#hard 
+
 æv.ər.ɪs
 
 - an extremely strong wish to get or keep money or possessions
@@ -7,6 +9,6 @@
 
 Similar words: [[Greed]]
 
-Mnemonic: Avarice, sounds like I want to get rich which greed.
+Mnemonic: Avarice, sounds like I want to more rice, which is greed.
 
 Example: Bull markets are dangerous because success breeds avarice.

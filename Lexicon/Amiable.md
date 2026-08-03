@@ -1,5 +1,7 @@
 # Amiable
 
+#hard 
+
 ā-mē-ə-bəl
 
 - friendly, sociable, and congenial

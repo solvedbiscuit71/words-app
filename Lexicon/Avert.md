@@ -11,4 +11,4 @@ Similar words: [[Prevent]], [[Avoid]]
 
 Near antonyms: [[Assist]]
 
-Mnemonic: Avert, sounds similar to divert, to turn away.
+Mnemonic: Avert, sounds similar to divert or avoid

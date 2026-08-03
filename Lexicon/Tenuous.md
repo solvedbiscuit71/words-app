@@ -1,5 +1,7 @@
 # Tenuous
 
+#hard 
+
 ten.ju.əs
 
 - thin, weak, and easily broken

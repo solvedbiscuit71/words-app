@@ -1,5 +1,7 @@
 # Incessant
 
+#hard 
+
 in·​ces·​sant
 
 - continuing without stopping : not stopping
