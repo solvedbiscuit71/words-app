@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.inFolder("Words/Lexicon")
+properties:
+  file.links:
+    displayName: Related words
+views:
+  - type: cards
+    name: All words
+    order:
+      - file.name
+      - file.links
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 270
+    columnSize:
+      file.name: 220
+  - type: cards
+    name: Hard words
+    filters:
+      and:
+        - file.hasTag("hard")
+    order:
+      - file.name
+      - file.links
+    sort:
+      - property: file.mtime
+        direction: DESC
+    cardSize: 270
+    columnSize:
+      file.name: 220

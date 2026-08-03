@@ -1,5 +1,7 @@
 # Brash
 
+#hard
+
 /bræʃ/
 
 - (of people) showing too much confidence and too little respect
