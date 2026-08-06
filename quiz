@@ -139,10 +139,6 @@ def main():
         print(f"unknown take method '{args.take}'")
         return
 
-    if no > len(entries):
-        print(f"no. of question ({no}) is greater than no. of entries ({len(entries)})")
-        return
-
     # no. of questions shouldn't exceed take count
     if count is not None:
         no = min(no, count)
@@ -171,6 +167,11 @@ def main():
             if word is not None and word.marked_as_hard:
                 filtered_entries.append(entry)
         entries = filtered_entries
+
+    # Sanity check (after take is applied)
+    if no > len(entries):
+        print(f"no. of question ({no}) is greater than no. of entries ({len(entries)})")
+        return
 
     # sampling
     if sampling != UNIFORM:
