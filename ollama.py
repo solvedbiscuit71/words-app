@@ -48,15 +48,35 @@ class Ollama:
         return None
 
     def _normalize_question(self, question: str) -> str:
-        question = question.replace("*", "").strip()
-        return re.sub(r"_+", "_____", question)
+        # Remove bold (**text** or __text__)
+        question = re.sub(r"\*\*(.+?)\*\*", r"\1", question)
+        question = re.sub(r"__(.+?)__", r"\1", question)
+
+        # Remove italic (*text* or _text_)
+        question = re.sub(r"\*(.+?)\*", r"\1", question)
+        question = re.sub(r"_(.+?)_", r"\1", question)
+
+        # Normalize the blank size
+        question = re.sub(r"_+", "_____", question)
+        return question
+
+    def _parse_words(self, text: str):
+        # Pattern explanation:
+        # 1. [a-zA-Z]+-[a-zA-Z]+ : Words joined by hyphens (can be multiple)
+        # 2. [a-zA-Z]+ : Regular words
+
+        pattern = r"[a-zA-Z]+-[a-zA-Z]+-?[a-zA-Z]*|[a-zA-Z]+"
+
+        matches = re.finditer(pattern, text)
+
+        for match in matches:
+            yield match.group(0)
 
     def _has_answer(self, question: str, answer: str, *, threshold=0.8) -> bool:
         """Check if word exists with fuzzy matching (threshold: 80%)"""
-        words = question.lower().split()
 
-        for w in words:
-            ratio = SequenceMatcher(None, w, answer.lower()).ratio()
+        for word in self._parse_words(question):
+            ratio = SequenceMatcher(None, word.lower(), answer.lower()).ratio()
             if ratio >= threshold:
                 return True
         return False
