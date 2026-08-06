@@ -21,6 +21,7 @@ EXP_OLDEST = "oldest"
 
 MODE_CLASSIC = "classic"
 MODE_CREATIVE = "creative"
+MODE_SIMILAR = "similar"
 
 
 def select_choices(
@@ -102,8 +103,8 @@ def main():
         "-m",
         "--mode",
         type=str,
-        default=MODE_CLASSIC,
-        choices=[MODE_CLASSIC, MODE_CREATIVE],
+        default=MODE_SIMILAR,  # make similar mode as default, because SE and TC question requires us to match answer choices with our own word.
+        choices=[MODE_CLASSIC, MODE_CREATIVE, MODE_SIMILAR],
     )
     parser.add_argument("-t", "--take", type=str, default="all")
     parser.add_argument("-s", "--sampling", type=str, default=UNIFORM)
@@ -233,9 +234,17 @@ def main():
                 continue
 
             definition = random.choice(word.definitions)
-            if mode == "classic":
+            if mode == MODE_CLASSIC:
                 # use definition as the question
                 question = definition
+            if mode == MODE_SIMILAR:
+                # use similar words as the question
+                if word.similar_words:
+                    similar_word = random.choice(word.similar_words)
+                    question = f'Choose the word which is similar to "{similar_word}":'
+                else:
+                    # in case of no similar words, fallback to classic mode
+                    question = definition
             else:
                 try:
                     # use AI to generate a question from the definition
@@ -253,12 +262,12 @@ def main():
                 render_question(f"{current+1} of {no}", question, choices)
 
                 user_input = input("A: ").lower()
-                if user_input == "/exit":
+                if user_input == "\\exit":
                     raise KeyboardInterrupt
-                elif user_input == "/hint":
-                    if mode == MODE_CREATIVE:
-                        print(f"Hint: {definition}")
-                        time.sleep(2)
+                elif user_input == "\\help":
+                    if mode != MODE_CLASSIC:
+                        print(f"H: {definition}\n")
+                        input("Press enter to continue...")
                 elif user_input == word.text.lower():
                     print("✓ Correct")
                     correct = True
