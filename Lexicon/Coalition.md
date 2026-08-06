@@ -1,5 +1,7 @@
 # Coalition
 
+#hard 
+
 ˌkō-ə-ˈli-shən
 
 - a group of people, groups, or countries who have joined together for a common purpose

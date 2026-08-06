@@ -1,5 +1,7 @@
 # Hegemonic
 
+#hard 
+
 /ˌhedʒ.ɪˈmɑː.nɪk/
 
 - able to influence or control over another country, a group of people, etc.

@@ -8,4 +8,4 @@ per.əl.əs
 
 Similar words: [[Dangerous]], [[Unsafe]], [[Threat]]
 
-Mnemonic: Perilous is something that paralyze you, so it's dangerous
+Mnemonic: Perilous, paralyse us, so it's dangerous

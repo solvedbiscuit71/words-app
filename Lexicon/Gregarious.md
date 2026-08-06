@@ -9,4 +9,4 @@ Similar words: [[Outgoing]], [[Social]]
 
 Mnemonic: Garrulous Gary is also known to be very much outgoing (gregarious).
 
-Example: {example}
+Example: Emma's a gregarious, outgoing sort of person.

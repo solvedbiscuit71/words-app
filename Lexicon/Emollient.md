@@ -1,5 +1,7 @@
 # Emollient
 
+#hard 
+
 /ɪˈmɒl.i.ənt/
 
 - a cream or liquid that makes dry or sore skin softer or less painful : ointment

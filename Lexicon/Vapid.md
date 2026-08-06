@@ -1,5 +1,7 @@
 # Vapid
 
+#hard 
+
 /ˈvæp.ɪd/
 
 - showing no intelligence or imagination

@@ -5,7 +5,7 @@
 esˈpaʊ.zəlk
 
 - the act of becoming involved with or supporting an activity or opinion
-- a marriage or engagement (= promise to marry):
+- a marriage or engagement (= promise to marry)
 
 Similar words: [[Support]], [[Adoption]], [[Betrothal]]
 

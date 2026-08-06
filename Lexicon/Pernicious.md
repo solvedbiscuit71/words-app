@@ -1,5 +1,7 @@
 # Pernicious
 
+#hard 
+
 /pəˈnɪʃ.əs/
 
 - having a very harmful effect or influence

@@ -1,5 +1,7 @@
 # Illustrious
 
+#hard 
+
 i-ˈlə-strē-əs
 
 - notably or brilliantly outstanding because of dignity or achievements or actions : eminent

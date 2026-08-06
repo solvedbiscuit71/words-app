@@ -1,5 +1,7 @@
 # Emulate
 
+#hard 
+
 em·​u·​late
 
 - to strive to equal or excel

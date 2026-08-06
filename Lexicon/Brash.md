@@ -5,7 +5,7 @@
 /bræʃ/
 
 - (of people) showing too much confidence and too little respect
-- (of clothes) too bright and colorful:
+- (of clothes) too bright and colorful
 
 Similar words: [[Bold]], [[Reckless]]
 

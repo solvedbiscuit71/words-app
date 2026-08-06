@@ -1,5 +1,7 @@
 # Solicitude
 
+#hard 
+
 so·​lic·​i·​tude
 
 - the state of being concerned and anxious
