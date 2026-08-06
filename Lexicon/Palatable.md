@@ -7,6 +7,4 @@
 
 Similar words: [[Fine]], [[Pleasant]], [[Delicious]]
 
-Near antonyms: [[Poor]], [[Unpleasant]], [[Unpalatable]]
-
 Mnemonic: Food on the Plate is not acceptable.

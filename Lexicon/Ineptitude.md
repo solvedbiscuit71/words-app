@@ -6,6 +6,4 @@ i-ˈnep-tə-ˌtüd
 
 Similar words: [[Inability]]
 
-Near antonyms: [[Competence]]
-
 Mnemonic: Ineptitude, more like IN + aptitude i.e. lack skills

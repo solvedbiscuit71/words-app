@@ -6,5 +6,3 @@ fore·​ground
 - a position of prominence : forefront
 
 Similar words: [[Emphasize]], [[Center]]
-
-Near antonyms: [[Play down]], [[Background]]

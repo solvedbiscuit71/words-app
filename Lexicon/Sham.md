@@ -9,6 +9,4 @@
 
 Similar words: [[Faux]], [[Counterfeit]], [[Parody]]
 
-Near antonyms: [[Real]], [[Genuine]]
-
 Mnemonic: It's a sham, it's a scam!

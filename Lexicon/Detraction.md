@@ -6,5 +6,3 @@ de·​trac·​tion
 - a taking away
 
 Similar words: [[Criticism]], [[Disparage]]
-
-Near antonyms: [[Aggrandize]], [[Praise]]

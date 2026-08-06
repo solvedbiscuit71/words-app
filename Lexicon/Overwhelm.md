@@ -9,5 +9,3 @@ over·​whelm
 - to cover over completely with water
 
 Similar words: [[Overcome]], [[Engulf]]
-
-Near antonyms: [[Drain]]

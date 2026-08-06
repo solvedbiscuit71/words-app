@@ -8,6 +8,4 @@
 
 Similar words: [[Prone]], [[Suitable]]
 
-Near antonyms: [[Unwilling]], [[Inappropriate]]
-
 Mnemonic: High APTitude makes you suitable.

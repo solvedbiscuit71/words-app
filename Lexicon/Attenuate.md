@@ -7,5 +7,3 @@ at·​ten·​u·​ate
 - to make thin or slender
 
 Similar words: [[Reduce]]
-
-Near antonyms: [[Enhance]]

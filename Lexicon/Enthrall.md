@@ -8,6 +8,4 @@ in-ˈthrȯl
 
 Similar words: [[Enchant]], [[Interest]]
 
-Near antonyms: [[Bore]]
-
 Mnemonic: Enthrall, thrall similar to thrill, to keep someone thrilled.

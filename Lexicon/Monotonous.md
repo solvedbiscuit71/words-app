@@ -6,6 +6,4 @@ mə-ˈnä-tə-nəs
 
 Similar words: [[Boring]]
 
-Near antonyms: [[Interesting]]
-
 Mnemonic: Mono (same), doing the same thing again and again becomes monotonous.

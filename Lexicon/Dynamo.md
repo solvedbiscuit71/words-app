@@ -6,5 +6,3 @@ dy·​na·​mo
 - a forceful energetic individual
 
 Similar words: [[Pistol]]
-
-Near antonyms: [[Loafer]]

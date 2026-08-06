@@ -6,5 +6,3 @@ yu̇-ˈna-nə-məs
 - having the same opinion
 
 Similar words: [[Compatible]]
-
-Near antonyms: [[Incompatible]]

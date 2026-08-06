@@ -8,5 +8,3 @@ so·​lic·​i·​tude
 - attentive care and protectiveness
 
 Similar words: [[Concern]], [[Careful]]
-
-Near antonyms: [[Unconcern]], [[Careless]]

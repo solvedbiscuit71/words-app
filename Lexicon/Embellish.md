@@ -7,5 +7,3 @@ im-ˈbe-lish
 - to decorate by adding special details and features : to make more appealing or attractive
 
 Similar words: [[Exaggeration]], [[Adorn]]
-
-Near antonyms: [[Understate]], [[Spoil]]

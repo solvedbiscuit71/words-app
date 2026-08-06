@@ -6,6 +6,4 @@ cor·​rob·​o·​rate
 
 Similar words: [[Confirm]], [[Reinforce]]
 
-Near antonyms: [[Refute]], [[Undermine]]
-
 Mnemonic: This collaboration helped corroborate the evidence.

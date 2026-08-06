@@ -8,5 +8,3 @@ im·​i·​ta·​tion
 - resembling something else that is usually genuine and of better quality : not real
 
 Similar words: [[Reproduce]], [[Faux]]
-
-Near antonyms: [[Original]], [[Real]]

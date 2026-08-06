@@ -8,5 +8,3 @@
 - profuse or exuberant in words, expression, or style
 
 Similar words: [[Lavish]]
-
-Near antonyms: [[Meager]]

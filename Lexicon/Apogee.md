@@ -7,5 +7,3 @@ apo·​gee
 - the farthest or highest point
 
 Similar words: [[Zenith]]
-
-Near antonyms: [[Nadir]]

@@ -7,5 +7,3 @@
 - marked by profusion or excess
 
 Similar words: [[Extravagant]], [[Abundant]], [[Luxurious]]
-
-Near antonyms: [[Reasonable]], [[Meager]], [[Austere]]

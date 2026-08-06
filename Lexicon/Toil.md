@@ -8,6 +8,4 @@
 
 Similar words: [[Labor]], [[Tangle]]
 
-Near antonyms: [[Leisure]]
-
 Mnemonic: You work hard in the TOILet

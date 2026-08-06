@@ -6,5 +6,3 @@ pi-ˈkyül-yər
 - different from the usual or normal : particular, eccentric
 
 Similar words: [[Unusual]], [[Eccentric]]
-
-Near antonyms: [[Common]], [[Ordinary]]

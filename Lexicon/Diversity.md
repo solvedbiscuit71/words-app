@@ -7,5 +7,3 @@ di·​ver·​si·​ty
 - the state or practice of including people of different races, cultures, etc. in a group or organization
 
 Similar words: [[Variety]], [[Different]]
-
-Near antonyms: [[Similar]]

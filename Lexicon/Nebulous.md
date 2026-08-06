@@ -7,5 +7,3 @@ neb·​u·​lous
 - difficult to see, understand, describe, etc.
 
 Similar words: [[Ambiguity]], [[Vague]]
-
-Near antonyms: [[Obvious]], [[Clear]]

@@ -7,6 +7,4 @@ tac·​it
 
 Similar words: [[Unspoken]]
 
-Near antonyms: [[Explicit]]
-
 Mnemonic: Tacit tacit, no need to say it.

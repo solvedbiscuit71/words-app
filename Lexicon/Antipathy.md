@@ -6,5 +6,3 @@ an·​tip·​a·​thy
 - something disliked : an object of aversion
 
 Similar words: [[Hostility]], [[Grudge]]
-
-Near antonyms: [[Amity]]

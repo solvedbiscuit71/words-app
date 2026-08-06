@@ -7,5 +7,3 @@ mal·​lea·​ble
 * having a capacity for adaptive change
 
 Similar words: [[Adaptable]], [[Plastic]]
-
-Near antonyms: [[Intractable]]

@@ -8,6 +8,4 @@
 
 Similar words: [[Taste]]
 
-Near antonyms: [[Hatred]]
-
 Mnemonic: Palate, Plate, similar spellings, Plate has food, Palate means taste.

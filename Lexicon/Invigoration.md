@@ -6,5 +6,3 @@ in·​vig·​o·​ra·​tion
 - to give life and energy to : animate
 
 Similar words: [[Stimulate]]
-
-Near antonyms: [[Insipid]]

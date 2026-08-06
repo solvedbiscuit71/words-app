@@ -6,5 +6,3 @@
 - human anticipation of the course of events
 
 Similar words: [[Foresight]], [[Provident]]
-
-Near antonyms: [[Myopic]], [[Improvident]]

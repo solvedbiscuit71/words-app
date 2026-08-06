@@ -9,5 +9,3 @@ an·​te·​date
 - to assign to a date prior to that of actual occurrence
 
 Similar words: [[Precede]]
-
-Near antonyms: [[Succeed]]

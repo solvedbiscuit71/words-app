@@ -7,6 +7,4 @@
 
 Similar words: [[Authoritarian]], [[Oppressive]]
 
-Near antonyms: [[Limited]], [[Humble]]
-
 Mnemonic: Autocratic, authority, are similar words.

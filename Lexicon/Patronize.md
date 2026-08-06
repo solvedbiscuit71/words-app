@@ -7,5 +7,3 @@ pa·​tron·​ize
 - to adopt an air of condescension or superiority
 
 Similar words: [[Support]], [[Condescend]]
-
-Near antonyms: [[Oppose]]

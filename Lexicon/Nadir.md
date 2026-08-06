@@ -6,5 +6,3 @@ na·​dir
 - the lowest point
 
 Similar words: [[Depth]], [[Bottom]]
-
-Near antonyms: [[Zenith]], [[Top]]

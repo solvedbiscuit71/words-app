@@ -6,6 +6,4 @@ di-ˈtest
 
 Similar words: [[Hate]]
 
-Near antonyms: [[Love]]
-
 Mnemonic: De + test, I HATE the test

@@ -9,5 +9,3 @@ equiv·​o·​cal
 - of doubtful advantage, genuineness, or moral rectitude
 
 Similar words: [[Ambiguity]], [[Questionable]]
-
-Near antonyms: [[Certain]], [[Obvious]]

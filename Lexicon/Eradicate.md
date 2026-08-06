@@ -7,6 +7,4 @@ erad·​i·​cate
 
 Similar words: [[Abolish]]
 
-Near antonyms: [[Protect]]
-
 Mnemonic: Eradicate the pest, don't let it rest.

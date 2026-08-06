@@ -9,5 +9,3 @@ ex·​trav·​a·​gant
 - spending much more than necessary
 
 Similar words: [[Wasteful]], [[Lavish]], [[Expensive]]
-
-Near antonyms: [[Frugal]], [[Reasonable]], [[Cheap]]

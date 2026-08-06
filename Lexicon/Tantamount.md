@@ -6,6 +6,4 @@ tan·​ta·​mount
 
 Similar words: [[Analogous]]
 
-Near antonyms: [[Distinct]]
-
 Mnemonic: Silence is tantamount to a yes.

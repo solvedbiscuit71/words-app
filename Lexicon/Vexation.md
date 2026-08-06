@@ -7,5 +7,3 @@ vex·​a·​tion
 - the act of harassing or vexing
 
 Similar words: [[Harassment]], [[Frustrate]]
-
-Near antonyms: [[Pleasure]]

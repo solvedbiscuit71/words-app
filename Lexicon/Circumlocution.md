@@ -6,5 +6,3 @@ cir·​cum·​lo·​cu·​tion
 - evasion in speech
 
 Similar words: [[Ambiguity]], [[Repetition]]
-
-Near antonyms: [[Frankness]], [[Brevity]]

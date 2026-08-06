@@ -6,6 +6,4 @@ du̇-ˈpli-sə-tē
 
 Similar words: [[Deception]]
 
-Near antonyms: [[Sincerity]]
-
 Mnemonic: DUPlicity, is a dUPe behavior

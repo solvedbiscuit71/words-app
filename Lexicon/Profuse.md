@@ -6,5 +6,3 @@ pro·​fuse
 - exhibiting great abundance
 
 Similar words: [[Lavish]]
-
-Near antonyms: [[Poor]]

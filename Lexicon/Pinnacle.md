@@ -7,5 +7,3 @@ pin·​na·​cle
 - a high mountain top
 
 Similar words: [[Zenith]]
-
-Near antonyms: [[Nadir]]

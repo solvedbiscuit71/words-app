@@ -7,5 +7,3 @@
 - to reduce in scope : diminish
 
 Similar words: [[Shorten]]
-
-Near antonyms: [[Extend]]

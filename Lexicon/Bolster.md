@@ -6,5 +6,3 @@ bol·​ster
 * to give support to (something)
 
 Similar words: [[Sustain]], [[Reinforce]]
-
-Near antonyms: [[Weaken]]

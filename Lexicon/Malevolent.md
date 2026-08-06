@@ -6,5 +6,3 @@ ma·​lev·​o·​lent
 - productive of harm or evil
 
 Similar words: [[Malicious]]
-
-Near antonyms: [[Benevolent]]

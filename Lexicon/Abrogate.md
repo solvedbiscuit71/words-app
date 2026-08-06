@@ -8,5 +8,3 @@ ab·​ro·​gate
 - to suppress or prevent (a biological function or process and especially an immune response)
 
 Similar words: [[Abolish]]
-
-Near antonyms: [[Enact]]

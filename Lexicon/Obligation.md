@@ -9,5 +9,3 @@ ob·​li·​ga·​tion
 - something one is bound to do : duty, responsibility
 
 Similar words: [[Duty]], [[Debt]]
-
-Near antonyms: [[Relief]], [[Repayment]]

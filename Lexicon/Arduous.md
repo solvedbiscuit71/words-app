@@ -7,5 +7,3 @@ ar·​du·​ous
 - hard to climb : steep
 
 Similar words: [[Difficult]]
-
-Near antonyms: [[Easy]]

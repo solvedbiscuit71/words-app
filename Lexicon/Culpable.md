@@ -6,5 +6,3 @@ cul·​pa·​ble
 - deserving blame : guilty of doing something wrong
 
 Similar words: [[Guilty]]
-
-Near antonyms: [[Blameless]]

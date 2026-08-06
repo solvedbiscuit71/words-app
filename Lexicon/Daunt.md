@@ -6,6 +6,4 @@
 
 Similar words: [[Discourage]]
 
-Near antonyms: [[Encourage]]
-
 Mnemonic: Daunt, is to haunt someone

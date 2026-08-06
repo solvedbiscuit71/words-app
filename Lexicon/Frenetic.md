@@ -9,6 +9,4 @@ fri-ˈne-tik
 
 Similar words: [[Frantic]]
 
-Near antonyms: [[Quiet]]
-
 Mnemonic: Frenetic, like a freak who's excited and confused.

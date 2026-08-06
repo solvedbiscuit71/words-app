@@ -7,6 +7,4 @@ pop·​u·​list
 
 Similar words: [[Socialist]]
 
-Near antonyms: [[Snob]]
-
 Mnemonic: Popular with the ordinary people.

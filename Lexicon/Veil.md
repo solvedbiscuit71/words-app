@@ -7,5 +7,3 @@
 - a concealing curtain or cover of cloth
 
 Similar words: [[Cloak]], [[Conceal]], [[Shroud]]
-
-Near antonyms: [[Reveal]], [[Expose]]

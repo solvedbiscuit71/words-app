@@ -7,5 +7,3 @@ com·​pli·​ance
 - a disposition to yield to others
 
 Similar words: [[Obedient]]
-
-Near antonyms: [[Defiant]]

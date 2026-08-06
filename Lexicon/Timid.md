@@ -6,5 +6,3 @@ tim·​id
 - lacking in boldness or determination
 
 Similar words: [[Fearful]]
-
-Near antonyms: [[Daring]]

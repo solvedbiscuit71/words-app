@@ -6,5 +6,3 @@
 - material deposited by water, wind, or glaciers
 
 Similar words: [[Settle]], [[Deposition]], [[Precipitate]]
-
-Near antonyms: [[Raise]], [[Stir]]

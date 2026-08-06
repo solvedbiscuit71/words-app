@@ -9,5 +9,3 @@ poi·​gnant
 - pungently pervasive
 
 Similar words: [[Emotional]], [[Spicy]], [[Pungent]]
-
-Near antonyms: [[Unemotional]], [[Insipid]]

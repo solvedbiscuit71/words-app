@@ -7,6 +7,4 @@
 
 Similar words: [[Honorable]], [[Meticulous]]
 
-Near antonyms: [[Dishonest]], [[Careless]]
-
 Mnemonic: Sculptor are scrupulous

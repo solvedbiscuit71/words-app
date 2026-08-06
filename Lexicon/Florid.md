@@ -8,5 +8,3 @@ flor·​id
 - having a red or reddish color
 
 Similar words: [[Ornate]], [[Rhetorical]], [[Red]]
-
-Near antonyms: [[Severe]], [[Plain]], [[Lurid]]

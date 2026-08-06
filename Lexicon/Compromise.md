@@ -7,5 +7,3 @@ com·​pro·​mise
 - a concession to something derogatory or prejudicial
 
 Similar words: [[Negotiation]], [[Concede]], [[Threaten]], [[Damage]]
-
-Near antonyms: [[Protect]], [[Repair]]

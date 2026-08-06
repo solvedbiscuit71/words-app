@@ -7,5 +7,3 @@ so·​phis·​ti·​cat·​ed
 - having a refined knowledge of the ways of the world cultivated especially through wide experience
 
 Similar words: [[Cosmopolitan]], [[Intricate]], [[Graceful]], [[Detailed]]
-
-Near antonyms: [[Unsophisticated]], [[Simple]], [[Wooden]]

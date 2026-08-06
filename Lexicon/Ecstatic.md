@@ -8,6 +8,4 @@ ec·​stat·​ic
 
 Similar words: [[Giddy]]
 
-Near antonyms: [[Depressed]]
-
 Mnemonic: Ecstatic fanatic, jumping with joy!

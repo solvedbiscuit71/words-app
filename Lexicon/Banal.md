@@ -7,6 +7,4 @@ bə-ˈnal
 
 Similar words: [[Boring]], [[Hackneyed]]
 
-Near antonyms: [[Poignant]], [[Pungent]], [[Original]]
-
 Mnemonic: A banal chat, boring and flat.

@@ -6,5 +6,3 @@ dis·​tend
 - extend
 
 Similar words: [[Swelling]]
-
-Near antonyms: [[Shortening]], [[Curtailing]]

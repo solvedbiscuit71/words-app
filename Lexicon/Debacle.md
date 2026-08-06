@@ -7,6 +7,4 @@ dē-ˈbä-kəl
 
 Similar words: [[Disaster]]
 
-Near antonyms: [[Windfall]], [[Success]]
-
 Mnemonic: The Diabolical plan turned into a debacle.

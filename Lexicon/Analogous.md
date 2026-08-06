@@ -7,6 +7,4 @@
 
 Similar words: [[Similar]]
 
-Near antonyms: [[Different]]
-
 Mnemonic: Analogous, is something that can be an analogy.

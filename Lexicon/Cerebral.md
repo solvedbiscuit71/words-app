@@ -8,6 +8,4 @@ ce·​re·​bral
 
 Similar words: [[Intellectual]]
 
-Near antonyms: [[NonIntellectual]]
-
 Mnemonic: He's so cerebral, he thinks before he feels.

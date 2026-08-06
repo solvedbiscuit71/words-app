@@ -6,6 +6,4 @@
 
 Similar words: [[Tease]], [[Mock]]
 
-Near antonyms: [[Compliment]], [[Praise]]
-
 Mnemonic: T+aunt always provoke me in front of my parents.

@@ -7,6 +7,4 @@
 
 Similar words: [[Break]], [[Pause]]
 
-Near antonyms: [[Noise]]
-
 Mnemonic: Respite, more like, rest a bit

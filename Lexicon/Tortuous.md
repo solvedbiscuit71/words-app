@@ -7,5 +7,3 @@ tor·​tu·​ous
 - complicated, long, and confusing
 
 Similar words: [[Winding]]
-
-Near antonyms: [[Straight]]

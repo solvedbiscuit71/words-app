@@ -8,6 +8,4 @@
 
 Similar words: [[Superficial]]
 
-Near antonyms: [[Sincere]]
-
 Mnemonic: So glib, so slick, but the words don't stick

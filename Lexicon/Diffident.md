@@ -6,5 +6,3 @@ dif·​fi·​dent
 - reserved, unassertive
 
 Similar words: [[Shy]]
-
-Near antonyms: [[Outgoing]]

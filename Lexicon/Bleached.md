@@ -7,5 +7,3 @@
 - to remove, make dull, or sanitize as if by removing color
 
 Similar words: [[Faded]]
-
-Near antonyms: [[Colored]]

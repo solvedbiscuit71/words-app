@@ -6,5 +6,3 @@
 - harsh criticism that shows a lack of respect or approval for someone or something
 
 Similar words: [[Contempt]], [[Disdain]]
-
-Near antonyms: [[Respect]], [[Admiration]]

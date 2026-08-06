@@ -8,5 +8,3 @@ ep·​i·​sod·​ic
 - occurring, appearing, or changing at usually irregular intervals : occasional
 
 Similar words: [[Sporadic]], [[Occasional]]
-
-Near antonyms: [[Periodic]]

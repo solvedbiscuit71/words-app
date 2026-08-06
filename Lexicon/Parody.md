@@ -6,5 +6,3 @@ par·​o·​dy
 * a feeble or ridiculous imitation
 
 Similar words: [[Satire]], [[Joke]], [[Travesty]]
-
-Near antonyms: [[Tribute]]

@@ -7,6 +7,4 @@ mē-tē-ˈȯr-ik
 
 Similar words: [[Rapid]], [[Volatile]]
 
-Near antonyms: [[Slow]], [[Gradual]]
-
 Mnemonic: Meteoric, like a meteor it's fast.

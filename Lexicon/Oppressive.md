@@ -6,5 +6,3 @@
 - very unpleasant or uncomfortable
 
 Similar words: [[Harsh]], [[Cruel]]
-
-Near antonyms: [[Light]]

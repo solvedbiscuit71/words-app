@@ -9,5 +9,3 @@ mea·​ger
 - not having enough of something (such as money or food) for comfort or happiness
 
 Similar words: [[Sparse]]
-
-Near antonyms: [[Adequate]]

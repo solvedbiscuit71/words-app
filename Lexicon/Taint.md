@@ -8,6 +8,4 @@
 
 Similar words: [[Stain]], [[Spoil]], [[Pollute]]
 
-Near antonyms: [[Purify]], [[Credit]]
-
 Mnemonic: The painting was tainted

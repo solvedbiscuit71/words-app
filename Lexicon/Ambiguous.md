@@ -7,6 +7,4 @@ am·​big·​u·​ous
 
 Similar words: [[Obscure]]
 
-Near antonyms: [[Obvious]]
-
 Mnemonic: Both seems right — unclear in sight.

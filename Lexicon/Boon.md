@@ -6,5 +6,3 @@ buːn
 - a timely benefit : blessing
 
 Similar words: [[Benefit]], [[Privilege]], [[Blessing]]
-
-Near antonyms: [[Hindrance]], [[Obstacle]], [[Bane]]

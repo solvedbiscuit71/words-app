@@ -7,5 +7,3 @@ def·​a·​ma·​tory
 - a communication that defames
 
 Similar words: [[Libel]], [[Defame]], [[Vilify]]
-
-Near antonyms: [[Praise]], [[Applaud]]

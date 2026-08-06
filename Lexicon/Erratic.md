@@ -10,6 +10,4 @@ i-ˈra-tik
 
 Similar words: [[Random]], [[Sporadic]], [[Changing]], [[Bizarre]]
 
-Near antonyms: [[Regular]], [[Continuous]], [[Constant]], [[Normal]]
-
 Mnemonic: Erratic, sounds similar to sporadic which means lack in consistency

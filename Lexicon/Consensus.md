@@ -7,5 +7,3 @@ con·​sen·​sus
 - group solidarity in sentiment and belief
 
 Similar words: [[Agreement]]
-
-Near antonyms: [[Disagreement]]

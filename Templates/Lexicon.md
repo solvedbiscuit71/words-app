@@ -8,8 +8,6 @@
 
 Similar words: {similar word}
 
-Near antonyms: {near antonyms}
-
 Mnemonic: {mnemonic}
 
 Example: {example}

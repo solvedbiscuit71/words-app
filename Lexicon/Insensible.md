@@ -10,5 +10,3 @@ in·​sen·​si·​ble
 - stupid, senseless
 
 Similar words: [[Unconscious]], [[Imperceptible]], [[Nonchalant]], [[Vulgar]], [[Ignorant]]
-
-Near antonyms: [[Conscious]], [[Perceptible]], [[Interested]], [[Smooth]]

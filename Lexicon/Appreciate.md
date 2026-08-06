@@ -9,5 +9,3 @@ ap·​pre·​ci·​ate
 - to increase in number or value
 
 Similar words: [[Understand]], [[Admiration]], [[Value]]
-
-Near antonyms: [[Misunderstand]], [[Hate]]

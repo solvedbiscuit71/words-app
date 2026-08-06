@@ -10,6 +10,4 @@
 
 Similar words: [[Gracious]]
 
-Near antonyms: [[Unpleasant]]
-
 Mnemonic: Amenable people are amiable to work with.

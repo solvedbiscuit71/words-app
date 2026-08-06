@@ -7,6 +7,4 @@ bi-ˈget
 
 Similar words: [[Create]], [[Produce]]
 
-Near antonyms: [[Impede]]
-
 Mnemonic: Bill gates beget Microsoft

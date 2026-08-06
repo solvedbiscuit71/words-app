@@ -6,5 +6,3 @@ my·​o·​pic
 - not able to clearly see objects that are far away : nearsighted
 
 Similar words: [[Shortsighted]], [[Careless]]
-
-Near antonyms: [[Farsighted]], [[Prescience]]

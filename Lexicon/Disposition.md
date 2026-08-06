@@ -9,5 +9,3 @@ dis·​po·​si·​tion
 - orderly arrangement
 
 Similar words: [[Temperament]], [[Inclination]], [[Disposal]], [[Arrangement]], [[Agreement]]
-
-Near antonyms: [[Aversion]], [[Acquisition]], [[Disorder]]

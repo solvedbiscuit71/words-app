@@ -6,5 +6,3 @@ be·​guile
 - to lead by deception
 
 Similar words: [[Deception]], [[Tempt]], [[Guile]]
-
-Near antonyms: [[Undeceive]], [[Warm]]

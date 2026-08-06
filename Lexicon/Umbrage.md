@@ -9,5 +9,3 @@ um·​brage
 - a reason for doubt : suspicion
 
 Similar words: [[Huff]], [[Resentful]]
-
-Near antonyms: [[Satisfaction]]

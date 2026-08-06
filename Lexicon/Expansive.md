@@ -8,6 +8,4 @@ ex·​pan·​sive
 
 Similar words: [[Extensive]]
 
-Near antonyms: [[Narrow]]
-
 Mnemonic: Expand, Expansion, Expansive, similar words

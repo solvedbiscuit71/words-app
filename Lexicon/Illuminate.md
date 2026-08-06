@@ -9,6 +9,4 @@ il·​lu·​mi·​nate
 
 Similar words: [[Light]], [[Illustrate]], [[Highlight]], [[Educate]]
 
-Near antonyms: [[Dim]], [[Obscure]], [[Confuse]]
-
 Mnemonic: A light so great, it'll illuminate!

@@ -7,6 +7,4 @@ su·​per·​flu·​ous
 
 Similar words: [[Extra]]
 
-Near antonyms: [[Inadequate]]
-
 Mnemonic: One's enough, don't be superfluous!

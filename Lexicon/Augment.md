@@ -6,5 +6,3 @@ aug·​ment
 - to add something to (something) in order to improve or complete it
 
 Similar words: [[Increase]]
-
-Near antonyms: [[Reduce]]

@@ -6,5 +6,3 @@ ma·​te·​ri·​al·​ism
 - the belief that only material things exist
 
 Similar words: [[Commercialism]]
-
-Near antonyms: [[Generosity]]

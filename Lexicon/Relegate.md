@@ -7,5 +7,3 @@ rel·​e·​gate
 - to give (something, such as a job or responsibility) to another person or group
 
 Similar words: [[Banish]], [[Classify]]
-
-Near antonyms: [[Accept]], [[Confuse]]

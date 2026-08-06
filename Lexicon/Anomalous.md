@@ -6,5 +6,3 @@ anom·​a·​lous
 - of uncertain nature or classification
 
 Similar words: [[Unusual]], [[Abnormal]]
-
-Near antonyms: [[Normal]]

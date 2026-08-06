@@ -8,6 +8,4 @@ pro·​vin·​cial
 
 Similar words: [[Petty]], [[Peasant]], [[Rustic]]
 
-Near antonyms: [[Liberal]], [[Cosmopolitan]]
-
 Mnemonic: Provincial are from provinces (not urban), so narrow-minded.

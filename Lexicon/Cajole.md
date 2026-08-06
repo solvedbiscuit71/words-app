@@ -7,5 +7,3 @@ ca·​jole
 - to deceive with soothing words or false promises
 
 Similar words: [[Coax]]
-
-Near antonyms: [[Harass]]

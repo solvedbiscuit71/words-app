@@ -8,6 +8,4 @@ kō-ˈərs
 
 Similar words: [[Compel]]
 
-Near antonyms: [[Let]]
-
 Mnemonic: To coerce is to force, no remorse.

@@ -8,6 +8,4 @@ tem·​per·​ate
 
 Similar words: [[Temperance]], [[Ascetic]]
 
-Near antonyms: [[Extreme]], [[Severe]], [[Voracious]]
-
 Mnemonic: Temperate, temperance, similar words, similar meaning. But not temperament.

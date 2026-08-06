@@ -9,5 +9,3 @@
 - having few pleasures : simple and harsh
 
 Similar words: [[Strict]], [[Stern]], [[Simple]]
-
-Near antonyms: [[Gentle]], [[Luxurious]]

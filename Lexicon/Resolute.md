@@ -6,5 +6,3 @@ res·​o·​lute
 - bold, steady
 
 Similar words: [[Determined]]
-
-Near antonyms: [[Hesitant]]

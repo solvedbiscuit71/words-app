@@ -7,5 +7,3 @@
 - a slight breeze
 
 Similar words: [[Breeze]], [[Hover]]
-
-Near antonyms: [[Calm]], [[Settle]]

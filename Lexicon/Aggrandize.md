@@ -7,5 +7,3 @@ ag·​gran·​dize
 * to enhance the power, wealth, position, or reputation of
 
 Similar words: [[Elevate]], [[Increase]]
-
-Near antonyms: [[Humble]]

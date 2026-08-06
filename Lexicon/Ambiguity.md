@@ -6,5 +6,3 @@ am·​big·​u·​ous
 - difficult to discern or categorize
 
 Similar words: [[Obscure]]
-
-Near antonyms: [[Obvious]]

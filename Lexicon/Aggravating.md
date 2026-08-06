@@ -9,6 +9,4 @@ ag·​gra·​vat·​ing
 
 Similar words: [[Annoying]], [[Worsening]]
 
-Near antonyms: [[Delighted]], [[Relieving]]
-
 Mnemonic: So aggravating, when they keep aggrandize-ing!

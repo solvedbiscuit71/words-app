@@ -7,6 +7,4 @@ im·​per·​ti·​nent
 
 Similar words: [[Rude]], [[Irrelevant]]
 
-Near antonyms: [[Polite]], [[Relevant]]
-
 Mnemonic: Impertinent and bold, no respect for the old.

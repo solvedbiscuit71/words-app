@@ -8,6 +8,4 @@ kən-ˈsə-mət
 
 Similar words: [[Skilled]], [[Utter]], [[Ultimate]], [[Complete]]
 
-Near antonyms: [[Amateur]], [[Uncertain]], [[Least]], [[Abandon]]
-
 Mnemonic: a mate who is consumed in something, becomes extremely skilled.

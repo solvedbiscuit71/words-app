@@ -6,5 +6,3 @@ spend·​thrift
 - given to spending money freely or foolishly: wasteful with money
 
 Similar words: [[Wasteful]]
-
-Near antonyms: [[Frugal]], [[Stingy]]

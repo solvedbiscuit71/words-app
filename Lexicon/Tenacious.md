@@ -8,6 +8,4 @@ tə-ˈnā-shəs
 
 Similar words: [[Persistent]], [[Adhesive]]
 
-Near antonyms: [[Yielding]], [[Nonadhesive]]
-
 Mnemonic: Tendency to not giving up

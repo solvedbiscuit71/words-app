@@ -7,6 +7,4 @@ dis·​abuse
 
 Similar words: [[Undeceive]]
 
-Near antonyms: [[Mislead]]
-
 Mnemonic: Dismiss the abuse of wrong ideas!

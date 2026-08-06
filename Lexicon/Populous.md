@@ -7,5 +7,3 @@ pop·​u·​lous
 - filled to capacity
 
 Similar words: [[Crowded]]
-
-Near antonyms: [[Lifeless]]

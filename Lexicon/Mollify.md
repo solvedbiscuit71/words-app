@@ -6,6 +6,4 @@ mol·​li·​fy
 
 Similar words: [[Appease]], [[Alleviate]]
 
-Near antonyms: [[Anger]], [[Hurt]]
-
 Mnemonic: Kind words mollify, and nullify the fight.

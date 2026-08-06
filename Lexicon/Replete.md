@@ -7,6 +7,4 @@ re·​plete
 
 Similar words: [[Full]], [[Stuffed]]
 
-Near antonyms: [[Thin]], [[Empty]]
-
 Mnemonic: Replete, opposite of deplete i.e. full

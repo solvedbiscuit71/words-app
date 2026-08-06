@@ -7,8 +7,6 @@ sæn.ə.ti
 
 Similar words: [[Mind]]
 
-Near antonyms: [[Insanity]]
-
 Mnemonic: Sane (like in insane), means healthy minded. Sanity means the same.
 
 Example: these working conditions are threatening my sanity!

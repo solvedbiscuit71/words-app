@@ -6,5 +6,3 @@ plum·​met
 - to drop sharply and abruptly
 
 Similar words: [[Fall]]
-
-Near antonyms: [[Rise]]

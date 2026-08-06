@@ -7,5 +7,3 @@
 - not sincere
 
 Similar words: [[Synthetic]], [[Fake]]
-
-Near antonyms: [[Genuine]]

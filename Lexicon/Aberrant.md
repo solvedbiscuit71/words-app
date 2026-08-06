@@ -6,5 +6,3 @@ ab·​er·​rant
 - straying from the right or normal way
 
 Similar words: [[Unusual]]
-
-Near antonyms: [[Normal]]

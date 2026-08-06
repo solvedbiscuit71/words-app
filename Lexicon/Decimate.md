@@ -7,6 +7,4 @@ dec·​i·​mate
 
 Similar words: [[Destroy]]
 
-Near antonyms: [[Build]]
-
 Mnemonic: One big storm can DECImate a farm.

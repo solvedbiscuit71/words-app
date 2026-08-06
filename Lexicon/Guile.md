@@ -6,5 +6,3 @@
 - deceitful cunning
 
 Similar words: [[Cunning]], [[Deception]]
-
-Near antonyms: [[Sincerity]]

@@ -6,5 +6,3 @@ ad·​a·​mant
 - not willing to change an opinion or decision : very determined
 
 Similar words: [[Obstinate]], [[Stubborn]], [[Steadfast]]
-
-Near antonyms: [[Amenable]]

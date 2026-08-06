@@ -7,6 +7,4 @@ dev·​as·​tate
 
 Similar words: [[Destroy]], [[Overwhelm]]
 
-Near antonyms: [[Recover]]
-
 Mnemonic: Storms devastate, they don't wait

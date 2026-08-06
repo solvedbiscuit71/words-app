@@ -7,5 +7,3 @@ dis·​tinc·​tive
 - having a quality or characteristic that makes a person or thing different from others : different in a way that is easy to notice
 
 Similar words: [[Different]], [[Distinct]]
-
-Near antonyms: [[Similar]], [[Atypical]]

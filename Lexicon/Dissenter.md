@@ -8,8 +8,6 @@ dɪˈsen.tər
 
 Similar words: [[Dissident]]
 
-Near antonyms: [[Conformist]]
-
 Mnemonic: Consent is to agree, dissent is to disagree
 
 Example: The plan passed a subcommittee vote in May with no dissenters.

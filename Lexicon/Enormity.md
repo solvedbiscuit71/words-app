@@ -8,5 +8,3 @@ enor·​mi·​ty
 - a quality of momentous importance or impact
 
 Similar words: [[Badness]], [[Magnitude]]
-
-Near antonyms: [[Goodness]], [[Minuteness]]

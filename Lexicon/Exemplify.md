@@ -7,6 +7,4 @@ ig-ˈzem-plə-ˌfī
 
 Similar words: [[Illustrate]]
 
-Near antonyms: [[Obscure]]
-
 Mnemonic: Exemplify, is similar to example. Don't be deceived by the pronunciation.

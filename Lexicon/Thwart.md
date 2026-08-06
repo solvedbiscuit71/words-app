@@ -8,5 +8,3 @@
 - to pass through or across
 
 Similar words: [[Frustrate]]
-
-Near antonyms: [[Promote]]

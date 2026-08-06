@@ -8,5 +8,3 @@ tran(t)-ˈsend
 - to rise above or extend notably beyond ordinary limits
 
 Similar words: [[Surpass]]
-
-Near antonyms: [[Lose]]

@@ -7,5 +7,3 @@ in·​su·​lar
 - dwelling or situated on an island
 
 Similar words: [[Parochial]]
-
-Near antonyms: [[Liberal]]

@@ -7,6 +7,4 @@ bi-ˈli-tᵊl
 
 Similar words: [[Dismiss]], [[Disparage]]
 
-Near antonyms: [[Applaud]]
-
 Mnemonic: Be + little, when you belittle someone, you are saying "you be little!"

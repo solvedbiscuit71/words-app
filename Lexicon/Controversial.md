@@ -7,5 +7,3 @@ con·​tro·​ver·​sial
 - quarrel, strife
 
 Similar words: [[Dispute]], [[Quarrel]]
-
-Near antonyms: [[Consensus]]

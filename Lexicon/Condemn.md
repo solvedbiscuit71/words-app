@@ -7,5 +7,3 @@ con·​demn
 - to adjudge unfit for use or consumption
 
 Similar words: [[Denounce]], [[Criticism]]
-
-Near antonyms: [[Approve]]

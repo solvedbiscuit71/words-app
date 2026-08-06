@@ -10,5 +10,3 @@ rec·​on·​cile
 - to account for : explain
 
 Similar words: [[Coordinate]]
-
-Near antonyms: [[Upset]]

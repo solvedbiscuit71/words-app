@@ -7,5 +7,3 @@ gar·​ner
 - to acquire by effort : earn
 
 Similar words: [[Collect]], [[Earn]]
-
-Near antonyms: [[Disperse]], [[Forfeit]]

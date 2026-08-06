@@ -7,5 +7,3 @@ pre·​car·​i·​ous
 - dependent on uncertain premises
 
 Similar words: [[Dangerous]], [[Uncertain]]
-
-Near antonyms: [[Advantageous]]

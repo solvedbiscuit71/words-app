@@ -9,6 +9,4 @@ dis·​af·​fect·​ed
 
 Similar words: [[Disgruntled]], [[Resentful]]
 
-Near antonyms: [[Sympathetic]]
-
 Mnemonic: Disaffected youth, tired of the truth.

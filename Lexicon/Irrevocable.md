@@ -6,6 +6,4 @@ ir·​rev·​o·​ca·​ble
 
 Similar words: [[Irreversible]]
 
-Near antonyms: [[Fixed]]
-
 Mnemonic: Gifts are suppose to be irrevocable.

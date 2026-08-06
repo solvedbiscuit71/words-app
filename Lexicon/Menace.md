@@ -8,5 +8,3 @@ men·​ace
 - an annoying person
 
 Similar words: [[Threat]], [[Endanger]]
-
-Near antonyms: [[Protect]]

@@ -6,5 +6,3 @@ ex·​i·​gent
 - requiring or calling for much : demanding
 
 Similar words: [[Urgent]]
-
-Near antonyms: [[Minor]]

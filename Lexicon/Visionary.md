@@ -9,5 +9,3 @@ vi·​sion·​ary
 - existing only in imagination : unreal
 
 Similar words: [[Impractical]], [[Fictional]], [[Cautious]], [[Prophet]], [[Dreamer]]
-
-Near antonyms: [[Pragmatic]], [[Real]], [[Improvident]], [[Realist]]

@@ -9,5 +9,3 @@ an·​tic·​i·​pate
 - to act before (another) often so as to check or counter
 
 Similar words: [[Forestall]], [[Expect]]
-
-Near antonyms: [[Question]]

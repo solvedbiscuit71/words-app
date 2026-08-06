@@ -7,5 +7,3 @@ ame·​na·​ble
 * able to be controlled, organized, or affected by something 
 
 Similar words: [[Willing]], [[Obedient]]
-
-Near antonyms: [[Unwilling]], [[Intractable]]

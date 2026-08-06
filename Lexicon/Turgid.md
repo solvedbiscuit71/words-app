@@ -9,5 +9,3 @@ tur·​gid
 - boring and too serious about its subject matter
 
 Similar words: [[Swollen]], [[Insipid]]
-
-Near antonyms: [[Deflated]]

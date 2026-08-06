@@ -7,6 +7,4 @@ boun·​ty
 
 Similar words: [[Reward]], [[Generosity]], [[Yield]]
 
-Near antonyms: [[Thrift]], [[Loss]]
-
 Mnemonic: Bounty hunter

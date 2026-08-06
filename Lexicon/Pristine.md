@@ -8,6 +8,4 @@ pris·​tine
 
 Similar words: [[Mint]], [[Clean]]
 
-Near antonyms: [[Stale]], [[Filthy]]
-
 Mnemonic: Angular form property pristine tells us whether the user has changed the input value in UI.

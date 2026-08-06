@@ -6,6 +6,4 @@ un·​der·​mine
 
 Similar words: [[Weaken]]
 
-Near antonyms: [[Help]]
-
 Mnemonic: Small cracks undermine a wall, till it starts to fall.

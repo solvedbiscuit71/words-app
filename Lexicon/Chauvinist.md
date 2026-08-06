@@ -6,5 +6,3 @@ chau·​vin·​ist
 - showing or filled with nationalism
 
 Similar words: [[Nationalist]]
-
-Near antonyms: [[Internationalist]]

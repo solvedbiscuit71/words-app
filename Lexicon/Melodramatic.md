@@ -6,6 +6,4 @@ melo·​dra·​mat·​ic
 
 Similar words: [[Dramatic]], [[Theatrical]]
 
-Near antonyms: [[Unaffected]], [[Undramatic]]
-
 Mnemonic: Melo + dramatic, focus on dramatic.

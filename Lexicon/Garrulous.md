@@ -6,6 +6,4 @@ gar·​ru·​lous
 
 Similar words: [[Loquacious]], [[Rambling]]
 
-Near antonyms: [[Laconic]], [[Concise]]
-
 Mnemonic: Garrulous Gary never stops the story.

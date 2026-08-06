@@ -7,5 +7,3 @@ tran·​sient
 - staying somewhere only a short time
 
 Similar words: [[Temporary]], [[Ephemeral]]
-
-Near antonyms: [[Persistent]], [[Eternal]]

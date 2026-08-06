@@ -6,6 +6,4 @@
 
 Similar words: [[Hate]]
 
-Near antonyms: [[Love]]
-
 Mnemonic: Self-loathing means self-hatred.

@@ -6,6 +6,4 @@ spar·​ing
 
 Similar words: [[Economical]], [[Careful]], [[Sparse]], [[Conserving]]
 
-Near antonyms: [[Wasteful]], [[Generous]], [[Sufficient]]
-
 Mnemonic: when something is sparse, you become sparing

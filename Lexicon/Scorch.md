@@ -8,6 +8,4 @@
 
 Similar words: [[Burn]], [[Dry]]
 
-Near antonyms: [[Wash]]
-
 Mnemonic: Scorching sun

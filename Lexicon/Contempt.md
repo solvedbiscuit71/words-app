@@ -8,5 +8,3 @@ con·​tempt
 - willful disobedience to or open disrespect of a court, judge, or legislative body
 
 Similar words: [[Disdain]], [[Hatred]]
-
-Near antonyms: [[Respect]], [[Admiration]]

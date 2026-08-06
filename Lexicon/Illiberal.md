@@ -7,5 +7,3 @@ il·​lib·​er·​al
 - lacking culture and refinement
 
 Similar words: [[Parochial]]
-
-Near antonyms: [[Liberal]]

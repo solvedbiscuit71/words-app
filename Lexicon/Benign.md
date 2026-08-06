@@ -8,5 +8,3 @@ bi-ˈnīn
 - showing kindness and gentleness
 
 Similar words: [[Harmless]], [[Gentle]]
-
-Near antonyms: [[Dangerous]], [[Harsh]]

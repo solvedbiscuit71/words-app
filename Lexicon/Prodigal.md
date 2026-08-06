@@ -7,5 +7,3 @@ prod·​i·​gal
 - yielding abundantly
 
 Similar words: [[Wasteful]], [[Profligate]], [[Spendthrift]]
-
-Near antonyms: [[Frugal]]

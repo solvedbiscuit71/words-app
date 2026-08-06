@@ -7,5 +7,3 @@ dis·​par·​age
 - to lower (someone or something) in rank or reputation
 
 Similar words: [[Dismiss]], [[Belittle]]
-
-Near antonyms: [[Applaud]]

@@ -7,6 +7,4 @@ de·​fi·​ance
 
 Similar words: [[Rebellious]], [[Aggressive]]
 
-Near antonyms: [[Compliance]]
-
 Mnemonic: De-FY-ance, I defy your stance

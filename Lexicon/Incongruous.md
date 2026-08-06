@@ -6,6 +6,4 @@ in·​con·​gru·​ous
 
 Similar words: [[Inappropriate]]
 
-Near antonyms: [[Appropriate]]
-
 Mnemonic: Incongruous and wrong, it just doesn't belong.

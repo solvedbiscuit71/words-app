@@ -7,6 +7,4 @@
 
 Similar words: [[Relinquish]]
 
-Near antonyms: [[Retain]], [[Claim]]
-
 Mnemonic: Cede, like concede, means to yield

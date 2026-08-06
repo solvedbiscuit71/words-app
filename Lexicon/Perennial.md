@@ -9,5 +9,3 @@ pe·​ren·​ni·​al
 - regularly repeated or renewed: recurrent
 
 Similar words: [[Enduring]], [[Eternal]]
-
-Near antonyms: [[Obsolete]]

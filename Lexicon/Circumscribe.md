@@ -6,5 +6,3 @@ cir·​cum·​scribe
 - to draw a shape around (another shape)
 
 Similar words: [[Limit]], [[Define]]
-
-Near antonyms: [[Exceed]]

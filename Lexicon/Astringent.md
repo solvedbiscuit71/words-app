@@ -9,5 +9,3 @@ as·​trin·​gent
 - having a dry, sour, slightly bitter taste or smell
 
 Similar words: [[Pungent]]
-
-Near antonyms: [[Sweet]]

@@ -8,6 +8,4 @@ gal·​va·​nize
 
 Similar words: [[Excite]]
 
-Near antonyms: [[Bore]]
-
 Mnemonic: Galvanize, energize, get up and rise!

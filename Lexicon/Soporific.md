@@ -7,5 +7,3 @@ sop·​o·​rif·​ic
 * of, relating to, or marked by sleepiness or lethargy
 
 Similar words: [[Hypnotic]]
-
-Near antonyms: [[Stimulating]]

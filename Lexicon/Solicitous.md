@@ -8,5 +8,3 @@ so·​lic·​i·​tous
 - full of desire : eager
 
 Similar words: [[Attentive]], [[Enthusiastic]]
-
-Near antonyms: [[Inconsiderate]], [[Indifferent]]

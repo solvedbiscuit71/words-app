@@ -6,5 +6,3 @@ elic·​it
 - to bring out (something latent or potential)
 
 Similar words: [[Evoke]]
-
-Near antonyms: [[Ignore]]

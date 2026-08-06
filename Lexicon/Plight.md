@@ -9,6 +9,4 @@
 
 Similar words: [[Predicament]], [[Promise]]
 
-Near antonyms: [[Pleasure]], [[Renege]]
-
 Mnemonic: Plight, something, that's not so light.

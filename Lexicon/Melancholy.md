@@ -7,6 +7,4 @@
 
 Similar words: [[Sad]], [[Depressed]], [[Thoughtful]]
 
-Near antonyms: [[Happy]], [[Joyful]], [[Flippant]]
-
 Mnemonic: He lost his smile, melancholic for a while.

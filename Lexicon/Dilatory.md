@@ -6,5 +6,3 @@ dil·​a·​to·​ry
 - characterized by procrastination : tardy
 
 Similar words: [[Leisurely]]
-
-Near antonyms: [[Rapid]]

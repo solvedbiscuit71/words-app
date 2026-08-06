@@ -7,5 +7,3 @@ char·​is·​mat·​ic
 - the ability to attract the attention and admiration of others, and to be seen as a leader
 
 Similar words: [[Charm]]
-
-Near antonyms: [[Repulsive]]

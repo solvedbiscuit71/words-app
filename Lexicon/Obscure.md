@@ -9,5 +9,3 @@ ob·​scure
 - to hide or cover (something) : to be in front of (something) so that it cannot be seen
 
 Similar words: [[Ambiguity]], [[Unknown]], [[Darkened]], [[Vague]], [[Conceal]], [[Blur]]
-
-Near antonyms: [[Obvious]], [[Prominent]], [[Light]], [[Clear]], [[Reveal]], [[Illuminate]]

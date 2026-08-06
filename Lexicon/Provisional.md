@@ -6,6 +6,4 @@ prə-ˈvizh-nəl
 
 Similar words: [[Interim]], [[Temporary]]
 
-Near antonyms: [[Permanent]]
-
 Mnemonic: Provisional certificate issued by university are temporary.

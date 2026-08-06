@@ -6,5 +6,3 @@ aus·​pi·​cious
 - attended by good auspices : fortunate, prosperous
 
 Similar words: [[Promising]]
-
-Near antonyms: [[Inauspicious]]

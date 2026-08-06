@@ -6,5 +6,3 @@ de·​fi·​ant
 - bold, impudent
 
 Similar words: [[Rebellious]], [[Stubborn]]
-
-Near antonyms: [[Obedient]]

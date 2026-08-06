@@ -7,5 +7,3 @@ alien·​ate
 - to cause (someone) to feel that she or he no longer belongs in a particular group, society, etc.
 
 Similar words: [[Infuriate]], [[Cede]]
-
-Near antonyms: [[Reconcile]]

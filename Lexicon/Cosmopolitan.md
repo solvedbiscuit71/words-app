@@ -10,6 +10,4 @@ cos·​mo·​pol·​i·​tan
 
 Similar words: [[Sophisticated]]
 
-Near antonyms: [[Naive]]
-
 Mnemonic: Cosmo (huge and diverse) + politan (like in metropolitan)

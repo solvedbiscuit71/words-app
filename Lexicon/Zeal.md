@@ -6,6 +6,4 @@
 
 Similar words: [[Vigor]]
 
-Near antonyms: [[Indifferent]]
-
 Mnemonic: Zeal, is to feel eager in pursuit of something

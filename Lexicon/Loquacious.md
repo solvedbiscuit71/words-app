@@ -6,5 +6,3 @@ lo·​qua·​cious
 - full of excessive talk : wordy
 
 Similar words: [[Talkative]]
-
-Near antonyms: [[Laconic]]

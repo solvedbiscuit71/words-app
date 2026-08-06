@@ -7,5 +7,3 @@ ex·​tem·​po·​ra·​ne·​ous
 - carefully prepared but delivered without notes or text
 
 Similar words: [[Impromptu]]
-
-Near antonyms: [[Rehearsed]]

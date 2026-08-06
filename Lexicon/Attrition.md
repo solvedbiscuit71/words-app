@@ -8,6 +8,4 @@
 
 Similar words: [[Erosion]]
 
-Near antonyms: [[Increase]]
-
 Mnemonic: Attrition, similar to Malnutrition, where the person is weaken gradually.

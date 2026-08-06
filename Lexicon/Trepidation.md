@@ -8,6 +8,4 @@
 
 Similar words: [[Fear]], [[Apprehensive]]
 
-Near antonyms: [[Confidence]]
-
 Mnemonic: When there are traps set, you feel trepidation, you don't make a move

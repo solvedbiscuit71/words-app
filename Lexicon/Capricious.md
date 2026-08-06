@@ -7,6 +7,4 @@ ca·​pri·​cious
 
 Similar words: [[Volatile]], [[Mercurial]], [[Impulsive]]
 
-Near antonyms: [[Certain]], [[Reasonable]]
-
 Mnemonic: Car price are volatile

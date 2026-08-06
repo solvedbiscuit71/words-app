@@ -6,6 +6,4 @@ fes·​tive
 
 Similar words: [[Merry]]
 
-Near antonyms: [[Sad]]
-
 Mnemonic:  Festive = Related to festival

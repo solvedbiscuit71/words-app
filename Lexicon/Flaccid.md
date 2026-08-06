@@ -7,5 +7,3 @@
 - soft or weak rather than firm
 
 Similar words: [[Limp]]
-
-Near antonyms: [[Rigid]]

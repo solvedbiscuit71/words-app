@@ -7,6 +7,4 @@
 
 Similar words: [[Augment]]
 
-Near antonyms: [[Compress]]
-
 Mnemonic: Aerate, air + rate, supply air

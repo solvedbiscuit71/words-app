@@ -6,6 +6,4 @@
 
 Similar words: [[Ameliorate]], [[Alleviate]], [[Satisfy]]
 
-Near antonyms: [[Exacerbate]], [[Stimulate]]
-
 Mnemonic: Assuage the fear, wipe away the tear.

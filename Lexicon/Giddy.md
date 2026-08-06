@@ -8,6 +8,4 @@ gid·​dy
 
 Similar words: [[Goofy]], [[Dizzy]], [[Ecstatic]]
 
-Near antonyms: [[Serious]], [[Stable]], [[Depressed]]
-
 Mnemonic: Too giddy to be steady!

@@ -6,5 +6,3 @@ ame·​lio·​rate
 - to grow better
 
 Similar words: [[Improve]]
-
-Near antonyms: [[Worsen]]

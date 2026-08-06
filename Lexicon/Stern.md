@@ -9,5 +9,3 @@
 - a hinder or rear part : the last or latter part
 
 Similar words: [[Strict]], [[Austere]], [[Rear]]
-
-Near antonyms: [[Gentle]]

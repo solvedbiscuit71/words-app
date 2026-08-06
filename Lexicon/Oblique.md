@@ -7,6 +7,4 @@
 
 Similar words: [[Tilted]], [[Sloping]]
 
-Near antonyms: [[Straight]], [[Level]]
-
 Mnemonic: Oblique, like Obtuse, is Tilted, not straight, indirect

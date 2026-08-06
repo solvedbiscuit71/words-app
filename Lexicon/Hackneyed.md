@@ -6,6 +6,4 @@ hack·​neyed
 
 Similar words: [[Cliche]], [[Stereotyped]]
 
-Near antonyms: [[Original]]
-
-Mnemonic: Hackneyed lines, heard multiple times. 
+Mnemonic: Hackneyed lines, heard multiple times.

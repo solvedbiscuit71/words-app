@@ -7,5 +7,3 @@ ma·​lig·​nant
 - passionately and relentlessly malevolent : aggressively malicious
 
 Similar words: [[Malicious]], [[Malevolent]]
-
-Near antonyms: [[Benign]]

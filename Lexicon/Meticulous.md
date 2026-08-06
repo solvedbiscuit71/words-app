@@ -6,5 +6,3 @@ me·​tic·​u·​lous
 * showing or requiring extreme care and attention to detail
 
 Similar words: [[Careful]]
-
-Near antonyms: [[Negligent]]

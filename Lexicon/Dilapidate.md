@@ -7,6 +7,4 @@ də-ˈla-pə-ˌdā-təd
 
 Similar words: [[Neglected]], [[Degraded]]
 
-Near antonyms: [[Maintained]], [[Improved]]
-
 Mnemonic: I drink a diluted apple juice which is outdated, now my stomach is ruined

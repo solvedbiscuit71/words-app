@@ -7,5 +7,3 @@ des·​ic·​cate
 * to drain of emotional or intellectual vitality, undermine
 
 Similar words: [[Undermine]]
-
-Near antonyms: [[Stimulate]]

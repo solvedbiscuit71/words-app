@@ -7,6 +7,4 @@ dis·​in·​gen·​u·​ous
 
 Similar words: [[Dishonest]]
 
-Near antonyms: [[Honest]]
-
 Mnemonic: Dis + in + genuine, not genuine

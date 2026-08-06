@@ -7,6 +7,4 @@ juːˈtəʊ.pi.ən
 
 Similar words: [[Visionary]]
 
-Near antonyms: [[Pragmatic]]
-
 Example: We reject proposals by arguing that they are excessively utopian.

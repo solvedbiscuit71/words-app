@@ -7,6 +7,4 @@
 
 Similar words: [[Anchor]], [[Support]], [[Bolster]]
 
-Near antonyms: [[Undermine]]
-
 Mnemonic: Butt + rest, butt gives us support to rest on the floor

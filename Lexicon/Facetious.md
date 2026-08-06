@@ -7,8 +7,6 @@ fə-ˈsē-shəs
 
 Similar words: [[Witty]], [[Cute]]
 
-Near antonyms: [[Stupid]], [[Sincere]]
-
 Mnemonic: Face is not serious, because it's silly joke
 
 Example: I make so much money that we never have to worry – I’m being facetious.

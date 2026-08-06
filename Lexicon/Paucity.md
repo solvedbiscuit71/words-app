@@ -7,6 +7,4 @@
 
 Similar words: [[Shortage]]
 
-Near antonyms: [[Abundance]]
-
 Mnemonic: Paucity, more like scarcity

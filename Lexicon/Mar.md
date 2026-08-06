@@ -6,6 +6,4 @@
 
 Similar words: [[Damage]], [[Taint]]
 
-Near antonyms: [[Fix]], [[Purify]]
-
 Mnemonic: His face got marred since he got married!

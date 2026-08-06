@@ -7,6 +7,4 @@ di-ˈsərn
 
 Similar words: [[Notice]], [[Differentiate]], [[Understand]]
 
-Near antonyms: [[Ignore]], [[Confuse]], [[Misunderstand]]
-
 Mnemonic: A wise mind can discern, right from wrong.

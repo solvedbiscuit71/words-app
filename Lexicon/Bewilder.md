@@ -7,6 +7,4 @@ bi-ˈwil-dər
 
 Similar words: [[Perplex]]
 
-Near antonyms: [[Assure]]
-
 Mnemonic: Something people behave like wild, that make me bewilder.

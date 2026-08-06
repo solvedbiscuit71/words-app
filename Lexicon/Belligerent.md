@@ -7,6 +7,4 @@ bel·​lig·​er·​ent
 
 Similar words: [[Aggressive]], [[Combatant]]
 
-Near antonyms: [[Peaceful]], [[Civilian]]
-
 Mnemonic: Billy give me the rent!

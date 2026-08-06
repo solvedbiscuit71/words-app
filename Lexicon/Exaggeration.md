@@ -8,5 +8,3 @@ ex·​ag·​ger·​a·​tion
 - to make (something) larger or greater than normal
 
 Similar words: [[Hyperbole]], [[Enhance]], [[Embellish]]
-
-Near antonyms: [[Understate]], [[Belittle]]

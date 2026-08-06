@@ -6,5 +6,3 @@ taw·​dry
 - morally sordid, base, or distasteful
 
 Similar words: [[Terrible]], [[Cheap]]
-
-Near antonyms: [[Elegant]]

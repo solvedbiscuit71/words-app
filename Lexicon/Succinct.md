@@ -8,8 +8,6 @@
 
 Similar words: [[Concise]], [[Laconic]]
 
-Near antonyms: [[Verbose]]
-
 Mnemonic: Suck + sinked, it sucks to be sinked deep in conversation.
 
 Example: Keep your letter succinct and to the point.

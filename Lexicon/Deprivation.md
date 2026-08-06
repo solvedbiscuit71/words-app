@@ -7,6 +7,4 @@
 
 Similar words: [[Denial]]
 
-Near antonyms: [[Control]]
-
 Mnemonic: Deprivation, state of being deprived

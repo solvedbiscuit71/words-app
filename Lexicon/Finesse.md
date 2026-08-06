@@ -7,6 +7,4 @@ fə-ˈnes
 
 Similar words: [[Ability]], [[Negotiate]], [[Evade]]
 
-Near antonyms: [[Ineptitude]], [[Blow]], [[Seek]]
-
 Mnemonic: Fine-ness or skillful-ness in evading problems.

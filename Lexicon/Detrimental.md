@@ -7,6 +7,4 @@ det·​ri·​men·​tal
 
 Similar words: [[Harmful]]
 
-Near antonyms: [[Beneficial]]
-
 Mnemonic: Don't try the mental, it will not go well.

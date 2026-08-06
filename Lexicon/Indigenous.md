@@ -7,5 +7,3 @@ in-ˈdi-jə-nəs
 - innate, inborn
 
 Similar words: [[Native]], [[Inherent]]
-
-Near antonyms: [[Foreign]]

@@ -7,6 +7,4 @@
 
 Similar words: [[Muscular]], [[Athletic]]
 
-Near antonyms: [[Weak]], [[Skinny]], [[Slender]]
-
 Mnemonic: Brawny, reminds of Rowdy, one who is bulk

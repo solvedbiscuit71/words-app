@@ -7,5 +7,3 @@ por·​tray
 - to play the role of : enact
 
 Similar words: [[Depict]], [[Play]]
-
-Near antonyms: [[Distort]]

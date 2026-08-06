@@ -6,5 +6,3 @@ vil·​i·​fy
 * to lower in estimation or importance
 
 Similar words: [[Defame]]
-
-Near antonyms: [[Honor]]

@@ -7,5 +7,3 @@ frus·​trate
 - to keep (someone) from doing something
 
 Similar words: [[Thwart]], [[Discourage]]
-
-Near antonyms: [[Encourage]]

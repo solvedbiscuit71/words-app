@@ -6,5 +6,3 @@ es·​ti·​ma·​ble
 - worthy of esteem
 
 Similar words: [[Meritorious]], [[Esteemed]]
-
-Near antonyms: [[Reprehensible]], [[Disreputable]]

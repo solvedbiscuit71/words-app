@@ -7,6 +7,4 @@
 
 Similar words: [[Taint]], [[Mar]]
 
-Near antonyms: [[Purified]]
-
 Mnemonic: Old silver spoons start to tarnish.

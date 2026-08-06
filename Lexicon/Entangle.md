@@ -7,5 +7,3 @@ en·​tan·​gle
 - to make complicated
 
 Similar words: [[Knot]], [[Trap]], [[Complicated]]
-
-Near antonyms: [[Untangle]], [[Simple]]

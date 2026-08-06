@@ -7,6 +7,4 @@
 
 Similar words: [[Overwhelm]], [[Flood]]
 
-Near antonyms: [[Drain]]
-
 Mnemonic: I + NUN + DATE, I asked a nun for a date, but I was FLOODED with letters from father Nate.

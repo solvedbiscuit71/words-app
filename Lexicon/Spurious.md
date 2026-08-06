@@ -9,6 +9,4 @@
 
 Similar words: [[Counterfeit]], [[Illegitimate]]
 
-Near antonyms: [[Genuine]], [[Legitimate]]
-
 Mnemonic: Spurious = s(us) + pure + ious, not authentic

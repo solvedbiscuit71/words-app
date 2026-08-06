@@ -7,5 +7,3 @@ sub·​tle
 - having or showing skill at recognizing and understanding things that are not obvious : perceptive
 
 Similar words: [[Cunning]], [[Delicate]], [[Exquisite]]
-
-Near antonyms: [[Obvious]], [[Strong]]

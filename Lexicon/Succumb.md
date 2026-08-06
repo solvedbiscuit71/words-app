@@ -7,6 +7,4 @@ sə-ˈkəm
 
 Similar words: [[Submit]], [[Concede]], [[Yield]], [[Die]]
 
-Near antonyms: [[Resist]], [[Live]], [[Endure]]
-
 Mnemonic: Succumb, children suck their thumb but they have to yield to their parent (superior)

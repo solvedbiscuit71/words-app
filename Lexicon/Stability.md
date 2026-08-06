@@ -8,5 +8,3 @@ sta·​bil·​i·​ty
 - resistance to chemical change or to physical disintegration
 
 Similar words: [[Reliability]]
-
-Near antonyms: [[Instability]]

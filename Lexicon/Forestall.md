@@ -7,5 +7,3 @@ fore·​stall
 - to prevent the normal trading in (something) by buying or diverting goods or by persuading people to raise prices
 
 Similar words: [[Prevent]]
-
-Near antonyms: [[Assist]]

@@ -8,5 +8,3 @@ del·​e·​gate
 - to assign responsibility or authority
 
 Similar words: [[Representative]], [[Appoint]], [[Entrust]]
-
-Near antonyms: [[Abrogate]], [[Retain]]

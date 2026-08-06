@@ -7,5 +7,3 @@ ban·​ish
 - to clear away : dispel
 
 Similar words: [[Relegate]], [[Exile]], [[Dismiss]]
-
-Near antonyms: [[Accept]]

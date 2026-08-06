@@ -8,6 +8,4 @@ con·​tem·​plate
 
 Similar words: [[Ponder]], [[Intend]]
 
-Near antonyms: [[Ignore]], [[Disregard]]
-
 Mnemonic: In order to create a template, one must contemplate.

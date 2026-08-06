@@ -8,6 +8,4 @@ amor·​phous
 
 Similar words: [[Shapeless]]
 
-Near antonyms: [[Structured]]
-
 Mnemonic: An amorphous plan, unclear as it began.

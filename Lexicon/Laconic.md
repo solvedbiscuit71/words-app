@@ -6,8 +6,6 @@ ləˈkɒn.ɪk
 
 Similar words: [[Concise]], [[Silent]]
 
-Near antonyms: [[Loquacious]], [[Garrulous]]
-
 Mnemonic: Laconic, lacking in words
 
 Example: She had a laconic wit.

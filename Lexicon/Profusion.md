@@ -8,6 +8,4 @@ pro·​fu·​sion
 
 Similar words: [[Loads]], [[Generosity]]
 
-Near antonyms: [[Handful]], [[Economical]]
-
 Mnemonic: Profusion, state of being profuse

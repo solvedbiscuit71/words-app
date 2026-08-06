@@ -7,5 +7,3 @@ de·​fy
 - to challenge to do something considered impossible : dare
 
 Similar words: [[Disobey]], [[Dare]], [[Confront]], [[Resist]]
-
-Near antonyms: [[Obey]], [[Avoid]], [[Submit]]

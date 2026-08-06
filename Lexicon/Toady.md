@@ -5,5 +5,3 @@
 - one who flatters in the hope of gaining favors
 
 Similar words: [[Sycophant]], [[Bootlick]]
-
-Near antonyms: [[Disdain]], [[Scorn]]

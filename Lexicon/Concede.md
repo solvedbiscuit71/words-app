@@ -9,6 +9,4 @@ con·​cede
 
 Similar words: [[Admit]], [[Succumb]]
 
-Near antonyms: [[Deny]], [[Resist]]
-
 Mnemonic: When you're wrong, just concede and move along.

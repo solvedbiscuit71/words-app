@@ -6,5 +6,3 @@ in·​sip·​id
 - lacking taste or savor
 
 Similar words: [[Bland]]
-
-Near antonyms: [[Pungent]], [[Poignant]]

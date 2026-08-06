@@ -7,6 +7,4 @@
 
 Similar words: [[Supporter]], [[Unite]]
 
-Near antonyms: [[Enemy]], [[Sever]]
-
 Mnemonic: Allied forces from world war 2.

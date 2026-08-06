@@ -7,5 +7,3 @@ dis·​crete
 - taking on or having a finite or countably infinite number of values
 
 Similar words: [[Distinct]], [[Detached]]
-
-Near antonyms: [[Connected]]

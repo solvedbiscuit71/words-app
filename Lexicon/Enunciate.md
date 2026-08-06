@@ -7,6 +7,4 @@ enun·​ci·​ate
 
 Similar words: [[Speak]], [[Announce]], [[Say]]
 
-Near antonyms: [[Hesitate]], [[Conceal]], [[Stifle]]
-
 Mnemonic: Enunciate means good pronunciation in communication

@@ -7,6 +7,4 @@
 
 Similar words: [[Exuberant]]
 
-Near antonyms: [[Sullen]]
-
 Mnemonic: Effort in scent, makes you more lively

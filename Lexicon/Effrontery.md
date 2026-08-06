@@ -6,6 +6,4 @@ i-ˈfrən-tə-rē
 
 Similar words: [[Nerve]]
 
-Near antonyms: [[Timid]]
-
 Mnemonic: Jeff comes in front of everyone to take the spotlight.

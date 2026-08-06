@@ -8,6 +8,4 @@ tem·​per·​ance
 
 Similar words: [[Moderate]], [[Restraint]]
 
-Near antonyms: [[Excess]], [[Gluttony]]
-
 Mnemonic: Temperance, opposite of Temperament

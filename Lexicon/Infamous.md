@@ -7,5 +7,3 @@ in·​fa·​mous
 - convicted of an offense (as a felony) bringing infamy
 
 Similar words: [[Notorious]]
-
-Near antonyms: [[Honorable]]

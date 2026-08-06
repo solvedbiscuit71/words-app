@@ -6,5 +6,3 @@ hy·​per·​bo·​le
 - extravagant exaggeration
 
 Similar words: [[Exaggeration]]
-
-Near antonyms: [[Understatement]]

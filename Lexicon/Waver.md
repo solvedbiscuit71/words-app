@@ -8,5 +8,3 @@ wa·​ver
 - to become unsteady because of weakness, emotion, tiredness, etc.
 
 Similar words: [[Hesitant]], [[Falter]], [[Sway]]
-
-Near antonyms: [[Decide]]

@@ -8,5 +8,3 @@ tru·​cu·​lent
 - feeling or displaying ferocity : cruel, savage
 
 Similar words: [[Aggressive]], [[Abusive]], [[Brutal]]
-
-Near antonyms: [[Peaceful]], [[Respect]], [[Compassionate]]

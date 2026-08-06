@@ -7,6 +7,4 @@ im·​pov·​er·​ished
 
 Similar words: [[Poor]], [[Desolate]], [[Depleted]]
 
-Near antonyms: [[Wealthy]], [[Rich]], [[Protected]]
-
 Mnemonic: ImPOVERished, in poverty

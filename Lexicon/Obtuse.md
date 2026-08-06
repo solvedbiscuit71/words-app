@@ -8,5 +8,3 @@ ob·​tuse
 - exceeding 90 degrees but less than 180 degrees
 
 Similar words: [[Blunt]], [[Dumb]]
-
-Near antonyms: [[Sharp]]

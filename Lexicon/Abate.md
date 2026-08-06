@@ -7,5 +7,3 @@
 * to decrease in amount or value
 
 Similar words: [[Decrease]]
-
-Near antonyms: [[Increase]]

@@ -6,6 +6,4 @@ sub·​si·​dize
 
 Similar words: [[Fund]]
 
-Near antonyms: [[Receive]]
-
 Mnemonic: The company subsidize term insurance for its employees.

@@ -7,5 +7,3 @@ ze·​nith
 - culminating point
 
 Similar words: [[Pinnacle]]
-
-Near antonyms: [[Nadir]]

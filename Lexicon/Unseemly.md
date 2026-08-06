@@ -7,6 +7,4 @@
 
 Similar words: [[Inappropriate]], [[Unsuitable]]
 
-Near antonyms: [[Appropriate]]
-
 Mnemonic: Unseemly, not be seen, not appropriate to be seen

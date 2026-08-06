@@ -9,6 +9,4 @@ lär-ˈjes
 
 Similar words: [[Gift]], [[Philanthropy]]
 
-Near antonyms: [[Loan]], [[Selfishness]]
-
 Mnemonic: Largest + gesture is giving away money to those who need it.

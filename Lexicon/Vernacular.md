@@ -7,5 +7,3 @@ ver·​nac·​u·​lar
 - dance, music, art, etc. that is in a style liked or performed by ordinary people
 
 Similar words: [[Colloquial]], [[Informal]]
-
-Near antonyms: [[Literary]], [[Formal]]

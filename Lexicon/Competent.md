@@ -6,5 +6,3 @@
 - able to take part in a trial
 
 Similar words: [[Qualified]], [[Justified]]
-
-Near antonyms: [[Incompetent]], [[Unfair]]

@@ -6,6 +6,4 @@
 
 Similar words: [[Assist]], [[Comfort]]
 
-Near antonyms: [[Interference]], [[Hinder]]
-
 Mnemonic: The one who gives succor, may end up the sucker.

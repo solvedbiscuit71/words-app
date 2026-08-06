@@ -6,5 +6,3 @@ tim·​o·​rous
 - expressing or suggesting timidity
 
 Similar words: [[Timid]]
-
-Near antonyms: [[Daring]]

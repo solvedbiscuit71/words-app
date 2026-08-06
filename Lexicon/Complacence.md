@@ -6,5 +6,3 @@ com·​pla·​cence
 - unconcern 
 
 Similar words: [[Vanity]], [[Pride]], [[Disregard]]
-
-Near antonyms: [[Humility]], [[Concern]]

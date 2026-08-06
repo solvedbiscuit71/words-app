@@ -8,6 +8,4 @@ im-ˈpyün
 
 Similar words: [[Criticize]], [[Accuse]]
 
-Near antonyms: [[Defend]], [[Advocate]]
-
 Mnemonic: To impugned, is, to prune someone's trust by criticism

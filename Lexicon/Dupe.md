@@ -8,6 +8,4 @@
 
 Similar words: [[Sucker]], [[Replica]], [[Deceive]]
 
-Near antonyms: [[Cheat]], [[Original]], [[Expose]]
-
 Mnemonic: Dupe in a group

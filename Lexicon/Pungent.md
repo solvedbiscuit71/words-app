@@ -7,5 +7,3 @@ pun·​gent
 - having an intense flavor or odor
 
 Similar words: [[Spicy]], [[Satiric]], [[Poignant]]
-
-Near antonyms: [[Mild]], [[Insipid]]

@@ -6,5 +6,3 @@ lə-ˈthär-jik
 - indifferent, apathetic
 
 Similar words: [[Sleepy]], [[Dull]]
-
-Near antonyms: [[Active]]

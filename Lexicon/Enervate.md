@@ -7,5 +7,3 @@ ener·​vate
 - to lessen the vitality or strength of
 
 Similar words: [[Undermine]], [[Desiccate]]
-
-Near antonyms: [[Stimulate]]

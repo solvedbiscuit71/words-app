@@ -7,6 +7,4 @@ de·​spon·​dent
 
 Similar words: [[Desperate]], [[Depressed]]
 
-Near antonyms: [[Hopeful]], [[Jubilant]]
-
 Mnemonic: DESPondent, DESPerate.

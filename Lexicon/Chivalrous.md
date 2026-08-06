@@ -7,6 +7,4 @@
 
 Similar words: [[Noble]]
 
-Near antonyms: [[Ignoble]]
-
 Mnemonic: Sounds like, she well, someone who's attentive to women

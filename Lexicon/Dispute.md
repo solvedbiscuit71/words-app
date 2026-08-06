@@ -8,5 +8,3 @@ dis·​pute
 - to fight in order to take control of (something)
 
 Similar words: [[Controversy]], [[Quarrel]], [[Debate]]
-
-Near antonyms: [[Agreement]], [[Believe]]

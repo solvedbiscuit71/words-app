@@ -6,5 +6,3 @@ com·​pre·​hen·​sive
 - having or exhibiting wide mental grasp
 
 Similar words: [[Thorough]], [[Complete]]
-
-Near antonyms: [[Limited]], [[Partial]], [[Haphazard]]

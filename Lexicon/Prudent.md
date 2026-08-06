@@ -9,6 +9,4 @@ pru·​dent
 
 Similar words: [[Cautious]], [[Wise]]
 
-Near antonyms: [[Imprudent]], [[Unwise]]
-
 Mnemonic: Prudent and wise, save before it flies.

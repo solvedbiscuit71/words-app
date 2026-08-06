@@ -6,5 +6,3 @@ com·​pel
 - to cause to do or occur by overwhelming pressure
 
 Similar words: [[Coerce]]
-
-Near antonyms: [[Let]]

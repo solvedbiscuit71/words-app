@@ -8,6 +8,4 @@ diz·​zy
 
 Similar words: [[Giddy]], [[Dazed]], [[Rapid]]
 
-Near antonyms: [[Steady]], [[Clear]], [[Slow]]
-
 Mnemonic: Dizzy, dizzy, head is whizzy!

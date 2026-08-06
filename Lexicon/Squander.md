@@ -8,6 +8,4 @@
 
 Similar words: [[Spend]], [[Disperse]]
 
-Near antonyms: [[Conserve]], [[Collect]]
-
 Mnemonic: Squander, sounds similar to wander, when you keep wander, you waste your time and resource.

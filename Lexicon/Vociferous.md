@@ -9,6 +9,4 @@ vō-ˈsi-f(ə-)rəs
 
 Similar words: [[Outspoken]]
 
-Near antonyms: [[Silent]]
-
 Mnemonic: The vociferous crowd shouted out loud.

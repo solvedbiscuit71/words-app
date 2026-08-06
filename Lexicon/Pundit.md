@@ -6,5 +6,3 @@ pun·​dit
 - a person who gives opinions in an authoritative manner usually through the mass media : critic
 
 Similar words: [[Scholar]], [[Critic]]
-
-Near antonyms: [[Idiot]]

@@ -7,6 +7,4 @@ sol·​i·​dar·​i·​ty
 
 Similar words: [[Sympathy]]
 
-Near antonyms: [[Hatred]]
-
 Mnemonic: Together we rise, that's solidarity and wise.

@@ -6,6 +6,4 @@ ig-ˈzȯr-bə-tənt
 
 Similar words: [[Excessive]]
 
-Near antonyms: [[Reasonable]]
-
 Mnemonic: Exceeding the orbit (the limit)

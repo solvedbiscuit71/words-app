@@ -7,6 +7,4 @@ de·​bil·​i·​tate
 
 Similar words: [[Weaken]]
 
-Near antonyms: [[Strengthen]]
-
 Mnemonic: De + ability = destroy or weaken one's ability

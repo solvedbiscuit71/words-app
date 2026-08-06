@@ -10,6 +10,4 @@
 
 Similar words: [[Boring]]
 
-Near antonyms: [[Interesting]]
-
 Mnemonic: StODgy, state of being old fashion, boring.

@@ -6,5 +6,3 @@ ob·​sti·​nate
 * not easily controlled, remedied, or removed
 
 Similar words: [[Stubborn]], [[Adamant]]
-
-Near antonyms: [[Acquiescent]]

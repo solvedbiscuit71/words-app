@@ -8,5 +8,3 @@ dis·​cre·​tion
 * power to choose or decide freely within certain legal bounds
 
 Similar words: [[Prudent]], [[Discern]], [[Choose]]
-
-Near antonyms: [[Shortsightedness]], [[Forced]]

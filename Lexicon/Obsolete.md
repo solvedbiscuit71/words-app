@@ -6,5 +6,3 @@ ob·​so·​lete
 - of a kind or style no longer current: old-fashioned
 
 Similar words: [[Archaic]]
-
-Near antonyms: [[Modern]]

@@ -7,6 +7,4 @@
 
 Similar words: [[Serene]], [[Tranquil]], [[Quiet]]
 
-Near antonyms: [[Agitated]], [[Turbulent]], [[Boisterous]]
-
 Mnemonic: Place so still, that's placid

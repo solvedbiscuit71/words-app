@@ -6,6 +6,4 @@ tə-ˈna-sə-tē
 
 Similar words: [[Persistent]]
 
-Near antonyms: [[Hesitate]]
-
 Mnemonic: Tenacity, tenacious, same meaning.

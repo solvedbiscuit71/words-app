@@ -7,8 +7,6 @@
 
 Similar words: [[Illegal]]
 
-Near antonyms: [[Legal]]
-
 Mnemonic: Illicit, illegal, both starts with the prefix "ill" which means diseased.
 
 Example: an illicit love affair

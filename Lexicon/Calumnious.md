@@ -7,5 +7,3 @@ ca·​lum·​ni·​ous
 - slanderous
 
 Similar words: [[Slanderous]], [[Scandalous]]
-
-Near antonyms: [[Favorable]]

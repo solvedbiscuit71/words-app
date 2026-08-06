@@ -8,6 +8,4 @@ strin·​gent
 
 Similar words: [[Strict]]
 
-Near antonyms: [[Lax]]
-
 Mnemonic: Stern, Stringent, Strict

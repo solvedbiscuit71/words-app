@@ -8,6 +8,4 @@
 
 Similar words: [[Various]]
 
-Near antonyms: [[Identical]]
-
 Mnemonic: various and sundry (something)

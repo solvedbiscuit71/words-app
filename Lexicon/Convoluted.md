@@ -6,5 +6,3 @@ con·​vo·​lut·​ed
 - having many twists and curves
 
 Similar words: [[Complicated]]
-
-Near antonyms: [[Simple]]

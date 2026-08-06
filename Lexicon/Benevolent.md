@@ -7,5 +7,3 @@ be·​nev·​o·​lent
 - marked by or suggestive of goodwill
 
 Similar words: [[Compassionate]]
-
-Near antonyms: [[Cruel]]

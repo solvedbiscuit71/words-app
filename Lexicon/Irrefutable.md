@@ -6,6 +6,4 @@ ir·​re·​fut·​able
 
 Similar words: [[Undeniable]]
 
-Near antonyms: [[Questionable]]
-
 Mnemonic: Ir + refute + able, something that's not refutable

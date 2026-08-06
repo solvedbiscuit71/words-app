@@ -7,5 +7,3 @@ con·​spic·​u·​ous
 - marked by a noticeable violation of good taste
 
 Similar words: [[Prominent]], [[Obvious]]
-
-Near antonyms: [[Inconspicuous]]

@@ -7,6 +7,4 @@ un·​nerve
 
 Similar words: [[Paralyze]], [[Frustrate]], [[Enervate]]
 
-Near antonyms: [[Nerve]], [[Encourage]]
-
 Mnemonic: Nerves bring strength, unnerve is to undo that i.e. nervous

@@ -9,6 +9,4 @@
 
 Similar words: [[Suppress]], [[Strangle]]
 
-Near antonyms: [[Express]], [[Breathe]]
-
 Example: She try to stifle her cry.

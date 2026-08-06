@@ -9,5 +9,3 @@ pi·​ous
 * deserving commendation
 
 Similar words: [[Steadfast]], [[Devout]]
-
-Near antonyms: [[Unfaithful]], [[Impious]]

@@ -6,6 +6,4 @@
 
 Similar words: [[Sinister]], [[Prophetic]]
 
-Near antonyms: [[Promising]]
-
 Mnemonic: Oracular, related to Oracle (someone who a foretell)

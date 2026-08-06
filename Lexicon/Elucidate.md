@@ -7,6 +7,4 @@ elu·​ci·​date
 
 Similar words: [[Lucid]], [[Explain]]
 
-Near antonyms: [[Obscure]]
-
 Mnemonic: eLUCIDate, don't complicate

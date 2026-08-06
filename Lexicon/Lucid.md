@@ -7,5 +7,3 @@ lu·​cid
 - suffused with light : luminous
 
 Similar words: [[Luminous]], [[Stable]], [[Clear]]
-
-Near antonyms: [[Dull]], [[Insane]], [[Ambiguity]]

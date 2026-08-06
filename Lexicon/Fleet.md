@@ -7,5 +7,3 @@ fliːt
 - to fade away : vanish
 
 Similar words: [[Convoy]], [[Parade]], [[Rapid]], [[Vanish]]
-
-Near antonyms: [[Slow]]

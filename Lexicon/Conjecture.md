@@ -6,6 +6,4 @@ con·​jec·​ture
 
 Similar words: [[Guess]], [[Speculate]], [[Theorize]]
 
-Near antonyms: [[Establish]], [[Measure]]
-
 Mnemonic: Con + gesture, a con artist claims something without evidence.

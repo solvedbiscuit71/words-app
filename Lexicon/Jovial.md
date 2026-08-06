@@ -7,6 +7,4 @@
 
 Similar words: [[Jolly]], [[Merry]]
 
-Near antonyms: [[Sad]]
-
 Mnemonic: Jovial, Joy, Jolly

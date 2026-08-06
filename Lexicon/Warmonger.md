@@ -6,6 +6,4 @@
 
 Similar words: [[Hawk]], [[Militarist]]
 
-Near antonyms: [[Pacifist]], [[Dove]]
-
 Example: fortunately, the warmongers met with overwhelming opposition

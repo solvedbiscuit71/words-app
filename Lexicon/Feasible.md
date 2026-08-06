@@ -8,5 +8,3 @@ fea·​si·​ble
 - reasonable, likely
 
 Similar words: [[Possible]]
-
-Near antonyms: [[Impossible]]

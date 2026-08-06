@@ -6,6 +6,4 @@ im·​plau·​si·​ble
 
 Similar words: [[Incredible]]
 
-Near antonyms: [[Plausible]]
-
 Mnemonic: Plausible sounds like possible

@@ -6,5 +6,3 @@ in·​duce
 - to cause (something) to happen or exist
 
 Similar words: [[Cause]], [[Persuade]]
-
-Near antonyms: [[Restrict]], [[Deter]]

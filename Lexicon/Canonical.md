@@ -8,6 +8,4 @@ ca·​non·​i·​cal
 
 Similar words: [[Apostolic]], [[Authoritative]]
 
-Near antonyms: [[Temporal]], [[Unofficial]]
-
 Mnemonic: Canonical, Biblical, related to the church and it's orthodox ways

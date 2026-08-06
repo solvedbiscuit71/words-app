@@ -7,6 +7,4 @@
 
 Similar words: [[Silent]]
 
-Near antonyms: [[Talkative]]
-
 Mnemonic: So taciturn, not a word does he return.

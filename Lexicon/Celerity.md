@@ -6,6 +6,4 @@ ce·​ler·​i·​ty
 
 Similar words: [[Speed]]
 
-Near antonyms: [[Slow]]
-
 Mnemonic: acCELERate = CELERity

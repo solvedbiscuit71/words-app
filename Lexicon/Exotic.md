@@ -6,5 +6,3 @@ ex·​ot·​ic
 - strikingly, excitingly, or mysteriously different or unusual
 
 Similar words: [[Romantic]], [[Rarity]]
-
-Near antonyms: [[Unromantic]], [[Familiar]]

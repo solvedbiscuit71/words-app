@@ -6,6 +6,4 @@ al·​lur·​ing
 
 Similar words: [[Appealing]], [[Fascinate]], [[Tempt]]
 
-Near antonyms: [[Repulsive]], [[Offend]], [[Warn]]
-
 Mnemonic: All are lure, that's alluring

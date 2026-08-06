@@ -6,5 +6,3 @@ for·​bear·​ance
 - the act of patience
 
 Similar words: [[Patience]], [[Mercy]]
-
-Near antonyms: [[Impatience]], [[Ruthlessness]]

@@ -6,6 +6,4 @@
 
 Similar words: [[Metaphor]]
 
-Near antonyms: [[Slur]]
-
 Mnemonic: Euphemism, terms used by the youth

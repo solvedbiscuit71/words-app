@@ -7,5 +7,3 @@ ad·​vo·​cate
 - one who pleads the cause of another
 
 Similar words: [[Proponent]], [[Lawyer]], [[Attorney]]
-
-Near antonyms: [[Opponent]]

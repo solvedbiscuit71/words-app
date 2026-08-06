@@ -6,5 +6,3 @@ di·​vulge
 * to make public
 
 Similar words: [[Disclose]]
-
-Near antonyms: [[Conceal]]

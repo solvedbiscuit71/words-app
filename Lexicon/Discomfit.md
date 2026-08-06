@@ -7,5 +7,3 @@ dis·​com·​fit
 - to defeat in battle
 
 Similar words: [[Frustrate]]
-
-Near antonyms: [[Encourage]]

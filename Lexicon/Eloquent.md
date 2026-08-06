@@ -6,5 +6,3 @@ el·​o·​quent
 - vividly or movingly expressive or revealing
 
 Similar words: [[Articulate]], [[Suggestive]], [[Rhetorical]]
-
-Near antonyms: [[Ineloquent]], [[Deadpan]], [[Informal]] 

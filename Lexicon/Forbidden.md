@@ -6,5 +6,3 @@ for·​bid·​den
 - not conforming to the usual selection principles
 
 Similar words: [[Prohibited]]
-
-Near antonyms: [[Permitted]]

@@ -6,5 +6,3 @@ mag·​na·​nim·​i·​ty
 - loftiness of spirit enabling one to bear trouble calmly, to disdain meanness and pettiness, and to display a noble generosity
 
 Similar words: [[Generosity]]
-
-Near antonyms: [[Ruthlessness]]

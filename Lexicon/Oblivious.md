@@ -8,6 +8,4 @@ obliv·​i·​ous
 
 Similar words: [[Ignorant]]
 
-Near antonyms: [[Aware]]
-
 Mnemonic: Head in the cloud, doesn't hear the crowd

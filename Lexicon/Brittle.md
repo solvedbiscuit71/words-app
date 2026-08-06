@@ -8,6 +8,4 @@ brit·​tle
 
 Similar words: [[Fragile]], [[Cold]]
 
-Near antonyms: [[Elastic]], [[Warm]]
-
 Mnemonic: Brick + little, as in hard but easily broken.

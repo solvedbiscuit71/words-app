@@ -7,5 +7,3 @@ pro·​voke
 - to provide the needed stimulus for
 
 Similar words: [[Encourage]], [[Raise]]
-
-Near antonyms: [[Calm]], [[Discourage]]

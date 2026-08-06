@@ -8,5 +8,3 @@ trem·​u·​lous
 - exceedingly sensitive : easily shaken or disordered
 
 Similar words: [[Timid]], [[Trembling]]
-
-Near antonyms: [[Daring]], [[Stable]]

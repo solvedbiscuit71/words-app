@@ -7,5 +7,3 @@ tor·​rid
 - ardent, passionate
 
 Similar words: [[Searing]], [[Warm]]
-
-Near antonyms: [[Cold]]

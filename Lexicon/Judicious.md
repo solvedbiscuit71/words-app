@@ -6,6 +6,4 @@ jü-ˈdi-shəs
 
 Similar words: [[Prudent]]
 
-Near antonyms: [[Imprudent]]
-
 Mnemonic: Judicious, like in Judicial system, is some who is wise in judgment

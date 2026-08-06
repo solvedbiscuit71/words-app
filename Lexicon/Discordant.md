@@ -9,6 +9,4 @@ dis·​cor·​dant
 
 Similar words: [[Shrill]], [[Cacophonous]], [[Noisy]], [[Aggressive]]
 
-Near antonyms: [[Musical]], [[Silent]], [[Peaceful]]
-
 Mnemonic: Disgusting + cord (like in music cord)

@@ -8,6 +8,4 @@
 
 Similar words: [[Extending]], [[Sitting]]
 
-Near antonyms: [[Containing]], [[Standing]]
-
 Mnemonic: Sprawl on the floor, legs out the door.

@@ -7,5 +7,3 @@ li·​bel
 - a statement published with the knowledge that it is false or with reckless disregard of the truth that injures a public person's reputation
 
 Similar words: [[Defamation]], [[Slander]]
-
-Near antonyms: [[Praise]], [[Honor]]

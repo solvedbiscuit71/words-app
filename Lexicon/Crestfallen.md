@@ -7,6 +7,4 @@ crest·​fall·​en
 
 Similar words: [[Sad]], [[Heartbroken]]
 
-Near antonyms: [[Jubilant]]
-
 Mnemonic: Crest (top, head) fallen, so did my head

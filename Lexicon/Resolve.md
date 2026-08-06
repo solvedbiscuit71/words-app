@@ -7,5 +7,3 @@ re·​solve
 - a strong determination to do something
 
 Similar words: [[Decide]], [[Solve]], [[Determination]]
-
-Near antonyms: [[Refuse]], [[Hesitate]]

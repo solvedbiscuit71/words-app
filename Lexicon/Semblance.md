@@ -6,6 +6,4 @@
 
 Similar words: [[Pretense]], [[Appearance]]
 
-Near antonyms: [[Sincerity]]
-
 Mnemonic: Semblance, semi + resemblance

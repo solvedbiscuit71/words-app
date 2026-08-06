@@ -8,5 +8,3 @@ ver·​i·​ta·​ble
 - true or real
 
 Similar words: [[Real]], [[Genuine]]
-
-Near antonyms: [[Questionable]]

@@ -7,6 +7,4 @@ in·​ter·​mit·​tent
 
 Similar words: [[Recurrent]], [[Sporadic]]
 
-Near antonyms: [[Continuous]]
-
 Mnemonic: Intermittent, interval, similar words.

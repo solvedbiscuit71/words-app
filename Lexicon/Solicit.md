@@ -7,5 +7,3 @@ so·​lic·​it
 - to try to obtain (something) by usually urgent requests or pleas
 
 Similar words: [[Seek]], [[Ask]], [[Tempt]]
-
-Near antonyms: [[Compel]], [[Suggest]], [[Warn]]

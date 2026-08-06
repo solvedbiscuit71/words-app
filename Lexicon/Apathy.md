@@ -7,6 +7,4 @@ ap·​a·​thy
 
 Similar words: [[Numbness]], [[Indifferent]]
 
-Near antonyms: [[Emotion]], [[Concern]]
-
 Mnemonic: Apathy sets in, no will to win.

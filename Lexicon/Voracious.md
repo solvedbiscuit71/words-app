@@ -7,5 +7,3 @@ vo·​ra·​cious
 - excessively eager
 
 Similar words: [[Greedy]], [[Enthusiastic]]
-
-Near antonyms: [[Satisfaction]], [[Indifferent]]

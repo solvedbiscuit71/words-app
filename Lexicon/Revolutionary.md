@@ -6,5 +6,3 @@ rev·​o·​lu·​tion·​ary
 - constituting or bringing about a major or fundamental change
 
 Similar words: [[Radical]], [[Rebellious]]
-
-Near antonyms: [[Conservative]], [[Steadfast]], [[Patriot]]

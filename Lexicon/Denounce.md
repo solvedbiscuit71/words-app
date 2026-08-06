@@ -7,6 +7,4 @@ di-ˈnau̇n(t)s
 
 Similar words: [[Condemn]], [[Censure]]
 
-Near antonyms: [[Approve]], [[Endorse]]
-
 Mnemonic: Denounce, is to announce something is bad (de-)

@@ -7,5 +7,3 @@ de·​vi·​a·​tion
 - deflection of the needle of a compass caused by local magnetic influences (as in a ship)
 
 Similar words: [[Departure]]
-
-Near antonyms: [[Adherence]]

@@ -8,5 +8,3 @@ neg·​li·​gent
 - failing to exercise the care expected of a reasonably prudent person in like circumstances
 
 Similar words: [[Careless]]
-
-Near antonyms: [[Careful]]

@@ -6,5 +6,3 @@ dis·​pas·​sion·​ate
 - not affected by personal or emotional involvement
 
 Similar words: [[Indifferent]], [[Equal]]
-
-Near antonyms: [[Partial]]

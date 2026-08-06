@@ -9,6 +9,4 @@ un·​to·​ward
 
 Similar words: [[Rebellious]], [[Stubborn]], [[Adverse]], [[Inappropriate]]
 
-Near antonyms: [[Amenable]], [[Obedient]], [[Favorable]], [[Appropriate]]
-
 Mnemonic: UntoWARD behavior is quite awkWARD!

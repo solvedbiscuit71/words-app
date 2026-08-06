@@ -6,5 +6,3 @@
 - death, destruction
 
 Similar words: [[Curse]]
-
-Near antonyms: [[Benefit]]

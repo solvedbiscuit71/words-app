@@ -7,6 +7,4 @@ con·​nois·​seur
 
 Similar words: [[Expert]], [[Pundit]]
 
-Near antonyms: [[Amateur]]
-
 Mnemonic: A connoisseur knows what is pure.

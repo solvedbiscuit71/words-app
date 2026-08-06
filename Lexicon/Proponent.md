@@ -6,6 +6,4 @@ prə-ˈpō-nənt
 
 Similar words: [[Advocate]], [[Supporter]]
 
-Near antonyms: [[Opponent]]
-
 Mnemonic: Proponent, opposite of opponent i.e. supporter

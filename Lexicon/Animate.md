@@ -6,5 +6,3 @@
 - to make (someone or something) lively or excited
 
 Similar words: [[Stimulate]], [[Alive]]
-
-Near antonyms: [[Kill]], [[Inanimate]]

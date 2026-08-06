@@ -8,5 +8,3 @@ de·​lib·​er·​ate
 * slow, unhurried, and steady as though allowing time for decision on each individual action involved
 
 Similar words: [[Considered]], [[Contemplate]]
-
-Near antonyms: [[Casual]], [[Disregard]]

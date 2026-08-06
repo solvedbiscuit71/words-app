@@ -8,6 +8,4 @@ i-ˈlə-strē-əs
 
 Similar words: [[Eminent]]
 
-Near antonyms: [[Minor]]
-
 Mnemonic: Illustrious, is an illustration of notable achievement

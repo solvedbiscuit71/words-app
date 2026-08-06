@@ -7,5 +7,3 @@ met·​tle
 - quality of temperament or disposition
 
 Similar words: [[Strength]]
-
-Near antonyms: [[Timid]]

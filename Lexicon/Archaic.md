@@ -7,5 +7,3 @@ ar·​cha·​ic
 - surviving from an earlier period
 
 Similar words: [[Obsolete]]
-
-Near antonyms: [[Contemporary]]

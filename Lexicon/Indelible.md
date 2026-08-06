@@ -7,6 +7,4 @@ in·​del·​i·​ble
 
 Similar words: [[Memorable]]
 
-Near antonyms: [[Unremarkable]]
-
 Mnemonic: Indelible = Inability to delete

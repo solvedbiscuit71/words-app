@@ -8,6 +8,4 @@
 
 Similar words: [[Pinnacle]], [[Peak]]
 
-Near antonyms: [[Bottom]], [[Fall]]
-
 Mnemonic: The crest is the best, it's the top of the rest.

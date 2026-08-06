@@ -7,5 +7,3 @@ tur·​bid
 - characterized by or producing obscurity (as of mind or emotions)
 
 Similar words: [[Muddy]]
-
-Near antonyms: [[Clear]]

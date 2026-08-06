@@ -7,6 +7,4 @@ i-ˈnāt
 
 Similar words: [[Inherent]]
 
-Near antonyms: [[Extrinsic]]
-
 Mnemonic: Nate = inborn, innate = inherent

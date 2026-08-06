@@ -10,6 +10,4 @@
 
 Similar words: [[Humid]], [[Torrid]]
 
-Near antonyms: [[Dry]], [[Cold]]
-
 Mnemonic: Sun + tree, when it's sunny you're under the tree.

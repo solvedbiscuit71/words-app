@@ -6,5 +6,3 @@ hal·​lowed
 - sacred, revered
 
 Similar words: [[Venerate]], [[Sacred]]
-
-Near antonyms: [[Infamous]]

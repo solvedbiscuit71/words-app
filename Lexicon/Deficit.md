@@ -8,6 +8,4 @@
 
 Similar words: [[Shortage]]
 
-Near antonyms: [[Abundance]]
-
 Mnemonic: Deficit, deficiency in something.

@@ -7,5 +7,3 @@ ec·​cen·​tric
 - not following a perfectly circular path
 
 Similar words: [[Bizarre]]
-
-Near antonyms: [[Ordinary]]

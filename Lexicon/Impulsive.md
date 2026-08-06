@@ -6,5 +6,3 @@ im-ˈpəl-siv
 - done suddenly and without planning : resulting from a sudden impulse
 
 Similar words: [[Obsessive]], [[Volatile]]
-
-Near antonyms: [[Voluntary]], [[Pragmatic]]

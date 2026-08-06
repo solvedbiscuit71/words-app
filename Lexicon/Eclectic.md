@@ -6,6 +6,4 @@ i-ˈklek-tik
 
 Similar words: [[Varied]], [[Diverse]], [[Sundry]]
 
-Near antonyms: [[Homogeneous]]
-
 Mnemonic: Eclectic is to elect the best from various sources.

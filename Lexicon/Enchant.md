@@ -6,5 +6,3 @@ en·​chant
 - to attract and move deeply : rouse to ecstatic admiration
 
 Similar words: [[Charm]], [[Bewitch]], [[Fascinate]]
-
-Near antonyms: [[Offend]], [[Bless]]

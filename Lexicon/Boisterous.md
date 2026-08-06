@@ -6,5 +6,3 @@ bois·​ter·​ous
 - marked by or expressive of exuberance and high spirits
 
 Similar words: [[Rowdy]]
-
-Near antonyms: [[Somber]]

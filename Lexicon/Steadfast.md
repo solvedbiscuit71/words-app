@@ -7,5 +7,3 @@ stead·​fast
 - not subject to change
 
 Similar words: [[Loyal]]
-
-Near antonyms: [[Unfaithful]]

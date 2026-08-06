@@ -10,5 +10,3 @@ ac·​ces·​sion
 - a sudden fit or outburst
 
 Similar words: [[Acquisition]], [[Access]]
-
-Near antonyms: [[Removal]]

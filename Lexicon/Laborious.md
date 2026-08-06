@@ -8,6 +8,4 @@ lə-ˈbȯr-ē-əs
 
 Similar words: [[Diligent]], [[Arduous]]
 
-Near antonyms: [[Idle]], [[Easy]]
-
 Mnemonic: Laborious, is something that requires labor.

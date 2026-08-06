@@ -6,5 +6,3 @@ dis·​pa·​rate
 - containing or made up of fundamentally different and often incongruous elements
 
 Similar words: [[Diverse]]
-
-Near antonyms: [[Similar]]

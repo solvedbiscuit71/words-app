@@ -7,6 +7,4 @@ car·​di·​nal
 
 Similar words: [[Main]]
 
-Near antonyms: [[Trivial]]
-
 Mnemonic: Cardinal rule, never to be fooled

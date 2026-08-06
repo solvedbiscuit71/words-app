@@ -7,6 +7,4 @@ fiˈæs.kəʊ
 
 Similar words: [[Disaster]]
 
-Near antonyms: [[Success]]
-
-Mnemonic: 
+Mnemonic:

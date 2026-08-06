@@ -7,5 +7,3 @@
 - to move in a violent and confused way
 
 Similar words: [[Swirl]], [[Anger]]
-
-Near antonyms: [[Calm]], [[Abate]], [[Please]]

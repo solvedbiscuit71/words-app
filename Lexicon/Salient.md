@@ -7,5 +7,3 @@ sa·​lient
 - something that projects outward or upward from its surroundings
 
 Similar words: [[Prominent]], [[Conspicuous]]
-
-Near antonyms: [[Subtle]]

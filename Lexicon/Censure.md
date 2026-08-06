@@ -8,5 +8,3 @@ cen·​sure
 - to officially criticize (someone or something) strongly and publicly
 
 Similar words: [[Condemn]], [[Reprimand]], [[Denounce]]
-
-Near antonyms: [[Endorse]], [[Approve]]

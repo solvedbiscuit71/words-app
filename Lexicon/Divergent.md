@@ -7,5 +7,3 @@ di·​ver·​gent
 - considering many different possibilities, especially unusual ones, in a way that helps you to think of new ideas or solutions
 
 Similar words: [[Different]]
-
-Near antonyms: [[Similar]]
