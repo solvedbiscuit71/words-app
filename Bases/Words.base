@@ -3,7 +3,7 @@ filters:
     - file.inFolder("Words/Lexicon")
 properties:
   file.links:
-    displayName: Related words
+    displayName: Similar words
 views:
   - type: cards
     name: All words

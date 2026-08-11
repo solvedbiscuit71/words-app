@@ -1,5 +1,7 @@
 # Reclusive
 
+#hard 
+
 /rɪˈkluː.sɪv/
 
 - living alone and avoiding going outside or talking to other people

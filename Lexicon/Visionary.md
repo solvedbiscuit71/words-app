@@ -8,4 +8,4 @@ vi·​sion·​ary
 - incapable of being realized or achieved : utopian
 - existing only in imagination : unreal
 
-Similar words: [[Impractical]], [[Fictional]], [[Cautious]], [[Prophet]], [[Dreamer]]
+Similar words: [[Impractical]], [[Fictional]], [[Prophet]], [[Dreamer]]

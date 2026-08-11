@@ -8,4 +8,4 @@ tur·​gid
 - being in a state of distension : swollen, tumid
 - boring and too serious about its subject matter
 
-Similar words: [[Swollen]], [[Insipid]]
+Similar words: [[Swollen]]

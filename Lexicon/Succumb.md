@@ -1,5 +1,7 @@
 # Succumb
 
+#hard 
+
 sə-ˈkəm
 
 - to yield to superior strength or force or overpowering appeal or desire
