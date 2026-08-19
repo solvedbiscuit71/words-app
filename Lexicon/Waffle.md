@@ -1,7 +1,5 @@
 # Waffle
 
-#hard 
-
 waf·​fle
 
 - to talk or write a lot without giving any useful information or any clear answers : equivocate

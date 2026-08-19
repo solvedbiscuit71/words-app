@@ -8,6 +8,6 @@
 
 Similar words: [[Insist]], [[Declare]]
 
-Mnemonic: Aver, I swear
+Mnemonic: A very confident statement (which is certainly true)
 
 Example: The lawyer averred her client's innocence.

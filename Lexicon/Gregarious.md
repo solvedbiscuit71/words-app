@@ -1,5 +1,7 @@
 # Gregarious
 
+#hard 
+
 /ɡrɪˈɡeə.ri.əs/
 
 - (of people) liking to be with other people

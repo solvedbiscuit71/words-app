@@ -1,5 +1,7 @@
 # Scant
 
+#hard 
+
 /skænt/
 
 - very little and not enough

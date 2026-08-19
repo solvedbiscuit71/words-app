@@ -1,7 +1,5 @@
 # Adulation
 
-#hard 
-
 /ˌædʒ.əˈleɪ.ʃən/
 
 - very great admiration or praise for someone, especially when it is more than is deserved

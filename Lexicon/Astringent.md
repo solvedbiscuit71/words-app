@@ -1,7 +1,5 @@
 # Astringent
 
-#hard 
-
 as·​trin·​gent
 
 - causing a tightening of soft organic tissues

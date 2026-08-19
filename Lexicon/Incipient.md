@@ -1,7 +1,5 @@
 # Incipient
 
-#hard 
-
 /ɪnˈsɪp.i.ənt/
 
 - just beginning or just coming into existence

@@ -1,7 +1,5 @@
 # Sequestration
 
-#hard 
-
 ˌsiː.kwesˈtreɪ.ʃən
 
 - the act of taking temporary possession of someone's property until they have paid money that is owed or obeyed a court order

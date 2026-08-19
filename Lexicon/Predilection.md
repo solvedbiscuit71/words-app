@@ -1,7 +1,5 @@
 # Predilection
 
-#hard 
-
 /ˌpriː.dɪˈlek.ʃən/
 
 - a strong liking or preference

@@ -1,5 +1,7 @@
 # Outlandish
 
+#hard 
+
 /ˌaʊtˈlæn.dɪʃ/
 
 - strange and unusual and difficult to accept or like

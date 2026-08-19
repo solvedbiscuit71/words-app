@@ -1,6 +1,6 @@
 # Tapestry
 
-{Pronunciation}
+/ˈtæp.ɪ.stri/
 
 - something that is made of many different parts
 - a strong cloth with colored threads woven into it to create a picture or design

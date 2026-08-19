@@ -6,4 +6,4 @@
 - to stir up : disturb, disorder
 - to move in a violent and confused way
 
-Similar words: [[Swirl]], [[Anger]]
+Similar words: [[Swirl]]

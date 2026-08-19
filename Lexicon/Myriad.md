@@ -8,6 +8,6 @@
 
 Similar words: [[Various]], [[Countless]]
 
-Mnemonic: Pyramid are made of a myriad of rocks
+Mnemonic: Pyramid are made of a myriad (various) of rocks
 
 Example: There’s a myriad of insects on the island.

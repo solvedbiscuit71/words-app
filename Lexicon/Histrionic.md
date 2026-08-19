@@ -1,5 +1,7 @@
 # Histrionic
 
+#hard 
+
 /ˌhɪs.triˈɒn.ɪk/
 
 - very emotional and energetic, but not sincere or without real meaning

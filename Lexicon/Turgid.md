@@ -1,7 +1,5 @@
 # Turgid
 
-#hard 
-
 tur·​gid
 
 - excessively embellished in style or language : bombastic, pompous

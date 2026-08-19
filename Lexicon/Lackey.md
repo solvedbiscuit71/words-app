@@ -1,7 +1,5 @@
 # Lackey
 
-#hard 
-
 ˈlæk.i
 
 - a person who is or acts like a weak servant of someone powerful

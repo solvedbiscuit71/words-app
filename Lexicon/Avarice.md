@@ -1,7 +1,5 @@
 # Avarice
 
-#hard 
-
 æv.ər.ɪs
 
 - an extremely strong wish to get or keep money or possessions

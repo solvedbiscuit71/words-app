@@ -6,7 +6,7 @@
 
 - showing no intelligence or imagination
 
-Similar words: [[Boring]]
+Similar words: [[Boring]], [[Insipid]]
 
 Mnemonic: Vapid, Stupid, Insipid are means the same, boring.
 

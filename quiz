@@ -1,6 +1,7 @@
 #!/Users/biscuit/.pyenv/shims/python
 
 import os
+import subprocess
 import time
 import argparse
 import random
@@ -52,9 +53,14 @@ def select_choices(
     return choices
 
 
+def clear_screen():
+    command = "cls" if os.name == "nt" else "clear"
+    subprocess.run(command)
+
+
 def render_question(question_number: str, question: str, choices: list[str]):
     # Clear screen
-    os.system("clear")
+    clear_screen()
 
     # Select one definition
     print()
@@ -70,7 +76,7 @@ def render_question(question_number: str, question: str, choices: list[str]):
 
 def render_thinking(question_number: str):
     # Clear screen
-    os.system("clear")
+    clear_screen()
 
     # Select one definition
     print()
@@ -186,7 +192,7 @@ def main():
 
     # Welcome screen
     try:
-        os.system("clear")
+        clear_screen()
         print("Welcome to Quiz2.0")
         print()
         print("number of questions:", no)
@@ -207,7 +213,7 @@ def main():
         time.sleep(0.2)
     except KeyboardInterrupt:
         if not args.debug:
-            os.system("clear")
+            clear_screen()
         return
 
     # start the quiz
@@ -285,14 +291,14 @@ def main():
                 time.sleep(1)
 
         except KeyboardInterrupt:
-            os.system("clear")
+            clear_screen()
             game_over = True
             continue
         except:
             continue
 
     # Exit
-    os.system("clear")
+    clear_screen()
 
 
 if __name__ == "__main__":

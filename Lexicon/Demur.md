@@ -6,7 +6,7 @@
 
 - to express disagreement or refuse to do something
 
-Similar words: [[Objection]]
+Similar words: [[Objection]], [[Refuse]]
 
 Mnemonic: Deemed to be wrong
 

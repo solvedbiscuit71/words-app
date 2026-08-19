@@ -1,7 +1,5 @@
 # Spasm
 
-#hard 
-
 spæz.əm
 
 - a sudden and usually brief occurrence of something you cannot control

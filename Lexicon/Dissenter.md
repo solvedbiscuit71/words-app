@@ -1,7 +1,5 @@
 # Dissenter
 
-#hard 
-
 dɪˈsen.tər
 
 - someone who publicly disagree with an official opinion, decision, or set of beliefs

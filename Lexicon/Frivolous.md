@@ -8,6 +8,6 @@
 
 Similar words: [[Minor]], [[Silly]]
 
-Mnemonic: Free will, you're act silly and not serious.
+Mnemonic: Free, if something is free, you don't take is seriously
 
 Example: I think he sees her as a frivolous young woman.

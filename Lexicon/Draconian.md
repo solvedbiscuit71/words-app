@@ -1,11 +1,13 @@
 # Draconian
 
+#hard 
+
 /drəˈkəʊ.ni.ən/
 
 - (esp. of a rule, law, or government action) extremely severe, or go further than what is right or necessary
 
 Similar words: [[Harsh]]
 
-Mnemonic: Dracula was harsh and extremely severe with her daughter.
+Mnemonic: Dracula was harsh and extremely severe with her daughter. (HT1)
 
 Example: The governor proposed draconian cuts in state aid to education.

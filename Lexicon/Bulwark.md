@@ -1,7 +1,5 @@
 # Bulwark
 
-#hard 
-
 bʊl.wək
 
 - something that protects you from dangerous or unpleasant situations

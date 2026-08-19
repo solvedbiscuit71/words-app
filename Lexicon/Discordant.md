@@ -1,7 +1,5 @@
 # Discordant
 
-#hard 
-
 dis·​cor·​dant
 
 - harsh or unpleasant in sound

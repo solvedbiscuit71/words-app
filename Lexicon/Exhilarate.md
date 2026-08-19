@@ -1,7 +1,5 @@
 # Exhilarate
 
-#hard 
-
 ex·​hil·​a·​rate
 
 - to make (someone) very happy and excited or elated

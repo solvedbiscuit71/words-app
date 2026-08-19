@@ -1,7 +1,5 @@
 # Sultry
 
-#hard 
-
 ˈsəl-trē
 
 - very hot and humid : sweltering

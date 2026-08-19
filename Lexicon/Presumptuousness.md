@@ -1,7 +1,5 @@
 # Presumptuousness
 
-#hard 
-
 prɪˈzʌmp.tʃəs.nəs
 
 - the quality of showing little respect for others by doing things you have no right to do

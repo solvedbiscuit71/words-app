@@ -1,5 +1,7 @@
 # Reprehensive
 
+#hard 
+
 ˌrep.rɪˈhen.sɪv
 
 - showing anger and disapproval about something someone has done

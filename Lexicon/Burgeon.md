@@ -1,5 +1,7 @@
 # Burgeon
 
+#hard 
+
 /ˈbɜː.dʒən/
 
 - to develop or grow quickly

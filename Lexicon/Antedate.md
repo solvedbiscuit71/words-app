@@ -1,7 +1,5 @@
 # Antedate
 
-#hard 
-
 an·​te·​date
 
 - a date assigned to an event or document earlier than the actual date of the event or document

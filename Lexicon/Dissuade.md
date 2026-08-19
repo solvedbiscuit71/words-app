@@ -1,5 +1,7 @@
 # Dissuade
 
+#hard 
+
 /dɪˈsweɪd/
 
 - to persuade someone not to do something

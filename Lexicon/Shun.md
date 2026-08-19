@@ -1,5 +1,7 @@
 # Shun
 
+#hard 
+
 /ʃʌn/
 
 - to avoid or refuse to accept someone or something

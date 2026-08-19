@@ -1,5 +1,7 @@
 # Solemn
 
+#hard 
+
 /ˈsɒl.əm/
 
 - serious and without any humor

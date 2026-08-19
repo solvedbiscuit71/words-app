@@ -1,5 +1,7 @@
 # Assuage
 
+#hard 
+
 ə-ˈswāj
 
 - to make (something, such as an unpleasant feeling) less painful, severe, etc.

@@ -1,7 +1,5 @@
 # Contentious
 
-#hard 
-
 kənˈten.ʃəs
 
 - causing, involving, or likely to cause disagreement and argument

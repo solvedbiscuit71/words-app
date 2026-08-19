@@ -1,5 +1,7 @@
 # Ostentatious
 
+#hard 
+
  /ˌɒs.tenˈteɪ.ʃəs/
 
 - too obviously showing your money, possessions, or power, in an attempt to make other people notice and admire you
