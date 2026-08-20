@@ -55,7 +55,7 @@ class Vault:
         if not path.exists():
             return None
 
-        with open(path) as file:
+        with open(path, encoding="utf8") as file:
             lines = [line.strip() for line in file.readlines() if line.strip()]
 
         word = Word(entry.text)

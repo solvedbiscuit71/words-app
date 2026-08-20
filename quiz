@@ -55,7 +55,7 @@ def select_choices(
 
 def clear_screen():
     command = "cls" if os.name == "nt" else "clear"
-    subprocess.run(command)
+    subprocess.run(command, shell=True)
 
 
 def render_question(question_number: str, question: str, choices: list[str]):
