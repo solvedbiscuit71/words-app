@@ -151,6 +151,7 @@ async function startQuiz() {
     wordBank: state.pool.map((w) => w.text),
     weights: state.pool.map(() => 100.0),
     answered: false,
+    results: [],
   };
 
   $("#quiz-setup").hidden = true;
@@ -210,6 +211,8 @@ async function nextQuestion() {
   quiz.answered = false;
   quiz.currentWord = word;
   quiz.currentDefinition = definition;
+  quiz.currentQuestion = question;
+  quiz.currentChoices = choices;
   renderQuestion(question, choices, false);
 }
 
@@ -221,6 +224,7 @@ function renderQuestion(question, choices, thinking) {
   $("#feedback").textContent = "";
   $("#feedback").className = "feedback";
   $("#hint-box").hidden = true;
+  $("#quiz-next").hidden = true;
 
   const container = $("#choices");
   container.innerHTML = "";
@@ -257,17 +261,28 @@ function answerQuestion(choice, btn) {
     feedback.className = "feedback good";
   } else {
     btn.classList.add("wrong");
-    feedback.textContent = `✗ Incorrect — the answer is "${quiz.currentWord.text}"`;
+    feedback.textContent = `✗ Incorrect — the correct answer is "${quiz.currentWord.text}"`;
     feedback.className = "feedback bad";
   }
+
+  // Record the answer for the end-of-quiz report
+  quiz.results.push({
+    word: quiz.currentWord,
+    question: quiz.currentQuestion,
+    chosen: choice,
+    correct: quiz.currentWord.text,
+    isCorrect: correct,
+  });
 
   quiz.current++;
   $("#progress-fill").style.width = `${(quiz.current / quiz.total) * 100}%`;
 
-  setTimeout(() => {
-    if (quiz.current >= quiz.total) finishQuiz();
-    else nextQuestion();
-  }, correct ? 900 : 1600);
+  // Wait for the user to continue instead of auto-advancing
+  const nextBtn = $("#btn-next");
+  nextBtn.textContent =
+    quiz.current >= quiz.total ? "See results →" : "Next question →";
+  $("#quiz-next").hidden = false;
+  nextBtn.focus();
 }
 
 function finishQuiz() {
@@ -279,7 +294,75 @@ function finishQuiz() {
   $("#score-value").textContent = `${pct}%`;
   $("#score-ring").style.setProperty("--pct", `${pct}%`);
   $("#result-line").textContent = `You answered ${quiz.correct} of ${quiz.total} correctly.`;
+  renderReport(quiz.results);
   state.quiz = null;
+}
+
+/* --------------------------- Quiz report ------------------------------ */
+function renderReport(results) {
+  const container = $("#report");
+  const wrong = results.filter((r) => !r.isCorrect);
+
+  if (!wrong.length) {
+    container.innerHTML = `<p class="report-empty">Perfect score — nothing to review. 🎉</p>`;
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="report-head">
+      <h3>Review (${wrong.length} incorrect)</h3>
+    </div>
+    <ul class="report-list"></ul>
+  `;
+
+  const list = container.querySelector(".report-list");
+  wrong.forEach((r) => {
+    const li = document.createElement("li");
+    li.className = "report-item";
+    li.innerHTML = `
+      <div class="report-q">${r.question}</div>
+      <div class="report-answers">
+        <span class="report-answer bad">
+          <span class="report-label">Your answer</span>${r.chosen}
+        </span>
+        <span class="report-answer good">
+          <span class="report-label">Correct</span>${r.correct}
+        </span>
+      </div>
+      <div class="report-actions"></div>
+    `;
+
+    const actions = li.querySelector(".report-actions");
+    const hardBtn = document.createElement("button");
+    hardBtn.className = "btn ghost small";
+    hardBtn.textContent = r.word.marked_as_hard ? "Marked as hard" : "Mark as hard";
+    hardBtn.disabled = r.word.marked_as_hard;
+    hardBtn.addEventListener("click", () => markAsHard(r.word, hardBtn));
+    actions.appendChild(hardBtn);
+
+    list.appendChild(li);
+  });
+}
+
+async function markAsHard(word, btn) {
+  btn.disabled = true;
+  btn.textContent = "Saving…";
+  try {
+    const payload = { ...word, marked_as_hard: true };
+    delete payload.ctime;
+    delete payload.mtime;
+    await api(`/words/${encodeURIComponent(word.text)}`, {
+      method: "PUT",
+      body: JSON.stringify(payload),
+    });
+    word.marked_as_hard = true;
+    btn.textContent = "Marked as hard";
+    toast(`"${word.text}" marked as hard.`, "good");
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = "Mark as hard";
+    toast(err.message, "bad");
+  }
 }
 
 function quitQuiz() {
@@ -592,6 +675,12 @@ function init() {
   });
   $("#btn-quit").addEventListener("click", quitQuiz);
   $("#btn-hint").addEventListener("click", showHint);
+  $("#btn-next").addEventListener("click", () => {
+    const quiz = state.quiz;
+    if (!quiz) return;
+    if (quiz.current >= quiz.total) finishQuiz();
+    else nextQuestion();
+  });
 
   // Lexicon
   $("#search").addEventListener("input", renderWordList);
@@ -611,7 +700,17 @@ function init() {
       closeModal();
       closeAllSelects();
     }
-    if (!state.quiz || state.quiz.answered) return;
+    if (!state.quiz) return;
+
+    // Once answered, Enter/Space advances to the next question
+    if (state.quiz.answered) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        $("#btn-next").click();
+      }
+      return;
+    }
+
     const map = { a: 0, b: 1, c: 2, d: 3, e: 4 };
     const key = e.key.toLowerCase();
     if (key in map) {

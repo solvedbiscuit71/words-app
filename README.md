@@ -16,6 +16,10 @@ the same FastAPI process — runs the quiz logic in the browser.
 - **Count** — how many words the `latest` / `oldest` take filters include
   (only shown for those two options)
 - **Sampling**: uniform or exponential (latest / oldest)
+- **Answer review** — after answering, the correct answer is highlighted and you
+  advance with a **Next** button (no auto-advance)
+- **End-of-quiz report** — accuracy plus a list of every incorrect question with
+  your answer, the correct answer, and a **Mark as hard** button
 - **Lexicon browser** with search and full word details
 - **CRUD** for words (create, read, update, delete) writing back to the vault
 

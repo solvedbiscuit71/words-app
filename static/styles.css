@@ -617,6 +617,12 @@ textarea {
   font-size: var(--fs-sm);
 }
 
+.quiz-next {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--sp-6);
+}
+
 /* ------------------------------- Result ------------------------------- */
 .result-panel {
   text-align: center;
@@ -653,6 +659,100 @@ textarea {
 .result-line {
   color: var(--fg-dim);
   margin: 0 0 var(--sp-8);
+}
+
+/* ------------------------------- Report ------------------------------- */
+.report {
+  margin: 0 0 var(--sp-8);
+  text-align: left;
+}
+
+.report-empty {
+  margin: 0;
+  padding: var(--sp-5);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+.report-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.report-head h3 {
+  margin: 0;
+  font-size: var(--fs-lg);
+}
+
+.report-list {
+  display: grid;
+  gap: var(--sp-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.report-item {
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--bg);
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--bad);
+  border-radius: var(--radius);
+}
+
+.report-q {
+  margin-bottom: var(--sp-3);
+  color: var(--fg-strong);
+  font-size: var(--fs-base);
+  line-height: var(--lh-snug);
+}
+
+.report-answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.report-answer {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.report-answer.bad {
+  background: var(--bad-soft);
+  border: 1px solid var(--bad);
+  color: var(--bad);
+}
+
+.report-answer.good {
+  background: var(--good-soft);
+  border: 1px solid var(--good);
+  color: var(--good);
+}
+
+.report-label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}
+
+.report-actions {
+  display: flex;
+  gap: var(--sp-2);
 }
 
 /* ------------------------------ Lexicon ------------------------------- */

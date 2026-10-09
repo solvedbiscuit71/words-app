@@ -105,7 +105,9 @@ class Vault:
                 sentence = line.split(":")[1].strip()
                 word.example = sentence
             else:
-                word.pronunciation = line.replace("\u200b", "")
+                # Keep the raw line (including any zero-width spaces used to
+                # control line-breaking) so a round-trip does not lose data.
+                word.pronunciation = line
 
         return word
 
