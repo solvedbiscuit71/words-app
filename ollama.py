@@ -81,7 +81,11 @@ class Ollama:
                 return True
         return False
 
-    def generate_question(self, word: str, definition: str, *, _retry: int = 0) -> str:
+    def generate_question(
+        self, word: str, definition: str | list[str], *, _retry: int = 0
+    ) -> str:
+        if isinstance(definition, str):
+            definition = [definition]
         prompt = EXERCISE_PROMPT.format(word=word, definition=random.choice(definition))
         question = self._generate(prompt)
         if question is None:

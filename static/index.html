@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Words · Vocabulary Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">W</span>
+        <div>
+          <h1>Words</h1>
+          <p class="brand-sub">Vocabulary trainer</p>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button class="tab active" data-view="quiz">Quiz</button>
+        <button class="tab" data-view="lexicon">Lexicon</button>
+      </nav>
+    </header>
+
+    <main class="content">
+      <!-- ============================ QUIZ VIEW ============================ -->
+      <section class="view active" id="view-quiz">
+        <div class="panel setup-panel" id="quiz-setup">
+          <h2>Start a quiz</h2>
+          <div class="setup-grid">
+            <label class="field">
+              <span>Questions</span>
+              <input type="number" id="opt-no" value="10" min="1" />
+            </label>
+            <label class="field">
+              <span>Mode</span>
+              <div class="select" data-select>
+                <select id="opt-mode" class="select-native">
+                  <option value="similar" selected>Similar words</option>
+                  <option value="classic">Classic (definition)</option>
+                  <option value="creative">Creative (AI)</option>
+                </select>
+                <button type="button" class="select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="select-value"></span>
+                  <span class="select-caret" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="select-menu" role="listbox" hidden></ul>
+              </div>
+            </label>
+            <label class="field">
+              <span>Take</span>
+              <div class="select" data-select>
+                <select id="opt-take" class="select-native">
+                  <option value="all" selected>All words</option>
+                  <option value="hard">Hard words</option>
+                  <option value="latest">Latest N</option>
+                  <option value="oldest">Oldest N</option>
+                </select>
+                <button type="button" class="select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="select-value"></span>
+                  <span class="select-caret" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="select-menu" role="listbox" hidden></ul>
+              </div>
+            </label>
+            <label class="field" id="take-count-field" hidden>
+              <span>Count</span>
+              <input type="number" id="opt-take-count" value="20" min="1" />
+            </label>
+            <label class="field">
+              <span>Sampling</span>
+              <div class="select" data-select>
+                <select id="opt-sampling" class="select-native">
+                  <option value="uniform" selected>Uniform</option>
+                  <option value="latest">Exponential · latest</option>
+                  <option value="oldest">Exponential · oldest</option>
+                </select>
+                <button type="button" class="select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="select-value"></span>
+                  <span class="select-caret" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="select-menu" role="listbox" hidden></ul>
+              </div>
+            </label>
+          </div>
+          <div class="setup-actions">
+            <button class="btn primary" id="btn-start">Start quiz</button>
+            <span class="pool-info" id="pool-info"></span>
+          </div>
+        </div>
+
+        <div class="panel quiz-panel" id="quiz-panel" hidden>
+          <div class="quiz-head">
+            <span class="progress" id="quiz-progress">1 of 10</span>
+            <div class="quiz-head-actions">
+              <button class="btn ghost small" id="btn-hint">Hint</button>
+              <button class="btn ghost small" id="btn-quit">Quit</button>
+            </div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+
+          <p class="question" id="question-text"></p>
+          <div class="choices" id="choices"></div>
+
+          <div class="feedback" id="feedback"></div>
+          <div class="hint-box" id="hint-box" hidden></div>
+        </div>
+
+        <div class="panel result-panel" id="quiz-result" hidden>
+          <h2>Quiz complete</h2>
+          <div class="score-ring" id="score-ring">
+            <span id="score-value">0%</span>
+          </div>
+          <p class="result-line" id="result-line"></p>
+          <button class="btn primary" id="btn-again">Play again</button>
+        </div>
+      </section>
+
+      <!-- ========================== LEXICON VIEW ========================== -->
+      <section class="view" id="view-lexicon">
+        <div class="panel lexicon-panel">
+          <div class="lexicon-head">
+            <input type="search" id="search" placeholder="Search words…" />
+            <button class="btn primary" id="btn-new-word">+ New word</button>
+          </div>
+          <div class="lexicon-body">
+            <ul class="word-list" id="word-list"></ul>
+            <div class="word-detail" id="word-detail">
+              <p class="empty">Select a word to view its details.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ============================== MODAL ============================== -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="modal-title">Edit word</h3>
+        <button class="icon-btn" id="modal-close" aria-label="Close">×</button>
+      </div>
+      <form id="word-form" class="word-form">
+        <label class="field">
+          <span>Word</span>
+          <input type="text" id="f-text" required />
+        </label>
+        <label class="field">
+          <span>Pronunciation</span>
+          <input type="text" id="f-pronunciation" />
+        </label>
+        <label class="field">
+          <span>Definitions (one per line)</span>
+          <textarea id="f-definitions" rows="4"></textarea>
+        </label>
+        <label class="field">
+          <span>Similar words (comma separated)</span>
+          <input type="text" id="f-similar" />
+        </label>
+        <label class="field">
+          <span>Near antonyms (comma separated)</span>
+          <input type="text" id="f-antonyms" />
+        </label>
+        <label class="field">
+          <span>Mnemonic</span>
+          <input type="text" id="f-mnemonic" />
+        </label>
+        <label class="field">
+          <span>Example</span>
+          <textarea id="f-example" rows="2"></textarea>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="f-hard" />
+          <span>Mark as hard</span>
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="btn-cancel">Cancel</button>
+          <button type="submit" class="btn primary" id="btn-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
