@@ -6,7 +6,7 @@ import time
 import argparse
 import random
 
-from obsidian import Vault
+from obsidian import Entry, Vault, Word
 from crandom import randexp, rand
 from ollama import Ollama
 
@@ -56,6 +56,24 @@ def select_choices(
 def clear_screen():
     command = "cls" if os.name == "nt" else "clear"
     subprocess.run(command, shell=True)
+
+
+def render_word(word: Word):
+    # Clear screen
+    clear_screen()
+
+    print()
+    print(f"{word.text}")
+    print()
+    for definition in word.definitions:
+        print(f"- {definition}")
+    print()
+    print("Similar words:", ", ".join(word.similar_words))
+    print()
+    print("Mnemonic:", word.mnemonic)
+    print()
+    print("Example:", word.example)
+    print()
 
 
 def render_question(question_number: str, question: str, choices: list[str]):
@@ -151,6 +169,9 @@ def main():
 
     # Extract word bank
     word_bank = [entry.text for entry in entries]
+
+    # Copy entries (for /search functionality)
+    all_entries = entries[:]
 
     # Weights will be used for select_choices
     weights = [100.0 for _ in range(len(word_bank))]
@@ -269,12 +290,24 @@ def main():
                 render_question(f"{current+1} of {no}", question, choices)
 
                 user_input = input("A: ").lower()
-                if user_input == "\\exit":
+                if user_input == ":q":
                     raise KeyboardInterrupt
-                elif user_input == "\\help":
+                elif user_input == ":h":
                     if mode != MODE_CLASSIC:
                         print(f"H: {definition}\n")
                         input("Press enter to continue...")
+                elif user_input.startswith("/"):
+                    text = user_input[1:].upper()
+                    opened_words = [
+                        vault.fetch_word(entry)
+                        for entry in all_entries
+                        if entry.text.upper() == text
+                    ]
+                    if opened_words and opened_words[0] is not None:
+                        render_word(opened_words[0])
+                    else:
+                        print(f"E: word '{text.title()}' not found\n")
+                    input("Press enter to continue...")
                 elif user_input == word.text.lower():
                     print("✓ Correct")
                     correct = True
