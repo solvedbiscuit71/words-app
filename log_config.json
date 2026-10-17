@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "default": {
+      "()": "uvicorn.logging.DefaultFormatter",
+      "fmt": "%(asctime)s %(levelprefix)s %(message)s",
+      "use_colors": false
+    },
+    "access": {
+      "()": "uvicorn.logging.AccessFormatter",
+      "fmt": "%(asctime)s %(levelprefix)s %(client_addr)s - \"%(request_line)s\" %(status_code)s",
+      "use_colors": false
+    }
+  },
+  "handlers": {
+    "file": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "formatter": "default",
+      "filename": "/Users/biscuit/Library/Logs/words-app/app.log",
+      "maxBytes": 5242880,
+      "backupCount": 3,
+      "encoding": "utf-8"
+    },
+    "access_file": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "formatter": "access",
+      "filename": "/Users/biscuit/Library/Logs/words-app/access.log",
+      "maxBytes": 5242880,
+      "backupCount": 3,
+      "encoding": "utf-8"
+    }
+  },
+  "loggers": {
+    "uvicorn": { "handlers": ["file"], "level": "INFO", "propagate": false },
+    "uvicorn.error": { "level": "INFO" },
+    "uvicorn.access": { "handlers": ["access_file"], "level": "INFO", "propagate": false }
+  },
+  "root": { "handlers": ["file"], "level": "INFO" }
+}
