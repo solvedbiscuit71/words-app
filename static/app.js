@@ -99,8 +99,11 @@ const state = {
   pool: [], // full word objects from /api/quiz/pool
   quiz: null, // active quiz session
   lexicon: [], // word metadata list
+  matches: [], // current search results shown in the sidebar dropdown
   selected: null, // selected word text in lexicon
-  editing: null, // word text being edited (null = creating)
+  editing: null, // word text being edited in the modal (null = creating)
+  resultsHidden: false, // dropdown suppressed after a selection or blur
+  focusIdx: 0, // keyboard-highlighted search result
 };
 
 /* ============================== QUIZ ================================== */
@@ -236,12 +239,14 @@ function renderQuestion(question, choices, thinking) {
     const btn = document.createElement("button");
     btn.className = "choice";
     btn.innerHTML = `<span class="key">${keys[i]}</span><span>${choice}</span>`;
-    btn.addEventListener("click", () => answerQuestion(choice, btn));
+    btn.addEventListener("click", (e) =>
+      answerQuestion(choice, btn, e.detail === 0)
+    );
     container.appendChild(btn);
   });
 }
 
-function answerQuestion(choice, btn) {
+function answerQuestion(choice, btn, fromKeyboard = false) {
   const quiz = state.quiz;
   if (quiz.answered) return;
   quiz.answered = true;
@@ -282,7 +287,9 @@ function answerQuestion(choice, btn) {
   nextBtn.textContent =
     quiz.current >= quiz.total ? "See results →" : "Next question →";
   $("#quiz-next").hidden = false;
-  nextBtn.focus();
+  // Only steal focus when the answer came from the keyboard; focusing on a
+  // mouse click would show a focus ring the user did not ask for.
+  if (fromKeyboard) nextBtn.focus();
 }
 
 function finishQuiz() {
@@ -381,38 +388,140 @@ function showHint() {
 }
 
 /* ============================ LEXICON ================================= */
+const LEXICON_OPEN_KEY = "words.lexiconOpen";
+
+function lexiconIsOpen() {
+  return !$("#lexicon-sidebar").hidden;
+}
+
+function setSidebar(open) {
+  const sidebar = $("#lexicon-sidebar");
+  const scrim = $("#sidebar-scrim");
+  const toggle = $("#btn-toggle-sidebar");
+
+  sidebar.hidden = !open;
+  scrim.hidden = !open;
+  toggle.classList.toggle("active", open);
+  toggle.setAttribute("aria-expanded", String(open));
+  document.body.classList.toggle("lexicon-open", open);
+
+  try {
+    localStorage.setItem(LEXICON_OPEN_KEY, open ? "1" : "0");
+  } catch (_) {
+    /* private mode — persistence is optional */
+  }
+
+  if (open) {
+    loadLexicon();
+  } else {
+    hideResults();
+    $("#search").blur();
+  }
+}
+
+function openSidebar() {
+  if (!lexiconIsOpen()) setSidebar(true);
+}
+
+function closeSidebar() {
+  if (lexiconIsOpen()) setSidebar(false);
+}
+
+function toggleSidebar() {
+  setSidebar(!lexiconIsOpen());
+}
+
+function focusSearch() {
+  openSidebar();
+  const input = $("#search");
+  input.focus();
+  input.select();
+}
+
 async function loadLexicon() {
   try {
     state.lexicon = await api("/words");
     renderWordList();
   } catch (err) {
-    toast("Failed to load lexicon: " + err.message, "bad");
+    toast("Failed to load dictionary: " + err.message, "bad");
   }
 }
 
+/* The results dropdown is visible while the sidebar is open and the user has
+   not just picked a word (choosing one, or blurring the search box, closes
+   it again). */
+function resultsVisible() {
+  return lexiconIsOpen() && !state.resultsHidden;
+}
+
+function hideResults() {
+  state.resultsHidden = true;
+  $("#word-list").hidden = true;
+  $("#search").setAttribute("aria-expanded", "false");
+}
+
+function showResults() {
+  state.resultsHidden = false;
+  renderWordList();
+}
+
 function renderWordList() {
-  const query = $("#search").value.trim().toLowerCase();
+  const input = $("#search");
+  const query = input.value.trim().toLowerCase();
   const list = $("#word-list");
   list.innerHTML = "";
 
-  const filtered = state.lexicon.filter((w) => w.text.toLowerCase().includes(query));
-  if (!filtered.length) {
-    list.innerHTML = `<li style="cursor:default;color:var(--fg-faint)">No words found.</li>`;
-    return;
+  $("#search-clear").hidden = !query;
+  input.closest(".search-field").classList.toggle("has-query", !!query);
+
+  state.matches = state.lexicon.filter((w) => w.text.toLowerCase().includes(query));
+
+  if (!state.matches.length) {
+    list.innerHTML = `<li class="no-results">No words found.</li>`;
   }
 
-  filtered.forEach((entry) => {
+  state.focusIdx = Math.min(state.focusIdx, Math.max(state.matches.length - 1, 0));
+
+  state.matches.forEach((entry, i) => {
     const li = document.createElement("li");
     li.dataset.text = entry.text;
+    li.setAttribute("role", "option");
     if (state.selected === entry.text) li.classList.add("active");
-    li.innerHTML = `<span>${entry.text}</span>`;
-    li.addEventListener("click", () => selectWord(entry.text));
+    if (i === state.focusIdx) li.classList.add("focused");
+    li.innerHTML = `<span>${entry.text}</span>${
+      entry.marked_as_hard ? '<span class="badge-hard">hard</span>' : ""
+    }`;
+    // mousedown (not click) so blur does not close the list first
+    li.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+      selectWord(entry.text);
+    });
     list.appendChild(li);
   });
+
+  const visible = resultsVisible();
+  list.hidden = !visible;
+  $("#search").setAttribute("aria-expanded", String(visible));
+}
+
+function moveFocus(delta) {
+  if (!state.matches.length) return;
+  state.focusIdx = (state.focusIdx + delta + state.matches.length) % state.matches.length;
+  state.resultsHidden = false;
+  renderWordList();
+}
+
+/* Enter in the search box opens the details of the highlighted (default:
+   first) result. */
+function selectFocusedResult() {
+  if (!state.matches.length) return;
+  const entry = state.matches[state.focusIdx] || state.matches[0];
+  selectWord(entry.text);
 }
 
 async function selectWord(text) {
   state.selected = text;
+  hideResults();
   renderWordList();
   const detail = $("#word-detail");
   detail.innerHTML = `<p class="empty">Loading…</p>`;
@@ -459,24 +568,130 @@ function renderWordDetail(word) {
     </div>
   `;
 
-  $("#btn-edit").addEventListener("click", () => openModal(word));
+  $("#btn-edit").addEventListener("click", () => editWordInPlace(word));
   $("#btn-delete").addEventListener("click", () => deleteWord(word.text));
+}
+
+function detailEmpty() {
+  $("#word-detail").innerHTML =
+    `<p class="empty">Select a word to view its details.</p>`;
+}
+
+/* --------------------------- In-place editing -------------------------- */
+/* Definitions/similar words/antonyms are edited as plain text (one
+   definition per line, the rest comma separated) and split back on save. */
+function fieldMarkup(label, name, { multiline = false, rows = 3 } = {}) {
+  if (multiline) {
+    return `<label class="field"><span>${label}</span>
+      <textarea data-field="${name}" rows="${rows}"></textarea></label>`;
+  }
+  return `<label class="field"><span>${label}</span>
+    <input type="text" data-field="${name}" /></label>`;
+}
+
+function fillEditor(root, word) {
+  const set = (name, value) => {
+    const el = root.querySelector(`[data-field="${name}"]`);
+    if (el) el.value = value;
+  };
+  set("text", word.text);
+  set("pronunciation", word.pronunciation || "");
+  set("definitions", word.definitions.join("\n"));
+  set("similar", word.similar_words.join(", "));
+  set("antonyms", word.near_antonyms.join(", "));
+  set("mnemonic", word.mnemonic || "");
+  set("example", word.example || "");
+  const hard = root.querySelector('[data-field="hard"]');
+  if (hard) hard.checked = word.marked_as_hard;
+}
+
+function editWordInPlace(word) {
+  const detail = $("#word-detail");
+  detail.innerHTML = `
+    <form class="word-form" id="detail-form">
+      ${fieldMarkup("Word", "text")}
+      ${fieldMarkup("Pronunciation", "pronunciation")}
+      ${fieldMarkup("Definitions (one per line)", "definitions", { multiline: true, rows: 4 })}
+      ${fieldMarkup("Similar words (comma separated)", "similar")}
+      ${fieldMarkup("Near antonyms (comma separated)", "antonyms")}
+      ${fieldMarkup("Mnemonic", "mnemonic")}
+      ${fieldMarkup("Example", "example", { multiline: true, rows: 2 })}
+      <label class="checkbox">
+        <input type="checkbox" data-field="hard" />
+        <span>Mark as hard</span>
+      </label>
+      <div class="word-form-actions">
+        <button type="button" class="btn ghost" id="btn-edit-cancel">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  `;
+
+  const form = $("#detail-form");
+  fillEditor(form, word);
+  form.querySelector('[data-field="text"]').focus();
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    saveWordFrom(form, word.text);
+  });
+  $("#btn-edit-cancel").addEventListener("click", () => renderWordDetail(word));
+}
+
+function readForm(root) {
+  const value = (name) => root.querySelector(`[data-field="${name}"]`)?.value ?? "";
+  return {
+    text: value("text").trim(),
+    pronunciation: value("pronunciation").trim() || null,
+    definitions: value("definitions")
+      .split("\n")
+      .map((s) => s.trim())
+      .filter(Boolean),
+    similar_words: splitList(value("similar")),
+    near_antonyms: splitList(value("antonyms")),
+    mnemonic: value("mnemonic").trim() || null,
+    example: value("example").trim() || null,
+    marked_as_hard: !!root.querySelector('[data-field="hard"]')?.checked,
+  };
+}
+
+async function saveWordFrom(root, editing) {
+  const payload = readForm(root);
+  if (!payload.text) {
+    toast("Word text is required.", "bad");
+    return false;
+  }
+
+  try {
+    if (editing) {
+      await api(`/words/${encodeURIComponent(editing)}`, {
+        method: "PUT",
+        body: JSON.stringify(payload),
+      });
+      toast("Word updated.", "good");
+    } else {
+      await api("/words", { method: "POST", body: JSON.stringify(payload) });
+      toast("Word created.", "good");
+    }
+    await loadLexicon();
+    await refreshPool();
+    await selectWord(payload.text);
+    return true;
+  } catch (err) {
+    toast(err.message, "bad");
+    return false;
+  }
 }
 
 /* ------------------------------ Modal --------------------------------- */
 function openModal(word = null) {
   state.editing = word ? word.text : null;
   $("#modal-title").textContent = word ? "Edit word" : "New word";
-  $("#f-text").value = word ? word.text : "";
-  $("#f-pronunciation").value = word?.pronunciation || "";
-  $("#f-definitions").value = word ? word.definitions.join("\n") : "";
-  $("#f-similar").value = word ? word.similar_words.join(", ") : "";
-  $("#f-antonyms").value = word ? word.near_antonyms.join(", ") : "";
-  $("#f-mnemonic").value = word?.mnemonic || "";
-  $("#f-example").value = word?.example || "";
-  $("#f-hard").checked = word ? word.marked_as_hard : false;
+  const form = $("#word-form");
+  if (word) fillEditor(form, word);
+  else form.reset();
   $("#modal-backdrop").hidden = false;
-  $("#f-text").focus();
+  form.querySelector('[data-field="text"]').focus();
 }
 
 function closeModal() {
@@ -491,54 +706,13 @@ function splitList(value) {
     .filter(Boolean);
 }
 
-async function saveWord(event) {
-  event.preventDefault();
-  const payload = {
-    text: $("#f-text").value.trim(),
-    pronunciation: $("#f-pronunciation").value.trim() || null,
-    definitions: $("#f-definitions")
-      .value.split("\n")
-      .map((s) => s.trim())
-      .filter(Boolean),
-    similar_words: splitList($("#f-similar").value),
-    near_antonyms: splitList($("#f-antonyms").value),
-    mnemonic: $("#f-mnemonic").value.trim() || null,
-    example: $("#f-example").value.trim() || null,
-    marked_as_hard: $("#f-hard").checked,
-  };
-
-  if (!payload.text) {
-    toast("Word text is required.", "bad");
-    return;
-  }
-
-  try {
-    if (state.editing) {
-      await api(`/words/${encodeURIComponent(state.editing)}`, {
-        method: "PUT",
-        body: JSON.stringify(payload),
-      });
-      toast("Word updated.", "good");
-    } else {
-      await api("/words", { method: "POST", body: JSON.stringify(payload) });
-      toast("Word created.", "good");
-    }
-    closeModal();
-    await loadLexicon();
-    await refreshPool();
-    await selectWord(payload.text);
-  } catch (err) {
-    toast(err.message, "bad");
-  }
-}
-
 async function deleteWord(text) {
   if (!confirm(`Delete "${text}"? This cannot be undone.`)) return;
   try {
     await api(`/words/${encodeURIComponent(text)}`, { method: "DELETE" });
     toast("Word deleted.", "good");
     state.selected = null;
-    $("#word-detail").innerHTML = `<p class="empty">Select a word to view its details.</p>`;
+    detailEmpty();
     await loadLexicon();
     await refreshPool();
   } catch (err) {
@@ -646,18 +820,22 @@ function closeAllSelects(except) {
 }
 
 /* ------------------------------ Wiring -------------------------------- */
-function switchView(view) {
-  $$(".tab").forEach((t) => t.classList.toggle("active", t.dataset.view === view));
-  $$(".view").forEach((v) => v.classList.toggle("active", v.id === `view-${view}`));
-  if (view === "lexicon") loadLexicon();
+function isTextField(el) {
+  if (!el) return false;
+  const tag = el.tagName;
+  return (
+    tag === "INPUT" ||
+    tag === "TEXTAREA" ||
+    tag === "SELECT" ||
+    el.isContentEditable === true
+  );
+}
+
+function modalIsOpen() {
+  return !$("#modal-backdrop").hidden;
 }
 
 function init() {
-  // Tabs
-  $$(".tab").forEach((tab) =>
-    tab.addEventListener("click", () => switchView(tab.dataset.view))
-  );
-
   // Custom selects
   $$("[data-select]").forEach(enhanceSelect);
   document.addEventListener("click", (e) => {
@@ -682,25 +860,113 @@ function init() {
     else nextQuestion();
   });
 
-  // Lexicon
-  $("#search").addEventListener("input", renderWordList);
+  // Lexicon sidebar
+  $("#btn-toggle-sidebar").addEventListener("click", toggleSidebar);
+  $("#sidebar-scrim").addEventListener("click", closeSidebar);
   $("#btn-new-word").addEventListener("click", () => openModal(null));
+
+  const search = $("#search");
+  search.addEventListener("input", showResults);
+  search.addEventListener("focus", () => {
+    state.focusIdx = 0;
+    showResults();
+  });
+  search.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      moveFocus(e.key === "ArrowDown" ? 1 : -1);
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      selectFocusedResult();
+    }
+  });
+
+  $("#search-clear").addEventListener("click", () => {
+    search.value = "";
+    state.focusIdx = 0;
+    showResults();
+    search.focus();
+  });
+
+  // Click-away closes the dropdown without losing the detail pane
+  document.addEventListener("mousedown", (e) => {
+    if (!lexiconIsOpen() || state.resultsHidden) return;
+    if (!e.target.closest(".lexicon-search")) hideResults();
+  });
 
   // Modal
   $("#modal-close").addEventListener("click", closeModal);
   $("#btn-cancel").addEventListener("click", closeModal);
-  $("#word-form").addEventListener("submit", saveWord);
+  $("#word-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const editing = state.editing;
+    saveWordFrom(e.currentTarget, editing).then((ok) => {
+      if (ok) closeModal();
+    });
+  });
   $("#modal-backdrop").addEventListener("click", (e) => {
     if (e.target === $("#modal-backdrop")) closeModal();
   });
 
-  // Keyboard shortcuts during a quiz
+  // Restore the sidebar state from the previous visit
+  let open = false;
+  try {
+    open = localStorage.getItem(LEXICON_OPEN_KEY) === "1";
+  } catch (_) {
+    /* ignore */
+  }
+  if (open) {
+    setSidebar(true);
+    state.resultsHidden = true; // keep the dropdown closed until asked for
+  }
+
+  // Global keyboard shortcuts
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      closeModal();
       closeAllSelects();
+      if (modalIsOpen()) {
+        closeModal();
+      } else if (lexiconIsOpen()) {
+        // Esc always hides the lexicon, whatever the search dropdown is doing
+        e.preventDefault();
+        closeSidebar();
+      }
+      return;
     }
+
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+    // "/" focuses the lexicon search (opening the sidebar if needed)
+    if (e.key === "/" && !isTextField(e.target) && !modalIsOpen()) {
+      e.preventDefault();
+      focusSearch();
+      return;
+    }
+
+    // "\" toggles the sidebar, unless the user is typing
+    if (e.key === "\\" && !isTextField(e.target) && !modalIsOpen()) {
+      e.preventDefault();
+      toggleSidebar();
+      return;
+    }
+
+    // Quiz shortcuts must not fire while typing in a text field
+    if (isTextField(e.target) || modalIsOpen()) return;
     if (!state.quiz) return;
+
+    const key = e.key.toLowerCase();
+
+    // "h" hints and "q" quits — available before and after answering
+    if (key === "h") {
+      e.preventDefault();
+      showHint();
+      return;
+    }
+    if (key === "q") {
+      e.preventDefault();
+      quitQuiz();
+      return;
+    }
 
     // Once answered, Enter/Space advances to the next question
     if (state.quiz.answered) {
@@ -712,7 +978,6 @@ function init() {
     }
 
     const map = { a: 0, b: 1, c: 2, d: 3, e: 4 };
-    const key = e.key.toLowerCase();
     if (key in map) {
       const btn = $$("#choices .choice")[map[key]];
       if (btn) btn.click();

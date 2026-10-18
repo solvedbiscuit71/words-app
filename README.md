@@ -20,7 +20,8 @@ the same FastAPI process — runs the quiz logic in the browser.
   advance with a **Next** button (no auto-advance)
 - **End-of-quiz report** — accuracy plus a list of every incorrect question with
   your answer, the correct answer, and a **Mark as hard** button
-- **Lexicon browser** with search and full word details
+- **Dictionary sidebar** — a panel on the right that can be shown or hidden at any
+  time, so words and definitions stay available while a quiz is running
 - **CRUD** for words (create, read, update, delete) writing back to the vault
 
 ## Quiz options
@@ -65,6 +66,44 @@ python main.py
 Then open <http://127.0.0.1:8000>.
 
 The API docs are available at <http://127.0.0.1:8000/docs>.
+
+## Dictionary sidebar
+
+The dictionary lives in a sidebar pinned to the right edge, so it can be
+consulted without leaving the quiz.
+
+| Action                | How                                                            |
+| --------------------- | -------------------------------------------------------------- |
+| Show / hide           | **Dictionary** button in the top bar (`/` keycap), `\`, or `Esc` to hide |
+| Focus the search box  | `/` (opens the sidebar first if it is hidden)                   |
+| Move through results  | `↓` / `↑` while the search box is focused                       |
+| Show a word's details | `Enter` — opens the highlighted (by default the first) match     |
+| Create a word         | **+ New word** opens the pop-up form                            |
+| Edit a word           | **Edit** turns the details card into an in-place form           |
+
+`Esc` hides the sidebar in one press, whether or not the search dropdown is
+open (it closes the pop-up form first if that is showing).
+
+The sidebar state is remembered in `localStorage`, so it reopens the way you
+left it. On screens narrower than 720px it becomes a slide-over overlay — the
+page behind it is dimmed, and tapping the dimmed area hides it too.
+
+Note that `Enter` and the `a`–`e` answer keys are only consumed by the quiz when
+a text field does **not** have focus, so typing in the search box never answers
+a question.
+
+## Quiz keyboard shortcuts
+
+| Key                     | Action                                                    |
+| ----------------------- | --------------------------------------------------------- |
+| `A` – `E`               | Answer with the matching choice                           |
+| `Enter` / `Space`       | After answering: go to the next question (or the results)  |
+| `H`                     | Show the hint (the matching button is labelled `Hint h`)   |
+| `Q`                     | Quit the quiz (the button is labelled `Quit q`)            |
+
+Answers given with `A`–`E` move focus to the **Next question** button so you can
+continue with `Enter` alone; clicking a choice with the mouse leaves focus where
+it is. The hint and quit shortcuts work both before and after answering.
 
 ## API
 

@@ -69,6 +69,10 @@
   --radius: 10px;
   --radius-lg: 14px;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* --- Layout --------------------------------------------------------- */
+  --sidebar-w: 380px;
+  --app-w: 1040px;
 }
 
 /* ------------------------------- Reset -------------------------------- */
@@ -143,9 +147,19 @@ h4 {
 
 /* ------------------------------- Layout ------------------------------- */
 .app {
-  max-width: 1040px;
+  max-width: var(--app-w);
   margin: 0 auto;
   padding: var(--sp-8) var(--sp-6) var(--sp-12);
+}
+
+/* The lexicon sidebar is fixed to the viewport; reserve room for it so the
+   centered app shifts left instead of being covered. */
+body {
+  transition: padding-right 0.24s ease;
+}
+
+body.lexicon-open {
+  padding-right: var(--sidebar-w);
 }
 
 /* ------------------------------- Topbar ------------------------------- */
@@ -193,36 +207,30 @@ h4 {
   letter-spacing: 0.12em;
 }
 
-/* -------------------------------- Tabs -------------------------------- */
-.tabs {
+/* ------------------------------- Tabs -------------------------------- */
+.topbar-actions {
   display: flex;
-  gap: var(--sp-1);
-  padding: var(--sp-1);
-  background: var(--bg-soft);
-  border: 1px solid var(--border-soft);
-  border-radius: var(--radius);
+  align-items: center;
+  gap: var(--sp-2);
 }
 
-.tab {
-  border: none;
-  background: transparent;
-  color: var(--fg-dim);
-  padding: var(--sp-2) var(--sp-5);
+kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  padding: 1px var(--sp-1);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-family: inherit;
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
+  color: var(--fg-faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  line-height: 1.4;
 }
 
-.tab:hover {
-  color: var(--fg);
-}
-
-.tab.active {
-  background: var(--surface);
-  color: var(--fg-strong);
+.sidebar-toggle.active {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ------------------------------- Views -------------------------------- */
@@ -463,6 +471,10 @@ textarea {
   border-color: var(--surface-2);
 }
 
+.btn kbd {
+  margin-left: var(--sp-1);
+}
+
 .btn.small {
   padding: var(--sp-2) var(--sp-4);
   font-size: var(--fs-xs);
@@ -481,6 +493,14 @@ textarea {
 .btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+/* Replace the browser's default (blue) focus ring with the theme accent.
+   :focus-visible keeps it off for mouse clicks and on for keyboard use. */
+.btn:focus-visible,
+.choice:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* -------------------------------- Quiz -------------------------------- */
@@ -755,33 +775,144 @@ textarea {
   gap: var(--sp-2);
 }
 
-/* ------------------------------ Lexicon ------------------------------- */
-.lexicon-head {
+/* ---------------------------- Lexicon sidebar -------------------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  width: var(--sidebar-w);
+  padding: var(--sp-6);
+  overflow-y: auto;
+  background: var(--bg-soft);
+  border-left: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  animation: slide-in 0.22s ease;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.sidebar-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  /* Only used when the sidebar overlays content (narrow screens). */
+  display: none;
+  background: rgba(29, 32, 33, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.sidebar-head h2 {
+  margin: 0;
+  font-size: var(--fs-lg);
+  color: var(--fg-strong);
+}
+
+.lexicon-search {
+  position: relative;
   display: flex;
   gap: var(--sp-3);
-  margin-bottom: var(--sp-6);
 }
 
-.lexicon-head input {
+.search-field {
+  position: relative;
   flex: 1;
+  min-width: 0;
 }
 
-.lexicon-body {
+.search-field input {
+  padding-right: var(--sp-10);
+}
+
+/* The native WebKit/Blink clear button is the OS-blue "×"; replace it with a
+   themed one so the search row matches the rest of the UI. */
+.search-field input::-webkit-search-cancel-button,
+.search-field input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-hint {
+  position: absolute;
+  top: 50%;
+  right: var(--sp-3);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-clear {
+  position: absolute;
+  top: 50%;
+  right: var(--sp-3);
+  transform: translateY(-50%);
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: var(--sp-5);
-  min-height: 420px;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--fg-dim);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
+.search-clear:hover {
+  background: var(--surface-2);
+  border-color: var(--fg-faint);
+  color: var(--fg-strong);
+}
+
+.search-clear:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Only one affordance in the slot at a time: the "/" hint when the box is
+   empty and unfocused, the clear button while it has content. */
+.search-field input:focus ~ .search-hint,
+.search-field.has-query .search-hint {
+  opacity: 0;
+}
+
+/* Results dropdown, anchored under the search row. */
 .word-list {
-  list-style: none;
+  position: absolute;
+  top: calc(100% + var(--sp-2));
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-height: 42vh;
   margin: 0;
-  padding: 0;
-  max-height: 560px;
+  padding: var(--sp-1);
   overflow-y: auto;
-  border: 1px solid var(--border-soft);
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg);
+  box-shadow: var(--shadow);
+  animation: fade 0.12s ease;
 }
 
 .word-list li {
@@ -789,27 +920,27 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: var(--sp-2);
-  padding: var(--sp-3) var(--sp-4);
-  border-bottom: 1px solid var(--border-soft);
-  border-left: 2px solid transparent;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-sm);
   font-size: var(--fs-base);
   cursor: pointer;
-  transition: background 0.12s ease, border-color 0.12s ease;
+  transition: background 0.12s ease, color 0.12s ease;
 }
 
-.word-list li:last-child {
-  border-bottom: none;
-}
-
-.word-list li:hover {
-  background: var(--bg-soft);
+.word-list li:hover,
+.word-list li.focused {
+  background: var(--surface-2);
 }
 
 .word-list li.active {
   background: var(--accent-soft);
-  border-left-color: var(--accent);
-  color: var(--fg-strong);
+  color: var(--accent);
   font-weight: 600;
+}
+
+.word-list .no-results {
+  cursor: default;
+  color: var(--fg-faint);
 }
 
 .badge-hard {
@@ -825,12 +956,11 @@ textarea {
 }
 
 .word-detail {
-  padding: var(--sp-6);
+  flex: 1;
+  padding: var(--sp-5);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   background: var(--bg);
-  overflow-y: auto;
-  max-height: 560px;
 }
 
 .word-detail .empty {
@@ -900,6 +1030,14 @@ textarea {
   border-top: 1px solid var(--border-soft);
 }
 
+/* In-place edit form (the same field markup the modal uses). */
+.word-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--sp-3);
+  margin-top: var(--sp-2);
+}
+
 /* ------------------------------- Modal -------------------------------- */
 .modal-backdrop {
   position: fixed;
@@ -960,6 +1098,13 @@ textarea {
 
 .icon-btn:hover {
   color: var(--fg-strong);
+}
+
+.icon-btn:focus-visible {
+  color: var(--fg-strong);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 .word-form {
@@ -1025,23 +1170,25 @@ textarea {
     gap: var(--sp-4);
   }
 
-  .tabs {
-    justify-content: stretch;
-  }
-
-  .tab {
-    flex: 1;
+  .topbar-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .panel {
     padding: var(--sp-6);
   }
 
-  .lexicon-body {
-    grid-template-columns: 1fr;
+  /* Below this width the sidebar becomes a full-screen slide-over. */
+  body.lexicon-open {
+    padding-right: 0;
   }
 
-  .word-list {
-    max-height: 240px;
+  .sidebar-scrim {
+    display: block;
+  }
+
+  .sidebar {
+    width: min(var(--sidebar-w), 100%);
   }
 }

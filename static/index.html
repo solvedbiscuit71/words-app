@@ -22,10 +22,17 @@
           <p class="brand-sub">Vocabulary trainer</p>
         </div>
       </div>
-      <nav class="tabs" id="tabs">
-        <button class="tab active" data-view="quiz">Quiz</button>
-        <button class="tab" data-view="lexicon">Lexicon</button>
-      </nav>
+      <div class="topbar-actions">
+        <button
+          class="btn ghost sidebar-toggle"
+          id="btn-toggle-sidebar"
+          aria-controls="lexicon-sidebar"
+          aria-expanded="false"
+        >
+          Dictionary
+          <kbd>/</kbd>
+        </button>
+      </div>
     </header>
 
     <main class="content">
@@ -111,8 +118,8 @@
           <div class="quiz-head">
             <span class="progress" id="quiz-progress">1 of 10</span>
             <div class="quiz-head-actions">
-              <button class="btn ghost small" id="btn-hint">Hint</button>
-              <button class="btn ghost small" id="btn-quit">Quit</button>
+              <button class="btn ghost small" id="btn-hint">Hint <kbd>h</kbd></button>
+              <button class="btn ghost small" id="btn-quit">Quit <kbd>q</kbd></button>
             </div>
           </div>
           <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
@@ -138,23 +145,54 @@
         </div>
       </section>
 
-      <!-- ========================== LEXICON VIEW ========================== -->
-      <section class="view" id="view-lexicon">
-        <div class="panel lexicon-panel">
-          <div class="lexicon-head">
-            <input type="search" id="search" placeholder="Search words…" />
-            <button class="btn primary" id="btn-new-word">+ New word</button>
-          </div>
-          <div class="lexicon-body">
-            <ul class="word-list" id="word-list"></ul>
-            <div class="word-detail" id="word-detail">
-              <p class="empty">Select a word to view its details.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   </div>
+
+  <!-- ========================= LEXICON SIDEBAR ========================= -->
+  <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+  <aside class="sidebar" id="lexicon-sidebar" aria-label="Dictionary" hidden>
+    <div class="sidebar-head">
+      <h2>Dictionary</h2>
+      <button class="btn primary" id="btn-new-word">+ New word</button>
+    </div>
+
+    <div class="lexicon-search">
+      <div class="search-field">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search words…"
+          autocomplete="off"
+          role="combobox"
+          aria-expanded="false"
+          aria-controls="word-list"
+          aria-autocomplete="list"
+        />
+        <kbd class="search-hint" aria-hidden="true">/</kbd>
+        <button
+          type="button"
+          class="search-clear"
+          id="search-clear"
+          aria-label="Clear search"
+          hidden
+        >
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path
+              d="M3 3l6 6M9 3l-6 6"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="word-list" id="word-list" role="listbox" hidden></ul>
+    </div>
+
+    <div class="word-detail" id="word-detail">
+      <p class="empty">Select a word to view its details.</p>
+    </div>
+  </aside>
 
   <!-- ============================== MODAL ============================== -->
   <div class="modal-backdrop" id="modal-backdrop" hidden>
@@ -166,34 +204,34 @@
       <form id="word-form" class="word-form">
         <label class="field">
           <span>Word</span>
-          <input type="text" id="f-text" required />
+          <input type="text" id="f-text" data-field="text" required />
         </label>
         <label class="field">
           <span>Pronunciation</span>
-          <input type="text" id="f-pronunciation" />
+          <input type="text" id="f-pronunciation" data-field="pronunciation" />
         </label>
         <label class="field">
           <span>Definitions (one per line)</span>
-          <textarea id="f-definitions" rows="4"></textarea>
+          <textarea id="f-definitions" data-field="definitions" rows="4"></textarea>
         </label>
         <label class="field">
           <span>Similar words (comma separated)</span>
-          <input type="text" id="f-similar" />
+          <input type="text" id="f-similar" data-field="similar" />
         </label>
         <label class="field">
           <span>Near antonyms (comma separated)</span>
-          <input type="text" id="f-antonyms" />
+          <input type="text" id="f-antonyms" data-field="antonyms" />
         </label>
         <label class="field">
           <span>Mnemonic</span>
-          <input type="text" id="f-mnemonic" />
+          <input type="text" id="f-mnemonic" data-field="mnemonic" />
         </label>
         <label class="field">
           <span>Example</span>
-          <textarea id="f-example" rows="2"></textarea>
+          <textarea id="f-example" data-field="example" rows="2"></textarea>
         </label>
         <label class="checkbox">
-          <input type="checkbox" id="f-hard" />
+          <input type="checkbox" id="f-hard" data-field="hard" />
           <span>Mark as hard</span>
         </label>
         <div class="modal-actions">
