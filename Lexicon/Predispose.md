@@ -1,5 +1,7 @@
 # Predispose
 
+#hard
+
 pre·​dis·​pose
 
 - to influence someone to behave or think in a particular way or to have a particular condition

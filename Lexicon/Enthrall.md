@@ -1,6 +1,6 @@
 # Enthrall
 
-#hard 
+#hard
 
 in-ˈthrȯl
 
@@ -8,4 +8,4 @@ in-ˈthrȯl
 
 Similar words: [[Enchant]], [[Interest]]
 
-Mnemonic: Enthrall, thrall similar to thrill, to keep someone thrilled.
+Mnemonic: Being engaged in thrill.

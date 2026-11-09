@@ -1,5 +1,7 @@
 # Calumnious
 
+#hard
+
 ca·​lum·​ni·​ous
 
 - a misrepresentation intended to harm another's reputation

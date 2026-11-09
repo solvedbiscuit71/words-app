@@ -1,5 +1,7 @@
 # Qualm
 
+#hard
+
 /kwɑːm/
 
 - an uncomfortable feeling when you doubt if you are doing the right thing

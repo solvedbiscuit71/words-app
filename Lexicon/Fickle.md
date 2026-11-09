@@ -1,5 +1,7 @@
 # Fickle
 
+#hard
+
 /ˈfɪk.əl/
 
 - likely to change your opinion or your feelings suddenly and without a good reason

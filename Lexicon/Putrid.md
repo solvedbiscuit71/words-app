@@ -7,6 +7,6 @@
 
 Similar words: [[Rotten]]
 
-Mnemonic: Get rid of it, it's rotten.
+Mnemonic: Get rid of the putrid
 
 Example: a dress in a putrid shade of yellow

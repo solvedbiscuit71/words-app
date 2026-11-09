@@ -2,8 +2,10 @@
 
 sop·​o·​rif·​ic
 
-* causing or tending to cause sleep
-* tending to dull awareness or alertness
-* of, relating to, or marked by sleepiness or lethargy
+- causing or tending to cause sleep
+- tending to dull awareness or alertness
+- of, relating to, or marked by sleepiness or lethargy
 
 Similar words: [[Hypnotic]]
+
+Example: this medication is soporific, so do not drive after taking it

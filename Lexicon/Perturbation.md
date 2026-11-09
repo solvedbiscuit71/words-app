@@ -1,5 +1,7 @@
 # Perturbation
 
+#hard
+
 pɜː.təˈbeɪ.ʃən
 
 - the state of being worried or upset

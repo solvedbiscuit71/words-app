@@ -1,6 +1,6 @@
 # Reticent
 
-#hard 
+#hard
 
 /ˈret.ɪ.sənt/
 
@@ -8,6 +8,6 @@
 
 Similar words: [[Silent]], [[Reserved]], [[Reluctant]]
 
-Mnemonic: Reticent : being reluctant and silent.
+Mnemonic: being reluctant and silent.
 
 Example: He is very reticent about his past.

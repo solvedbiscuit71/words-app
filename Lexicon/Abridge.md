@@ -7,3 +7,5 @@
 - to reduce in scope : diminish
 
 Similar words: [[Shorten]]
+
+Example: Tess wished to abridge her visit as much as possible.

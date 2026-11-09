@@ -9,3 +9,5 @@
 Similar words: [[Erosion]]
 
 Mnemonic: Attrition, similar to Malnutrition, where the person is weaken gradually.
+
+Example: a company with a high rate of attrition

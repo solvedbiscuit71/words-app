@@ -9,4 +9,4 @@ Similar words: [[Honest]]
 
 Mnemonic: Candor, Candid, one who can tell the truth honestly.
 
-Example: We have to attach head on with a lot of courage and candor.
+Example: We have to attack head on with a lot of courage and candor.

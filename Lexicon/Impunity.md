@@ -1,10 +1,11 @@
 # Impunity
 
-#hard 
+#hard
 
 /ɪmˈpjuː.nə.ti/
 
 - freedom from punishment for something that has been done that is wrong or illegal
+- Exemption from punishment or freedom from the injurious consequences of an action
 
 Similar words: [[Immunity]]
 

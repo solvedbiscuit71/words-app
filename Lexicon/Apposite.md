@@ -1,6 +1,6 @@
 # Apposite
 
-#hard 
+#hard
 
 /ˈæp.ə.zɪt/
 
@@ -11,4 +11,4 @@ Similar words: [[Apt]], [[Pertinent]]
 
 Mnemonic: Apposite, not opposite, perfectly match or appropriate
 
-Example: It is clear, concise and *apposite* to the specific task of the work.
+Example: It is clear, concise and apposite to the specific task of the work.

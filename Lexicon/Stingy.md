@@ -1,5 +1,7 @@
 # Stingy
 
+#hard
+
 /ˈstɪn.dʒi/
 
 - unwilling to spend money
