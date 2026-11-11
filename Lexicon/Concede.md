@@ -10,3 +10,5 @@ con·​cede
 Similar words: [[Admit]], [[Succumb]]
 
 Mnemonic: When you're wrong, just concede and move along.
+
+Example: The president is not expected to concede these reforms.

@@ -1,11 +1,13 @@
 # Restive
 
+#hard
+
 res.tɪv
 
 - feeling bored or impatient while waiting for something to happen or change
 - unwilling to be controlled or be patient
 
-Similar words: [[Sutbborn]], [[Restless]]
+Similar words: [[Restless]]
 
 Mnemonic: Resistive, restless
 

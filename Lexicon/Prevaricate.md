@@ -1,6 +1,6 @@
 # Prevaricate
 
-#hard 
+#hard
 
 /prɪˈvær.ɪ.keɪt/
 
@@ -8,6 +8,6 @@
 
 Similar words: [[Lie]]
 
-Mnemonic: Pre (before) + Var (like in veracity) + cate (like in fabricate)
+Mnemonic: Prevent from telling the truth
 
 Example: He accused the minister of prevaricating.

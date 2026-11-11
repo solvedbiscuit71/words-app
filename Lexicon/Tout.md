@@ -1,5 +1,7 @@
 # Tout
 
+#hard
+
 taʊt
 
 - to advertise, talk about, or praise something or someone repeatedly, especially as a way of encouraging people to like, accept, or buy something
