@@ -50,32 +50,17 @@ function rand(n, weights) {
   return n - 1;
 }
 
-// Exponential sampling (mirrors crandom.randexp)
-function randexp(n, lam = 1.0) {
-  if (n === 0) throw new Error("n cannot be zero");
-  if (n === 1) return 0;
-  const weights = [];
-  for (let i = 0; i < n; i++) weights.push(Math.exp((lam * i) / (n - 1)));
-  const total = weights.reduce((a, b) => a + b, 0);
-  let r = Math.random() * total;
-  let cumulative = 0;
-  for (let i = 0; i < n; i++) {
-    cumulative += weights[i];
-    if (r <= cumulative) return i;
-  }
-  return n - 1;
-}
+const CHOICE_KEYS = ["a", "b", "c", "d", "e", "f"];
 
-// Build the 5 answer choices (mirrors quiz.select_choices)
+// Build the six answer choices (mirrors quiz.select_choices)
 function selectChoices(wordBank, answer, weights) {
   const i = wordBank.indexOf(answer);
   if (i >= 0) weights[i] = Math.max(weights[i] / 10, 0);
 
-  const keys = ["a", "b", "c", "d", "e"];
-  const correctKey = keys[Math.floor(Math.random() * keys.length)];
+  const correctKey = CHOICE_KEYS[Math.floor(Math.random() * CHOICE_KEYS.length)];
   const choices = [];
 
-  for (const key of keys) {
+  for (const key of CHOICE_KEYS) {
     if (key === correctKey) {
       choices.push(answer);
     } else {
@@ -101,64 +86,42 @@ const state = {
   lexicon: [], // word metadata list
   matches: [], // current search results shown in the sidebar dropdown
   selected: null, // selected word text in lexicon
-  editing: null, // word text being edited in the modal (null = creating)
   resultsHidden: false, // dropdown suppressed after a selection or blur
   focusIdx: 0, // keyboard-highlighted search result
 };
 
 /* ============================== QUIZ ================================== */
-function applyTake(pool, take, count) {
-  if (take === "all") return pool.slice();
-  if (take === "hard") return pool.filter((w) => w.marked_as_hard);
-
-  const sorted = pool.slice().sort((a, b) => a.ctime - b.ctime);
-  if (take === "latest") return sorted.slice(-count);
-  if (take === "oldest") return sorted.slice(0, count);
-  return pool.slice();
-}
-
-function applySamplingOrder(pool, sampling) {
-  if (sampling === "latest") return pool.slice().sort((a, b) => a.ctime - b.ctime);
-  if (sampling === "oldest") return pool.slice().sort((a, b) => b.ctime - a.ctime);
-  return pool.slice();
-}
-
 async function startQuiz() {
   const no = parseInt($("#opt-no").value, 10);
-  const mode = $("#opt-mode").value;
-  const take = $("#opt-take").value;
-  const takeCount = parseInt($("#opt-take-count").value, 10) || 0;
-  const sampling = $("#opt-sampling").value;
+  const mode = $("input[name=\"quiz-mode\"]:checked").value;
 
   if (!state.pool.length) {
     toast("No words available to quiz.", "bad");
     return;
   }
 
-  let entries = applyTake(state.pool, take, takeCount);
-  if (!entries.length) {
-    toast("No words match the selected filter.", "bad");
+  if (!Number.isInteger(no) || no < 1) {
+    toast("Enter at least one question.", "bad");
     return;
   }
 
+  const entries = state.pool.slice();
   const total = Math.min(no, entries.length);
-  entries = applySamplingOrder(entries, sampling);
 
   state.quiz = {
     mode,
-    sampling,
+    sampling: "uniform",
     total,
     current: 0,
     correct: 0,
     entries,
     wordBank: state.pool.map((w) => w.text),
+    wordByText: new Map(state.pool.map((word) => [word.text, word])),
     weights: state.pool.map(() => 100.0),
     answered: false,
-    results: [],
   };
 
   $("#quiz-setup").hidden = true;
-  $("#quiz-result").hidden = true;
   $("#quiz-panel").hidden = false;
   nextQuestion();
 }
@@ -172,12 +135,7 @@ async function nextQuestion() {
   }
 
   // Pick an entry
-  let idx;
-  if (quiz.sampling === "uniform") {
-    idx = Math.floor(Math.random() * quiz.entries.length);
-  } else {
-    idx = randexp(quiz.entries.length, 3);
-  }
+  const idx = Math.floor(Math.random() * quiz.entries.length);
   const word = quiz.entries[idx];
   quiz.entries.splice(idx, 1);
 
@@ -224,21 +182,51 @@ function renderQuestion(question, choices, thinking) {
   $("#quiz-progress").textContent = `${quiz.current + 1} of ${quiz.total}`;
   $("#progress-fill").style.width = `${(quiz.current / quiz.total) * 100}%`;
   $("#question-text").textContent = thinking ? "Thinking…" : question;
-  $("#feedback").textContent = "";
-  $("#feedback").className = "feedback";
-  $("#hint-box").hidden = true;
   $("#quiz-next").hidden = true;
 
   const container = $("#choices");
+  container.classList.remove("revealed");
   container.innerHTML = "";
 
   if (thinking || !choices) return;
 
-  const keys = ["A", "B", "C", "D", "E"];
   choices.forEach((choice, i) => {
     const btn = document.createElement("button");
     btn.className = "choice";
-    btn.innerHTML = `<span class="key">${keys[i]}</span><span>${choice}</span>`;
+    btn.dataset.word = choice;
+
+    const key = document.createElement("span");
+    key.className = "key";
+    key.textContent = CHOICE_KEYS[i].toUpperCase();
+
+    const wordLabel = document.createElement("span");
+    wordLabel.className = "choice-word";
+    wordLabel.textContent = choice;
+
+    const content = document.createElement("span");
+    content.className = "choice-content";
+    content.appendChild(wordLabel);
+
+    const details = document.createElement("span");
+    details.className = "choice-details";
+    const entry = quiz.wordByText.get(choice) || quiz.currentWord;
+    const definition = entry.definitions?.[0];
+    if (definition) {
+      const definitionLine = document.createElement("span");
+      definitionLine.className = "choice-definition";
+      definitionLine.textContent = definition;
+      details.appendChild(definitionLine);
+    }
+    const similarWords = entry.similar_words?.slice(0, 2) || [];
+    if (similarWords.length) {
+      const similarLine = document.createElement("span");
+      similarLine.className = "choice-similar";
+      similarLine.textContent = similarWords.join(", ");
+      details.appendChild(similarLine);
+    }
+    content.append(details);
+
+    btn.append(key, content);
     btn.addEventListener("click", (e) =>
       answerQuestion(choice, btn, e.detail === 0)
     );
@@ -255,40 +243,23 @@ function answerQuestion(choice, btn, fromKeyboard = false) {
   const buttons = $$("#choices .choice");
   buttons.forEach((b) => {
     b.disabled = true;
-    const label = b.querySelector("span:last-child").textContent;
-    if (label === quiz.currentWord.text) b.classList.add("correct");
+    if (b.dataset.word === quiz.currentWord.text) b.classList.add("correct");
   });
 
-  const feedback = $("#feedback");
   if (correct) {
     quiz.correct++;
-    feedback.textContent = "✓ Correct";
-    feedback.className = "feedback good";
   } else {
     btn.classList.add("wrong");
-    feedback.textContent = `✗ Incorrect — the correct answer is "${quiz.currentWord.text}"`;
-    feedback.className = "feedback bad";
   }
 
-  // Record the answer for the end-of-quiz report
-  quiz.results.push({
-    word: quiz.currentWord,
-    question: quiz.currentQuestion,
-    chosen: choice,
-    correct: quiz.currentWord.text,
-    isCorrect: correct,
-  });
-
+  $("#choices").classList.add("revealed");
   quiz.current++;
   $("#progress-fill").style.width = `${(quiz.current / quiz.total) * 100}%`;
 
-  // Wait for the user to continue instead of auto-advancing
   const nextBtn = $("#btn-next");
   nextBtn.textContent =
     quiz.current >= quiz.total ? "See results →" : "Next question →";
   $("#quiz-next").hidden = false;
-  // Only steal focus when the answer came from the keyboard; focusing on a
-  // mouse click would show a focus ring the user did not ask for.
   if (fromKeyboard) nextBtn.focus();
 }
 
@@ -297,94 +268,15 @@ function finishQuiz() {
   const pct = quiz.total ? Math.round((quiz.correct / quiz.total) * 100) : 0;
 
   $("#quiz-panel").hidden = true;
-  $("#quiz-result").hidden = false;
-  $("#score-value").textContent = `${pct}%`;
-  $("#score-ring").style.setProperty("--pct", `${pct}%`);
-  $("#result-line").textContent = `You answered ${quiz.correct} of ${quiz.total} correctly.`;
-  renderReport(quiz.results);
+  $("#quiz-setup").hidden = false;
   state.quiz = null;
+  toast(`Quiz completed with ${pct}% accuracy`, "good");
 }
 
-/* --------------------------- Quiz report ------------------------------ */
-function renderReport(results) {
-  const container = $("#report");
-  const wrong = results.filter((r) => !r.isCorrect);
-
-  if (!wrong.length) {
-    container.innerHTML = `<p class="report-empty">Perfect score — nothing to review. 🎉</p>`;
-    return;
-  }
-
-  container.innerHTML = `
-    <div class="report-head">
-      <h3>Review (${wrong.length} incorrect)</h3>
-    </div>
-    <ul class="report-list"></ul>
-  `;
-
-  const list = container.querySelector(".report-list");
-  wrong.forEach((r) => {
-    const li = document.createElement("li");
-    li.className = "report-item";
-    li.innerHTML = `
-      <div class="report-q">${r.question}</div>
-      <div class="report-answers">
-        <span class="report-answer bad">
-          <span class="report-label">Your answer</span>${r.chosen}
-        </span>
-        <span class="report-answer good">
-          <span class="report-label">Correct</span>${r.correct}
-        </span>
-      </div>
-      <div class="report-actions"></div>
-    `;
-
-    const actions = li.querySelector(".report-actions");
-    const hardBtn = document.createElement("button");
-    hardBtn.className = "btn ghost small";
-    hardBtn.textContent = r.word.marked_as_hard ? "Marked as hard" : "Mark as hard";
-    hardBtn.disabled = r.word.marked_as_hard;
-    hardBtn.addEventListener("click", () => markAsHard(r.word, hardBtn));
-    actions.appendChild(hardBtn);
-
-    list.appendChild(li);
-  });
-}
-
-async function markAsHard(word, btn) {
-  btn.disabled = true;
-  btn.textContent = "Saving…";
-  try {
-    const payload = { ...word, marked_as_hard: true };
-    delete payload.ctime;
-    delete payload.mtime;
-    await api(`/words/${encodeURIComponent(word.text)}`, {
-      method: "PUT",
-      body: JSON.stringify(payload),
-    });
-    word.marked_as_hard = true;
-    btn.textContent = "Marked as hard";
-    toast(`"${word.text}" marked as hard.`, "good");
-  } catch (err) {
-    btn.disabled = false;
-    btn.textContent = "Mark as hard";
-    toast(err.message, "bad");
-  }
-}
-
-function quitQuiz() {
+function returnToSetup() {
   state.quiz = null;
   $("#quiz-panel").hidden = true;
-  $("#quiz-result").hidden = true;
   $("#quiz-setup").hidden = false;
-}
-
-function showHint() {
-  const quiz = state.quiz;
-  if (!quiz || !quiz.currentDefinition) return;
-  const box = $("#hint-box");
-  box.textContent = `Hint: ${quiz.currentDefinition}`;
-  box.hidden = false;
 }
 
 /* ============================ LEXICON ================================= */
@@ -415,7 +307,16 @@ function setSidebar(open) {
     loadLexicon();
   } else {
     hideResults();
-    $("#search").blur();
+    const search = $("#search");
+    search.value = "";
+    search.blur();
+    state.selected = null;
+    state.focusIdx = 0;
+    renderWordList();
+    detailEmpty();
+    const detail = $("#word-detail");
+    detail.scrollTop = 0;
+    detail.classList.remove("editing");
   }
 }
 
@@ -535,6 +436,7 @@ async function selectWord(text) {
 
 function renderWordDetail(word) {
   const detail = $("#word-detail");
+  detail.classList.remove("editing");
   const chips = (arr) =>
     arr && arr.length
       ? `<div class="chips">${arr.map((w) => `<span class="chip">${w}</span>`).join("")}</div>`
@@ -573,8 +475,9 @@ function renderWordDetail(word) {
 }
 
 function detailEmpty() {
+  $("#word-detail").classList.remove("editing");
   $("#word-detail").innerHTML =
-    `<p class="empty">Select a word to view its details.</p>`;
+    `<p class="empty">Search a word to view its definition.</p>`;
 }
 
 /* --------------------------- In-place editing -------------------------- */
@@ -607,6 +510,7 @@ function fillEditor(root, word) {
 
 function editWordInPlace(word) {
   const detail = $("#word-detail");
+  detail.classList.add("editing");
   detail.innerHTML = `
     <form class="word-form" id="detail-form">
       ${fieldMarkup("Word", "text")}
@@ -638,6 +542,52 @@ function editWordInPlace(word) {
   $("#btn-edit-cancel").addEventListener("click", () => renderWordDetail(word));
 }
 
+function createWordInPlace() {
+  const detail = $("#word-detail");
+  const blankWord = {
+    text: "",
+    pronunciation: "",
+    definitions: [],
+    similar_words: [],
+    near_antonyms: [],
+    mnemonic: "",
+    example: "",
+    marked_as_hard: false,
+  };
+  detail.classList.add("editing");
+  detail.innerHTML = `
+    <form class="word-form" id="detail-form">
+      ${fieldMarkup("Word", "text")}
+      ${fieldMarkup("Pronunciation", "pronunciation")}
+      ${fieldMarkup("Definitions (one per line)", "definitions", { multiline: true, rows: 4 })}
+      ${fieldMarkup("Similar words (comma separated)", "similar")}
+      ${fieldMarkup("Near antonyms (comma separated)", "antonyms")}
+      ${fieldMarkup("Mnemonic", "mnemonic")}
+      ${fieldMarkup("Example", "example", { multiline: true, rows: 2 })}
+      <label class="checkbox">
+        <input type="checkbox" data-field="hard" />
+        <span>Mark as hard</span>
+      </label>
+      <div class="word-form-actions">
+        <button type="button" class="btn ghost" id="btn-edit-cancel">Cancel</button>
+        <button type="submit" class="btn primary">Create word</button>
+      </div>
+    </form>
+  `;
+
+  const form = $("#detail-form");
+  fillEditor(form, blankWord);
+  form.querySelector('[data-field="text"]').focus();
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    saveWordFrom(form);
+  });
+  $("#btn-edit-cancel").addEventListener("click", () => {
+    detail.classList.remove("editing");
+    detailEmpty();
+  });
+}
+
 function readForm(root) {
   const value = (name) => root.querySelector(`[data-field="${name}"]`)?.value ?? "";
   return {
@@ -655,7 +605,7 @@ function readForm(root) {
   };
 }
 
-async function saveWordFrom(root, editing) {
+async function saveWordFrom(root, editing = null) {
   const payload = readForm(root);
   if (!payload.text) {
     toast("Word text is required.", "bad");
@@ -681,22 +631,6 @@ async function saveWordFrom(root, editing) {
     toast(err.message, "bad");
     return false;
   }
-}
-
-/* ------------------------------ Modal --------------------------------- */
-function openModal(word = null) {
-  state.editing = word ? word.text : null;
-  $("#modal-title").textContent = word ? "Edit word" : "New word";
-  const form = $("#word-form");
-  if (word) fillEditor(form, word);
-  else form.reset();
-  $("#modal-backdrop").hidden = false;
-  form.querySelector('[data-field="text"]').focus();
-}
-
-function closeModal() {
-  $("#modal-backdrop").hidden = true;
-  state.editing = null;
 }
 
 function splitList(value) {
@@ -726,7 +660,8 @@ async function refreshPool() {
     state.pool = await api("/quiz/pool");
     $("#pool-info").textContent = `${state.pool.length} words available`;
   } catch (err) {
-    $("#pool-info").textContent = "Failed to load words";
+    state.pool = [];
+    $("#pool-info").textContent = "0 words available";
   }
 }
 
@@ -831,10 +766,6 @@ function isTextField(el) {
   );
 }
 
-function modalIsOpen() {
-  return !$("#modal-backdrop").hidden;
-}
-
 function init() {
   // Custom selects
   $$("[data-select]").forEach(enhanceSelect);
@@ -843,16 +774,8 @@ function init() {
   });
 
   // Quiz setup
-  $("#opt-take").addEventListener("change", (e) => {
-    $("#take-count-field").hidden = !["latest", "oldest"].includes(e.target.value);
-  });
   $("#btn-start").addEventListener("click", startQuiz);
-  $("#btn-again").addEventListener("click", () => {
-    $("#quiz-result").hidden = true;
-    $("#quiz-setup").hidden = false;
-  });
-  $("#btn-quit").addEventListener("click", quitQuiz);
-  $("#btn-hint").addEventListener("click", showHint);
+  $("#btn-back").addEventListener("click", returnToSetup);
   $("#btn-next").addEventListener("click", () => {
     const quiz = state.quiz;
     if (!quiz) return;
@@ -863,7 +786,7 @@ function init() {
   // Lexicon sidebar
   $("#btn-toggle-sidebar").addEventListener("click", toggleSidebar);
   $("#sidebar-scrim").addEventListener("click", closeSidebar);
-  $("#btn-new-word").addEventListener("click", () => openModal(null));
+  $("#btn-new-word").addEventListener("click", createWordInPlace);
 
   const search = $("#search");
   search.addEventListener("input", showResults);
@@ -894,20 +817,6 @@ function init() {
     if (!e.target.closest(".lexicon-search")) hideResults();
   });
 
-  // Modal
-  $("#modal-close").addEventListener("click", closeModal);
-  $("#btn-cancel").addEventListener("click", closeModal);
-  $("#word-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    const editing = state.editing;
-    saveWordFrom(e.currentTarget, editing).then((ok) => {
-      if (ok) closeModal();
-    });
-  });
-  $("#modal-backdrop").addEventListener("click", (e) => {
-    if (e.target === $("#modal-backdrop")) closeModal();
-  });
-
   // Restore the sidebar state from the previous visit
   let open = false;
   try {
@@ -924,9 +833,7 @@ function init() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeAllSelects();
-      if (modalIsOpen()) {
-        closeModal();
-      } else if (lexiconIsOpen()) {
+      if (lexiconIsOpen()) {
         // Esc always hides the lexicon, whatever the search dropdown is doing
         e.preventDefault();
         closeSidebar();
@@ -937,36 +844,24 @@ function init() {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
 
     // "/" focuses the lexicon search (opening the sidebar if needed)
-    if (e.key === "/" && !isTextField(e.target) && !modalIsOpen()) {
+    if (e.key === "/" && !isTextField(e.target)) {
       e.preventDefault();
       focusSearch();
       return;
     }
 
     // "\" toggles the sidebar, unless the user is typing
-    if (e.key === "\\" && !isTextField(e.target) && !modalIsOpen()) {
+    if (e.key === "\\" && !isTextField(e.target)) {
       e.preventDefault();
       toggleSidebar();
       return;
     }
 
     // Quiz shortcuts must not fire while typing in a text field
-    if (isTextField(e.target) || modalIsOpen()) return;
+    if (isTextField(e.target)) return;
     if (!state.quiz) return;
 
     const key = e.key.toLowerCase();
-
-    // "h" hints and "q" quits — available before and after answering
-    if (key === "h") {
-      e.preventDefault();
-      showHint();
-      return;
-    }
-    if (key === "q") {
-      e.preventDefault();
-      quitQuiz();
-      return;
-    }
 
     // Once answered, Enter/Space advances to the next question
     if (state.quiz.answered) {
@@ -977,9 +872,9 @@ function init() {
       return;
     }
 
-    const map = { a: 0, b: 1, c: 2, d: 3, e: 4 };
-    if (key in map) {
-      const btn = $$("#choices .choice")[map[key]];
+    const choiceIndex = CHOICE_KEYS.indexOf(key);
+    if (choiceIndex !== -1) {
+      const btn = $$("#choices .choice")[choiceIndex];
       if (btn) btn.click();
     }
   });
