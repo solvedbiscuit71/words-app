@@ -1,6 +1,6 @@
 # Disaffected
 
-#hard 
+#hard
 
 dis·​af·​fect·​ed
 
@@ -10,3 +10,5 @@ dis·​af·​fect·​ed
 Similar words: [[Disgruntled]], [[Resentful]]
 
 Mnemonic: Disaffected youth, tired of the truth.
+
+Example: The party needs to take steps to attract disaffected voters.

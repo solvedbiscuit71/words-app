@@ -1,5 +1,7 @@
 # Dissimilitude
 
+#hard
+
 /ˌdɪs.sɪˈmɪl.ɪ.tʃuːd/
 
 - a difference, or the state of being different

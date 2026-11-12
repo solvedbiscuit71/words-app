@@ -7,3 +7,5 @@
 Similar words: [[Assist]], [[Comfort]]
 
 Mnemonic: The one who gives succor, may end up the sucker.
+
+Example: Her organization gave succor and strength to those who had been emotionally damaged.

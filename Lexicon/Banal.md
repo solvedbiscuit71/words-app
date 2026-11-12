@@ -8,3 +8,5 @@ bə-ˈnal
 Similar words: [[Boring]], [[Hackneyed]]
 
 Mnemonic: A banal chat, boring and flat.
+
+Example: He just sat there making banal remarks all evening.

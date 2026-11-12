@@ -6,4 +6,6 @@ in·​con·​gru·​ous
 
 Similar words: [[Inappropriate]]
 
-Mnemonic: Incongruous and wrong, it just doesn't belong.
+Mnemonic: When two things are in congruous they are in harmony
+
+Example: Such a modern office building looks incongruous in the quaint little town.

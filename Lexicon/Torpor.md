@@ -1,5 +1,7 @@
 # Torpor
 
+#hard
+
 tɔː.pər
 
 - a state of not being active and having very little energy
