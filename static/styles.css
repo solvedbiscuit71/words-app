@@ -184,12 +184,15 @@ body.lexicon-open {
   place-items: center;
   width: 40px;
   height: 40px;
+  flex: 0 0 40px;
   border-radius: var(--radius);
   background: var(--accent);
-  color: var(--bg-hard);
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: var(--fs-lg);
+}
+
+.brand-mark svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--bg-hard);
 }
 
 .brand h1 {
