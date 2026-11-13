@@ -8,3 +8,5 @@ im·​per·​ti·​nent
 Similar words: [[Rude]], [[Irrelevant]]
 
 Mnemonic: Impertinent and bold, no respect for the old.
+
+Example: I hope he didn't think I was being impertinent when I asked him about his private life.

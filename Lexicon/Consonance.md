@@ -8,3 +8,5 @@ kɒn.sə.nəns
 Similar words: [[Peaceful]], [[Tranquil]], [[Accept]], [[Agree]]
 
 Mnemonic: Consonant sounds are pleasant, consonance are people who are peace.
+
+Example: His beliefs are in consonance with the political party's views.

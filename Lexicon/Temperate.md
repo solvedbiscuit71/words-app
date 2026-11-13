@@ -8,4 +8,4 @@ tem·​per·​ate
 
 Similar words: [[Temperance]], [[Ascetic]]
 
-Mnemonic: Temperate, temperance, similar words, similar meaning. But not temperament.
+Example: The climate here is pretty temperate.

@@ -1,6 +1,6 @@
 # Incessant
 
-#hard 
+#hard
 
 in·​ces·​sant
 
@@ -9,3 +9,5 @@ in·​ces·​sant
 Similar words: [[Continuous]]
 
 Mnemonic: In (not) + cease (to stop), continuous
+
+Example: incessant rain

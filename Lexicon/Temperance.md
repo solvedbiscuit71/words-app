@@ -9,3 +9,5 @@ tem·​per·​ance
 Similar words: [[Moderate]], [[Restraint]]
 
 Mnemonic: Temperance, opposite of Temperament
+
+Example: my father attributes his ripe old age to temperance in all things, especially eating and drinking.

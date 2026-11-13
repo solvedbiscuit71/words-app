@@ -7,4 +7,6 @@
 
 Similar words: [[Noble]]
 
-Mnemonic: Sounds like, she well, someone who's attentive to women
+Mnemonic: she's well? someone who's attentive to women
+
+Example: He was polite and chivalrous and never cursed in front of her.

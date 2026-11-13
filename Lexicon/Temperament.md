@@ -8,3 +8,5 @@ tem·​per·​a·​ment
 - the slight modification of acoustically pure intervals in tuning a musical instrument
 
 Similar words: [[Temper]], [[Disposition]]
+
+Example: The two women were opposite in temperament.

@@ -8,3 +8,5 @@
 Similar words: [[Novice]], [[Nascent]]
 
 Mnemonic: Ducklings are fledgling, immature ducks
+
+Example: The current economic climate is particularly difficult for fledgling businesses.
